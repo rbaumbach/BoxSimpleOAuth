@@ -24,7 +24,6 @@
 		AF8AAFB91A13AA3500147063 /* FakeBoxOAuthResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8AAFB81A13AA3500147063 /* FakeBoxOAuthResponse.m */; };
 		AF8AAFBC1A13AB8100147063 /* BoxLoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8AAFBB1A13AB8100147063 /* BoxLoginResponse.m */; };
 		AF8AAFBD1A13AB8100147063 /* BoxLoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8AAFBB1A13AB8100147063 /* BoxLoginResponse.m */; };
-		AFDD773F1A132CC700B349AE /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = AFDD773E1A132CC700B349AE /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -374,7 +373,6 @@
 				AF8AAFBC1A13AB8100147063 /* BoxLoginResponse.m in Sources */,
 				AF4CF51A1A132B4B0013D8A6 /* BoxSimpleOAuthViewController.m in Sources */,
 				AF4CF4FA1A1327990013D8A6 /* ViewController.m in Sources */,
-				AFDD773F1A132CC700B349AE /* README.md in Sources */,
 				AF4CF4F71A1327990013D8A6 /* AppDelegate.m in Sources */,
 				AF4CF4F41A1327990013D8A6 /* main.m in Sources */,
 			);
