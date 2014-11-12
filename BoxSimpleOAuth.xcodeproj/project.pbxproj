@@ -18,6 +18,7 @@
 		AF4CF50E1A1327990013D8A6 /* BoxSimpleOAuthViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4CF50D1A1327990013D8A6 /* BoxSimpleOAuthViewControllerTests.m */; };
 		AF4CF51A1A132B4B0013D8A6 /* BoxSimpleOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4CF5191A132B4B0013D8A6 /* BoxSimpleOAuthViewController.m */; };
 		AF4CF51B1A132B4B0013D8A6 /* BoxSimpleOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4CF5191A132B4B0013D8A6 /* BoxSimpleOAuthViewController.m */; };
+		AFDD773F1A132CC700B349AE /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = AFDD773E1A132CC700B349AE /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		AF4CF50D1A1327990013D8A6 /* BoxSimpleOAuthViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoxSimpleOAuthViewControllerTests.m; sourceTree = "<group>"; };
 		AF4CF5181A132B4B0013D8A6 /* BoxSimpleOAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoxSimpleOAuthViewController.h; path = Source/BoxSimpleOAuthViewController.h; sourceTree = "<group>"; };
 		AF4CF5191A132B4B0013D8A6 /* BoxSimpleOAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoxSimpleOAuthViewController.m; path = Source/BoxSimpleOAuthViewController.m; sourceTree = "<group>"; };
+		AFDD773E1A132CC700B349AE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B042B58440F69176CCFBE0AF /* Pods-BoxSimpleOAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxSimpleOAuth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BoxSimpleOAuth/Pods-BoxSimpleOAuth.debug.xcconfig"; sourceTree = "<group>"; };
 		CD61102C2D674C44E147EC09 /* libPods-BoxSimpleOAuthTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BoxSimpleOAuthTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8FC09FC6580E69AAD565D3A /* Pods-BoxSimpleOAuthTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxSimpleOAuthTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BoxSimpleOAuthTests/Pods-BoxSimpleOAuthTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		AF4CF4E51A1327990013D8A6 = {
 			isa = PBXGroup;
 			children = (
+				AFDD773D1A132C9E00B349AE /* Github */,
 				AF4CF4F01A1327990013D8A6 /* BoxSimpleOAuth */,
 				AF4CF50A1A1327990013D8A6 /* BoxSimpleOAuthTests */,
 				AF4CF4EF1A1327990013D8A6 /* Products */,
@@ -163,6 +166,14 @@
 				AF4CF4F11A1327990013D8A6 /* Supporting Files */,
 			);
 			name = AppCode;
+			sourceTree = "<group>";
+		};
+		AFDD773D1A132C9E00B349AE /* Github */ = {
+			isa = PBXGroup;
+			children = (
+				AFDD773E1A132CC700B349AE /* README.md */,
+			);
+			name = Github;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +345,7 @@
 			files = (
 				AF4CF51A1A132B4B0013D8A6 /* BoxSimpleOAuthViewController.m in Sources */,
 				AF4CF4FA1A1327990013D8A6 /* ViewController.m in Sources */,
+				AFDD773F1A132CC700B349AE /* README.md in Sources */,
 				AF4CF4F71A1327990013D8A6 /* AppDelegate.m in Sources */,
 				AF4CF4F41A1327990013D8A6 /* main.m in Sources */,
 			);
