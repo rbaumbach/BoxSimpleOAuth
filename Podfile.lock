@@ -1,0 +1,47 @@
+PODS:
+  - AFNetworking (2.4.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.4.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.4.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.4.1)
+  - AFNetworking/Security (2.4.1)
+  - AFNetworking/Serialization (2.4.1)
+  - AFNetworking/UIKit (2.4.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - Expecta (0.2.4)
+  - OCMock (3.0.2)
+  - SimpleOAuth2 (0.0.2):
+    - AFNetworking (~> 2.0)
+  - Specta (0.3.0.beta1)
+
+DEPENDENCIES:
+  - Expecta (~> 0.2.1)
+  - OCMock (~> 3.0.2)
+  - SimpleOAuth2 (= 0.0.2)
+  - Specta (from `https://github.com/specta/specta.git`, tag `v0.3.0.beta1`)
+
+EXTERNAL SOURCES:
+  Specta:
+    :git: https://github.com/specta/specta.git
+    :tag: v0.3.0.beta1
+
+SPEC CHECKSUMS:
+  AFNetworking: 0aabc6fae66d6e5d039eeb21c315843c7aae51ab
+  Expecta: 112bcafa2304ee0f3c5e586505f24555a47b25d5
+  OCMock: b9836ab89d8d5e66cbe6333f93857037c310ee62
+  SimpleOAuth2: 9aa021b7a3840dae24a30453ab2c94c79ea6d784
+  Specta: 63e8ac8e07db6675c7096d37f77a266a1be4c02d
+
+COCOAPODS: 0.34.4
