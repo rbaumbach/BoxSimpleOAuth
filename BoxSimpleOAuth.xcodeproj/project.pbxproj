@@ -18,6 +18,12 @@
 		AF4CF50E1A1327990013D8A6 /* BoxSimpleOAuthViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4CF50D1A1327990013D8A6 /* BoxSimpleOAuthViewControllerTests.m */; };
 		AF4CF51A1A132B4B0013D8A6 /* BoxSimpleOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4CF5191A132B4B0013D8A6 /* BoxSimpleOAuthViewController.m */; };
 		AF4CF51B1A132B4B0013D8A6 /* BoxSimpleOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4CF5191A132B4B0013D8A6 /* BoxSimpleOAuthViewController.m */; };
+		AF8AAFB21A13A94000147063 /* BoxSimpleOAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF8AAFB11A13A94000147063 /* BoxSimpleOAuthViewController.xib */; };
+		AF8AAFB31A13A94000147063 /* BoxSimpleOAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF8AAFB11A13A94000147063 /* BoxSimpleOAuthViewController.xib */; };
+		AF8AAFB51A13A9C100147063 /* BoxLoginResponseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8AAFB41A13A9C100147063 /* BoxLoginResponseTests.m */; };
+		AF8AAFB91A13AA3500147063 /* FakeBoxOAuthResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8AAFB81A13AA3500147063 /* FakeBoxOAuthResponse.m */; };
+		AF8AAFBC1A13AB8100147063 /* BoxLoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8AAFBB1A13AB8100147063 /* BoxLoginResponse.m */; };
+		AF8AAFBD1A13AB8100147063 /* BoxLoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8AAFBB1A13AB8100147063 /* BoxLoginResponse.m */; };
 		AFDD773F1A132CC700B349AE /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = AFDD773E1A132CC700B349AE /* README.md */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +56,12 @@
 		AF4CF50D1A1327990013D8A6 /* BoxSimpleOAuthViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoxSimpleOAuthViewControllerTests.m; sourceTree = "<group>"; };
 		AF4CF5181A132B4B0013D8A6 /* BoxSimpleOAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoxSimpleOAuthViewController.h; path = Source/BoxSimpleOAuthViewController.h; sourceTree = "<group>"; };
 		AF4CF5191A132B4B0013D8A6 /* BoxSimpleOAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoxSimpleOAuthViewController.m; path = Source/BoxSimpleOAuthViewController.m; sourceTree = "<group>"; };
+		AF8AAFB11A13A94000147063 /* BoxSimpleOAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BoxSimpleOAuthViewController.xib; path = Source/BoxSimpleOAuthViewController.xib; sourceTree = "<group>"; };
+		AF8AAFB41A13A9C100147063 /* BoxLoginResponseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxLoginResponseTests.m; sourceTree = "<group>"; };
+		AF8AAFB71A13AA3500147063 /* FakeBoxOAuthResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeBoxOAuthResponse.h; sourceTree = "<group>"; };
+		AF8AAFB81A13AA3500147063 /* FakeBoxOAuthResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeBoxOAuthResponse.m; sourceTree = "<group>"; };
+		AF8AAFBA1A13AB8100147063 /* BoxLoginResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoxLoginResponse.h; path = Source/BoxLoginResponse.h; sourceTree = "<group>"; };
+		AF8AAFBB1A13AB8100147063 /* BoxLoginResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoxLoginResponse.m; path = Source/BoxLoginResponse.m; sourceTree = "<group>"; };
 		AFDD773E1A132CC700B349AE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B042B58440F69176CCFBE0AF /* Pods-BoxSimpleOAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxSimpleOAuth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BoxSimpleOAuth/Pods-BoxSimpleOAuth.debug.xcconfig"; sourceTree = "<group>"; };
 		CD61102C2D674C44E147EC09 /* libPods-BoxSimpleOAuthTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BoxSimpleOAuthTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +134,9 @@
 			children = (
 				AF4CF5181A132B4B0013D8A6 /* BoxSimpleOAuthViewController.h */,
 				AF4CF5191A132B4B0013D8A6 /* BoxSimpleOAuthViewController.m */,
+				AF8AAFB11A13A94000147063 /* BoxSimpleOAuthViewController.xib */,
+				AF8AAFBA1A13AB8100147063 /* BoxLoginResponse.h */,
+				AF8AAFBB1A13AB8100147063 /* BoxLoginResponse.m */,
 				AF4CF5171A132AF90013D8A6 /* AppCode */,
 			);
 			path = BoxSimpleOAuth;
@@ -140,7 +155,9 @@
 		AF4CF50A1A1327990013D8A6 /* BoxSimpleOAuthTests */ = {
 			isa = PBXGroup;
 			children = (
+				AF8AAFB61A13AA1800147063 /* Fakes */,
 				AF4CF50D1A1327990013D8A6 /* BoxSimpleOAuthViewControllerTests.m */,
+				AF8AAFB41A13A9C100147063 /* BoxLoginResponseTests.m */,
 				AF4CF50B1A1327990013D8A6 /* Supporting Files */,
 			);
 			path = BoxSimpleOAuthTests;
@@ -166,6 +183,15 @@
 				AF4CF4F11A1327990013D8A6 /* Supporting Files */,
 			);
 			name = AppCode;
+			sourceTree = "<group>";
+		};
+		AF8AAFB61A13AA1800147063 /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				AF8AAFB71A13AA3500147063 /* FakeBoxOAuthResponse.h */,
+				AF8AAFB81A13AA3500147063 /* FakeBoxOAuthResponse.m */,
+			);
+			name = Fakes;
 			sourceTree = "<group>";
 		};
 		AFDD773D1A132C9E00B349AE /* Github */ = {
@@ -260,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF8AAFB21A13A94000147063 /* BoxSimpleOAuthViewController.xib in Resources */,
 				AF4CF4FD1A1327990013D8A6 /* Main.storyboard in Resources */,
 				AF4CF5021A1327990013D8A6 /* LaunchScreen.xib in Resources */,
 				AF4CF4FF1A1327990013D8A6 /* Images.xcassets in Resources */,
@@ -270,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF8AAFB31A13A94000147063 /* BoxSimpleOAuthViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +371,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF8AAFBC1A13AB8100147063 /* BoxLoginResponse.m in Sources */,
 				AF4CF51A1A132B4B0013D8A6 /* BoxSimpleOAuthViewController.m in Sources */,
 				AF4CF4FA1A1327990013D8A6 /* ViewController.m in Sources */,
 				AFDD773F1A132CC700B349AE /* README.md in Sources */,
@@ -355,8 +384,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF8AAFB51A13A9C100147063 /* BoxLoginResponseTests.m in Sources */,
+				AF8AAFB91A13AA3500147063 /* FakeBoxOAuthResponse.m in Sources */,
 				AF4CF51B1A132B4B0013D8A6 /* BoxSimpleOAuthViewController.m in Sources */,
 				AF4CF50E1A1327990013D8A6 /* BoxSimpleOAuthViewControllerTests.m in Sources */,
+				AF8AAFBD1A13AB8100147063 /* BoxLoginResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
