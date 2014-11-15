@@ -12,8 +12,8 @@
 
 @interface BoxAuthenticationManager ()
 
-@property (copy, nonatomic) NSString *appKey;
-@property (copy, nonatomic) NSString *appSecret;
+@property (copy, nonatomic) NSString *clientID;
+@property (copy, nonatomic) NSString *clientSecret;
 @property (copy, nonatomic) NSString *callbackURLString;
 @property (copy, nonatomic) SimpleOAuth2AuthenticationManager *simpleOAuth2AuthenticationManager;
 
@@ -25,17 +25,17 @@ describe(@"BoxAuthenticationManager", ^{
     __block BoxAuthenticationManager *boxAuthenticationManager;
     
     beforeEach(^{
-        boxAuthenticationManager = [[BoxAuthenticationManager alloc] initWithAppKey:@"give-me-the-keys"
-                                                                          appSecret:@"spilling-beans"
-                                                                  callbackURLString:@"http://call-me-back.8675309"];
+        boxAuthenticationManager = [[BoxAuthenticationManager alloc] initWithClientID:@"give-me-the-keys"
+                                                                         clientSecret:@"spilling-beans"
+                                                                    callbackURLString:@"http://call-me-back.8675309"];
     });
     
     it(@"has an appKey", ^{
-        expect(boxAuthenticationManager.appKey).to.equal(@"give-me-the-keys");
+        expect(boxAuthenticationManager.clientID).to.equal(@"give-me-the-keys");
     });
     
     it(@"has an appSecret", ^{
-        expect(boxAuthenticationManager.appSecret).to.equal(@"spilling-beans");
+        expect(boxAuthenticationManager.clientSecret).to.equal(@"spilling-beans");
     });
     
     it(@"has a callbackURLString", ^{

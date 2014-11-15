@@ -34,6 +34,7 @@
 		AFC0AAF81A17CB7400025EF8 /* BoxTokenParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AAF71A17CB7400025EF8 /* BoxTokenParameters.m */; };
 		AFC0AAF91A17CB7400025EF8 /* BoxTokenParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AAF71A17CB7400025EF8 /* BoxTokenParameters.m */; };
 		AFC0AAFB1A17CD7F00025EF8 /* BoxTokenParametersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AAFA1A17CD7F00025EF8 /* BoxTokenParametersTests.m */; };
+		AFC0AAFE1A17D5B800025EF8 /* FakeBoxAuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AAFD1A17D5B800025EF8 /* FakeBoxAuthenticationManager.m */; };
 		AFC5CD4D1A1714BB006A95C0 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC5CD4C1A1714BB006A95C0 /* MainViewController.xib */; };
 		AFC5CD4F1A171C32006A95C0 /* BoxSimpleOAuthViewControllerXibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC5CD4E1A171C32006A95C0 /* BoxSimpleOAuthViewControllerXibTests.m */; };
 		AFC5CD531A17A852006A95C0 /* JustAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC5CD511A17A852006A95C0 /* JustAViewController.m */; };
@@ -89,6 +90,8 @@
 		AFC0AAF61A17CB7400025EF8 /* BoxTokenParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoxTokenParameters.h; path = Source/BoxTokenParameters.h; sourceTree = "<group>"; };
 		AFC0AAF71A17CB7400025EF8 /* BoxTokenParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoxTokenParameters.m; path = Source/BoxTokenParameters.m; sourceTree = "<group>"; };
 		AFC0AAFA1A17CD7F00025EF8 /* BoxTokenParametersTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxTokenParametersTests.m; sourceTree = "<group>"; };
+		AFC0AAFC1A17D5B800025EF8 /* FakeBoxAuthenticationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeBoxAuthenticationManager.h; sourceTree = "<group>"; };
+		AFC0AAFD1A17D5B800025EF8 /* FakeBoxAuthenticationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeBoxAuthenticationManager.m; sourceTree = "<group>"; };
 		AFC5CD4C1A1714BB006A95C0 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		AFC5CD4E1A171C32006A95C0 /* BoxSimpleOAuthViewControllerXibTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxSimpleOAuthViewControllerXibTests.m; sourceTree = "<group>"; };
 		AFC5CD501A17A852006A95C0 /* JustAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JustAViewController.h; sourceTree = "<group>"; };
@@ -257,6 +260,8 @@
 			children = (
 				AFC0AAEF1A17CA5A00025EF8 /* FakeSimpleOAuth2AuthenticationManager.h */,
 				AFC0AAF01A17CA5A00025EF8 /* FakeSimpleOAuth2AuthenticationManager.m */,
+				AFC0AAFC1A17D5B800025EF8 /* FakeBoxAuthenticationManager.h */,
+				AFC0AAFD1A17D5B800025EF8 /* FakeBoxAuthenticationManager.m */,
 			);
 			name = "Real Fakes";
 			sourceTree = "<group>";
@@ -468,6 +473,7 @@
 				AFC0AAF51A17CA9800025EF8 /* BoxAuthenticationManager.m in Sources */,
 				AFC0AAEB1A17BD8B00025EF8 /* NSLayoutConstraint+TestUtils.m in Sources */,
 				AFC0AAE81A17BD4E00025EF8 /* UIAlertView+TestUtils.m in Sources */,
+				AFC0AAFE1A17D5B800025EF8 /* FakeBoxAuthenticationManager.m in Sources */,
 				AFC0AAFB1A17CD7F00025EF8 /* BoxTokenParametersTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

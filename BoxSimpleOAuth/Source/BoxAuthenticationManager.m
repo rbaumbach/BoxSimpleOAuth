@@ -9,8 +9,8 @@ NSString *const BoxTokenEndpoint = @"/api/oauth2/token";
 
 @interface BoxAuthenticationManager ()
 
-@property (copy, nonatomic) NSString *appKey;
-@property (copy, nonatomic) NSString *appSecret;
+@property (copy, nonatomic) NSString *clientID;
+@property (copy, nonatomic) NSString *clientSecret;
 @property (copy, nonatomic) NSString *callbackURLString;
 @property (strong, nonatomic) SimpleOAuth2AuthenticationManager *simpleOAuth2AuthenticationManager;
 
@@ -20,14 +20,14 @@ NSString *const BoxTokenEndpoint = @"/api/oauth2/token";
 
 #pragma mark - Init Methods
 
-- (instancetype)initWithAppKey:(NSString *)appKey
-                     appSecret:(NSString *)appSecret
-             callbackURLString:(NSString *)callbackURLString
+- (instancetype)initWithClientID:(NSString *)clientID
+                    clientSecret:(NSString *)clientSecret
+               callbackURLString:(NSString *)callbackURLString
 {
     self = [super init];
     if (self) {
-        self.appKey = appKey;
-        self.appSecret = appSecret;
+        self.clientID = clientID;
+        self.clientSecret = clientSecret;
         self.callbackURLString = callbackURLString;
         self.simpleOAuth2AuthenticationManager = [[SimpleOAuth2AuthenticationManager alloc] init];
     }
@@ -55,8 +55,8 @@ NSString *const BoxTokenEndpoint = @"/api/oauth2/token";
 - (id<TokenParameters>)boxTokenParametersFromAuthCode:(NSString *)authCode
 {
     BoxTokenParameters *boxTokenParameters = [[BoxTokenParameters alloc] init];
-    boxTokenParameters.clientID = self.appKey;
-    boxTokenParameters.clientSecret = self.appSecret;
+    boxTokenParameters.clientID = self.clientID;
+    boxTokenParameters.clientSecret = self.clientSecret;
     boxTokenParameters.callbackURLString = self.callbackURLString;
     boxTokenParameters.authorizationCode = authCode;
     

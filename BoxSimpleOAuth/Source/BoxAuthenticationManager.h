@@ -5,9 +5,9 @@
 
 @interface BoxAuthenticationManager : NSObject
 
-- (instancetype)initWithAppKey:(NSString *)appKey
-                     appSecret:(NSString *)appSecret
-             callbackURLString:(NSString *)callbackURLString;
+- (instancetype)initWithClientID:(NSString *)clientID
+                    clientSecret:(NSString *)clientSecret
+               callbackURLString:(NSString *)callbackURLString;
 
 - (void)authenticateClientWithAuthCode:(NSString *)authCode
                                success:(void (^)(BoxLoginResponse *reponse))success
