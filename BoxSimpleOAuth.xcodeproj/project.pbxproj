@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		42895D3B62BDC5891C5C7B0C /* libPods-BoxSimpleOAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 806F62EC2F43E04C075A5D26 /* libPods-BoxSimpleOAuth.a */; };
 		47F8DC7966B9B858EF9CC5B5 /* libPods-BoxSimpleOAuthTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD61102C2D674C44E147EC09 /* libPods-BoxSimpleOAuthTests.a */; };
+		AF27D4331A16513500820FC2 /* BoxConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = AF27D4321A16513500820FC2 /* BoxConstants.m */; };
+		AF27D4341A16513500820FC2 /* BoxConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = AF27D4321A16513500820FC2 /* BoxConstants.m */; };
 		AF4CF4F41A1327990013D8A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4CF4F31A1327990013D8A6 /* main.m */; };
 		AF4CF4F71A1327990013D8A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4CF4F61A1327990013D8A6 /* AppDelegate.m */; };
-		AF4CF4FA1A1327990013D8A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4CF4F91A1327990013D8A6 /* ViewController.m */; };
-		AF4CF4FD1A1327990013D8A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF4CF4FB1A1327990013D8A6 /* Main.storyboard */; };
+		AF4CF4FA1A1327990013D8A6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4CF4F91A1327990013D8A6 /* MainViewController.m */; };
 		AF4CF4FF1A1327990013D8A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF4CF4FE1A1327990013D8A6 /* Images.xcassets */; };
 		AF4CF5021A1327990013D8A6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF4CF5001A1327990013D8A6 /* LaunchScreen.xib */; };
 		AF4CF50E1A1327990013D8A6 /* BoxSimpleOAuthViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4CF50D1A1327990013D8A6 /* BoxSimpleOAuthViewControllerTests.m */; };
@@ -24,6 +25,8 @@
 		AF8AAFB91A13AA3500147063 /* FakeBoxOAuthResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8AAFB81A13AA3500147063 /* FakeBoxOAuthResponse.m */; };
 		AF8AAFBC1A13AB8100147063 /* BoxLoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8AAFBB1A13AB8100147063 /* BoxLoginResponse.m */; };
 		AF8AAFBD1A13AB8100147063 /* BoxLoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8AAFBB1A13AB8100147063 /* BoxLoginResponse.m */; };
+		AFC5CD4D1A1714BB006A95C0 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC5CD4C1A1714BB006A95C0 /* MainViewController.xib */; };
+		AFC5CD4F1A171C32006A95C0 /* BoxSimpleOAuthViewControllerXibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC5CD4E1A171C32006A95C0 /* BoxSimpleOAuthViewControllerXibTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,14 +43,16 @@
 		0017319A4E9A0B16B76AF2A2 /* Pods-BoxSimpleOAuthTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxSimpleOAuthTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BoxSimpleOAuthTests/Pods-BoxSimpleOAuthTests.release.xcconfig"; sourceTree = "<group>"; };
 		35674B29B39A4D40EC2FCA1F /* Pods-BoxSimpleOAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxSimpleOAuth.release.xcconfig"; path = "Pods/Target Support Files/Pods-BoxSimpleOAuth/Pods-BoxSimpleOAuth.release.xcconfig"; sourceTree = "<group>"; };
 		806F62EC2F43E04C075A5D26 /* libPods-BoxSimpleOAuth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BoxSimpleOAuth.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF27D4301A164EB100820FC2 /* BoxSimpleOAuth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BoxSimpleOAuth.h; path = Source/BoxSimpleOAuth.h; sourceTree = "<group>"; };
+		AF27D4311A16513500820FC2 /* BoxConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoxConstants.h; path = Source/BoxConstants.h; sourceTree = "<group>"; };
+		AF27D4321A16513500820FC2 /* BoxConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoxConstants.m; path = Source/BoxConstants.m; sourceTree = "<group>"; };
 		AF4CF4EE1A1327990013D8A6 /* BoxSimpleOAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoxSimpleOAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF4CF4F21A1327990013D8A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF4CF4F31A1327990013D8A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AF4CF4F51A1327990013D8A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AF4CF4F61A1327990013D8A6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AF4CF4F81A1327990013D8A6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AF4CF4F91A1327990013D8A6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		AF4CF4FC1A1327990013D8A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF4CF4F81A1327990013D8A6 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		AF4CF4F91A1327990013D8A6 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		AF4CF4FE1A1327990013D8A6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AF4CF5011A1327990013D8A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		AF4CF5071A1327990013D8A6 /* BoxSimpleOAuthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoxSimpleOAuthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +66,8 @@
 		AF8AAFB81A13AA3500147063 /* FakeBoxOAuthResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeBoxOAuthResponse.m; sourceTree = "<group>"; };
 		AF8AAFBA1A13AB8100147063 /* BoxLoginResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoxLoginResponse.h; path = Source/BoxLoginResponse.h; sourceTree = "<group>"; };
 		AF8AAFBB1A13AB8100147063 /* BoxLoginResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoxLoginResponse.m; path = Source/BoxLoginResponse.m; sourceTree = "<group>"; };
+		AFC5CD4C1A1714BB006A95C0 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		AFC5CD4E1A171C32006A95C0 /* BoxSimpleOAuthViewControllerXibTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxSimpleOAuthViewControllerXibTests.m; sourceTree = "<group>"; };
 		AFDD773E1A132CC700B349AE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B042B58440F69176CCFBE0AF /* Pods-BoxSimpleOAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxSimpleOAuth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BoxSimpleOAuth/Pods-BoxSimpleOAuth.debug.xcconfig"; sourceTree = "<group>"; };
 		CD61102C2D674C44E147EC09 /* libPods-BoxSimpleOAuthTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BoxSimpleOAuthTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +138,9 @@
 		AF4CF4F01A1327990013D8A6 /* BoxSimpleOAuth */ = {
 			isa = PBXGroup;
 			children = (
+				AF27D4301A164EB100820FC2 /* BoxSimpleOAuth.h */,
+				AF27D4311A16513500820FC2 /* BoxConstants.h */,
+				AF27D4321A16513500820FC2 /* BoxConstants.m */,
 				AF4CF5181A132B4B0013D8A6 /* BoxSimpleOAuthViewController.h */,
 				AF4CF5191A132B4B0013D8A6 /* BoxSimpleOAuthViewController.m */,
 				AF8AAFB11A13A94000147063 /* BoxSimpleOAuthViewController.xib */,
@@ -156,6 +166,7 @@
 			children = (
 				AF8AAFB61A13AA1800147063 /* Fakes */,
 				AF4CF50D1A1327990013D8A6 /* BoxSimpleOAuthViewControllerTests.m */,
+				AFC5CD4E1A171C32006A95C0 /* BoxSimpleOAuthViewControllerXibTests.m */,
 				AF8AAFB41A13A9C100147063 /* BoxLoginResponseTests.m */,
 				AF4CF50B1A1327990013D8A6 /* Supporting Files */,
 			);
@@ -175,9 +186,9 @@
 			children = (
 				AF4CF4F51A1327990013D8A6 /* AppDelegate.h */,
 				AF4CF4F61A1327990013D8A6 /* AppDelegate.m */,
-				AF4CF4F81A1327990013D8A6 /* ViewController.h */,
-				AF4CF4F91A1327990013D8A6 /* ViewController.m */,
-				AF4CF4FB1A1327990013D8A6 /* Main.storyboard */,
+				AF4CF4F81A1327990013D8A6 /* MainViewController.h */,
+				AF4CF4F91A1327990013D8A6 /* MainViewController.m */,
+				AFC5CD4C1A1714BB006A95C0 /* MainViewController.xib */,
 				AF4CF5001A1327990013D8A6 /* LaunchScreen.xib */,
 				AF4CF4F11A1327990013D8A6 /* Supporting Files */,
 			);
@@ -286,9 +297,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF8AAFB21A13A94000147063 /* BoxSimpleOAuthViewController.xib in Resources */,
-				AF4CF4FD1A1327990013D8A6 /* Main.storyboard in Resources */,
 				AF4CF5021A1327990013D8A6 /* LaunchScreen.xib in Resources */,
 				AF4CF4FF1A1327990013D8A6 /* Images.xcassets in Resources */,
+				AFC5CD4D1A1714BB006A95C0 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +383,8 @@
 			files = (
 				AF8AAFBC1A13AB8100147063 /* BoxLoginResponse.m in Sources */,
 				AF4CF51A1A132B4B0013D8A6 /* BoxSimpleOAuthViewController.m in Sources */,
-				AF4CF4FA1A1327990013D8A6 /* ViewController.m in Sources */,
+				AF27D4331A16513500820FC2 /* BoxConstants.m in Sources */,
+				AF4CF4FA1A1327990013D8A6 /* MainViewController.m in Sources */,
 				AF4CF4F71A1327990013D8A6 /* AppDelegate.m in Sources */,
 				AF4CF4F41A1327990013D8A6 /* main.m in Sources */,
 			);
@@ -384,7 +396,9 @@
 			files = (
 				AF8AAFB51A13A9C100147063 /* BoxLoginResponseTests.m in Sources */,
 				AF8AAFB91A13AA3500147063 /* FakeBoxOAuthResponse.m in Sources */,
+				AF27D4341A16513500820FC2 /* BoxConstants.m in Sources */,
 				AF4CF51B1A132B4B0013D8A6 /* BoxSimpleOAuthViewController.m in Sources */,
+				AFC5CD4F1A171C32006A95C0 /* BoxSimpleOAuthViewControllerXibTests.m in Sources */,
 				AF4CF50E1A1327990013D8A6 /* BoxSimpleOAuthViewControllerTests.m in Sources */,
 				AF8AAFBD1A13AB8100147063 /* BoxLoginResponse.m in Sources */,
 			);
@@ -401,14 +415,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AF4CF4FB1A1327990013D8A6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AF4CF4FC1A1327990013D8A6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AF4CF5001A1327990013D8A6 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

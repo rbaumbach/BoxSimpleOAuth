@@ -5,11 +5,13 @@ inhibit_all_warnings!
 
 target "BoxSimpleOAuth" do
     pod 'SimpleOAuth2', '0.0.2'
+    pod 'MBProgressHUD', '~>0.9'
 end
 
 target "BoxSimpleOAuthTests" do
     pod 'Specta', :git => 'https://github.com/specta/specta.git', :tag => 'v0.3.0.beta1'
     pod 'Expecta', '~> 0.2.1'
     pod 'OCMock', '~> 3.0.2'
+    pod 'Swizzlean', '0.2.0'
 end
 

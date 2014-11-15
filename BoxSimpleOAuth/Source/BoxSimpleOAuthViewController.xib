@@ -5,7 +5,33 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BoxSimpleOAuthViewController">
+            <connections>
+                <outlet property="boxWebView" destination="NTf-m7-KdN" id="46b-70-L7p"/>
+                <outlet property="view" destination="mbI-l9-9KU" id="MV8-WJ-Aea"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="mbI-l9-9KU">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NTf-m7-KdN">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="rHH-bF-xa4"/>
+                    </connections>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="NTf-m7-KdN" secondAttribute="trailing" id="4Cg-FE-8u1"/>
+                <constraint firstItem="NTf-m7-KdN" firstAttribute="top" secondItem="mbI-l9-9KU" secondAttribute="top" id="Rag-S0-f9y"/>
+                <constraint firstItem="NTf-m7-KdN" firstAttribute="leading" secondItem="mbI-l9-9KU" secondAttribute="leading" id="fz2-2e-nfa"/>
+                <constraint firstAttribute="bottom" secondItem="NTf-m7-KdN" secondAttribute="bottom" id="rhK-29-XvS"/>
+            </constraints>
+            <point key="canvasLocation" x="398" y="467"/>
+        </view>
     </objects>
 </document>

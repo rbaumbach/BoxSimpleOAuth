@@ -2,7 +2,7 @@
 #define EXP_SHORTHAND
 #import <Expecta/Expecta.h>
 #import <OCMock/OCMock.h>
-#import "BoxLoginResponse.h"
+#import "BoxSimpleOAuth.h"
 #import "FakeBoxOAuthResponse.h"
 
 
