@@ -22,28 +22,29 @@ A quick and simple way to authenticate a Box user in your iPhone or iPad app.
 // Simplest Example:
 
 BoxSimpleOAuthViewController
-*viewController = [[BoxSimpleOAuthViewController alloc] initWithClientID:@"123I_am_a_client_id_567890"
-clientSecret:@"shhhhhh, I'm a secret"
-callbackURL:[NSURL URLWithString:@"http://your.fancy.site"]
-completion:^(BoxLoginResponse *response, NSError *error) {
-NSLog(@"My Access Token is: %@", response.accessToken);
-}];
+    *viewController = [[BoxSimpleOAuthViewController alloc] initWithClientID:@"panchos_client_id"
+                                                                clientSecret:@"shhhhhh, I'm a secret"
+                                                                 callbackURL:[NSURL URLWithString:@"http://chihuahuas.dog"]
+                                                                  completion:^(BoxLoginResponse *response, NSError *error) {
+                                                                      NSLog(@"My Access Token is: %@", response.accessToken);
+                                                                  }];
 [self.navigationController pushViewController:viewController
-animated:YES];
+                                     animated:YES];
 
 // Disable error UIAlertViews Example:
 
 BoxSimpleOAuthViewController
-*viewController = [[BoxSimpleOAuthViewController alloc] initWithClientID:@"123I_am_a_client_id_567890"
-clientSecret:@"shhhhhh, I'm a secret"
-callbackURL:[NSURL URLWithString:@"http://your.fancy.site"]
-completion:^(BoxLoginResponse *response, NSError *error) {
-NSLog(@"My OAuth Token is: %@", response.accessToken);
-}];
+    *viewController = [[BoxSimpleOAuthViewController alloc] initWithClientID:@"pancho_jrs_client_id"
+                                                                clientSecret:@"shhhhhh, I'm a secret"
+                                                                 callbackURL:[NSURL URLWithString:@"http://your.fancy.site"]
+                                                                  completion:^(BoxLoginResponse *response, NSError *error) {
+                                                                      NSLog(@"My OAuth Token is: %@", response.accessToken);
+                                                                  }];
 viewController.shouldShowErrorAlert = NO;
 
 [self.navigationController pushViewController:viewController
-animated:YES];
+                                     animated:YES];
+
 ```
 
 ## Testing
