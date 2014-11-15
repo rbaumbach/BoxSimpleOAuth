@@ -7,9 +7,6 @@
 NSString *const BoxAuthClientIDEndpoint = @"/api/oauth2/authorize?client_id=";
 NSString *const BoxAuthRequestParams = @"&response_type=code&redirect_uri=";
 
-//NSString *const DropboxAuthClientIDEndpoint = @"/1/oauth2/authorize?client_id=";
-//NSString *const DropboxAuthRequestParams = @"&response_type=code&redirect_uri=";
-
 @interface BoxSimpleOAuthViewController () <UIWebViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIWebView *boxWebView;

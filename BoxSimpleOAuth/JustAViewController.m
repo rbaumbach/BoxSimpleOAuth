@@ -1,13 +1,12 @@
-#import "MainViewController.h"
-#import "BoxSimpleOAuth.h"
 #import "JustAViewController.h"
+#import "BoxSimpleOAuth.h"
 
 
-@implementation MainViewController
+@implementation JustAViewController
 
-#pragma mark - Actions
+#pragma mark - IBActions
 
-- (IBAction)presentBoxVCTapped:(id)sender
+- (IBAction)pushBoxVCOnNavStackTapped:(id)sender
 {
     BoxSimpleOAuthViewController
     *viewController = [[BoxSimpleOAuthViewController alloc] initWithClientID:@"enter_your_app_key_here"
@@ -18,18 +17,9 @@
                                                                           [self displayToken:response.accessToken];
                                                                       }
                                                                   }];
-    [self presentViewController:viewController
-                       animated:YES
-                     completion:nil];
-}
-
-- (IBAction)boxVCOnNavControllerTapped:(id)sender
-{
-    JustAViewController *viewController = [[JustAViewController alloc] init];
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
-    [self presentViewController:navController
-                       animated:YES
-                     completion:nil];
+    
+    [self.navigationController pushViewController:viewController
+                                         animated:YES];
 }
 
 #pragma mark - Private Method

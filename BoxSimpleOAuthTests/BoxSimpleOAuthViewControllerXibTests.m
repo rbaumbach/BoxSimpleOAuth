@@ -23,7 +23,7 @@ describe(@"BoxSimpleOAuthViewControllerXib", ^{
         boxWebView = boxView.subviews[0]; // only subview of the main view
     });
     
-    describe(@"dropbox web view", ^{
+    describe(@"box web view", ^{
         it(@"s delegate is the file'z owner", ^{
             expect(boxWebView.delegate).to.equal(controller);
         });
