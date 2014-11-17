@@ -1,4 +1,4 @@
-# BoxSimpleOAuth ![License](http://b.repl.ca/v1/License-MIT-blue.png)
+# BoxSimpleOAuth [![Build Status](https://travis-ci.org/rbaumbach/BoxSimpleOAuth.svg?branch=master)](https://travis-ci.org/rbaumbach/BoxSimpleOAuth) [![License](http://b.repl.ca/v1/License-MIT-blue.png)](https://github.com/rbaumbach/BxSimpleOAuth/blob/master/MIT.LICENSE)
 
 A quick and simple way to authenticate a Box user in your iPhone or iPad app.
 
