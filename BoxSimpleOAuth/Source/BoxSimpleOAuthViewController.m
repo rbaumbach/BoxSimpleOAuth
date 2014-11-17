@@ -62,8 +62,6 @@ NSString *const BoxLoginCancelButtonTitle = @"OK";
 
 #pragma mark - <UIWebViewDelegate>
 
-#pragma mark - <UIWebViewDelegate>
-
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType;
 {
     NSString *authorizationCode = [request oAuth2AuthorizationCode];
