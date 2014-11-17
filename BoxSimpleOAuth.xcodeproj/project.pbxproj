@@ -35,6 +35,9 @@
 		AFC0AAF91A17CB7400025EF8 /* BoxTokenParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AAF71A17CB7400025EF8 /* BoxTokenParameters.m */; };
 		AFC0AAFB1A17CD7F00025EF8 /* BoxTokenParametersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AAFA1A17CD7F00025EF8 /* BoxTokenParametersTests.m */; };
 		AFC0AAFE1A17D5B800025EF8 /* FakeBoxAuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AAFD1A17D5B800025EF8 /* FakeBoxAuthenticationManager.m */; };
+		AFC3EBB41A19BA130089FEB4 /* BoxRefreshTokenParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC3EBB31A19BA130089FEB4 /* BoxRefreshTokenParameters.m */; };
+		AFC3EBB51A19BA130089FEB4 /* BoxRefreshTokenParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC3EBB31A19BA130089FEB4 /* BoxRefreshTokenParameters.m */; };
+		AFC3EBB71A19BFD80089FEB4 /* BoxRefreshTokenParametersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC3EBB61A19BFD80089FEB4 /* BoxRefreshTokenParametersTests.m */; };
 		AFC5CD4D1A1714BB006A95C0 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC5CD4C1A1714BB006A95C0 /* MainViewController.xib */; };
 		AFC5CD4F1A171C32006A95C0 /* BoxSimpleOAuthViewControllerXibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC5CD4E1A171C32006A95C0 /* BoxSimpleOAuthViewControllerXibTests.m */; };
 		AFC5CD531A17A852006A95C0 /* JustAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC5CD511A17A852006A95C0 /* JustAViewController.m */; };
@@ -92,6 +95,9 @@
 		AFC0AAFA1A17CD7F00025EF8 /* BoxTokenParametersTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxTokenParametersTests.m; sourceTree = "<group>"; };
 		AFC0AAFC1A17D5B800025EF8 /* FakeBoxAuthenticationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeBoxAuthenticationManager.h; sourceTree = "<group>"; };
 		AFC0AAFD1A17D5B800025EF8 /* FakeBoxAuthenticationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeBoxAuthenticationManager.m; sourceTree = "<group>"; };
+		AFC3EBB21A19BA130089FEB4 /* BoxRefreshTokenParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoxRefreshTokenParameters.h; path = Source/BoxRefreshTokenParameters.h; sourceTree = "<group>"; };
+		AFC3EBB31A19BA130089FEB4 /* BoxRefreshTokenParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoxRefreshTokenParameters.m; path = Source/BoxRefreshTokenParameters.m; sourceTree = "<group>"; };
+		AFC3EBB61A19BFD80089FEB4 /* BoxRefreshTokenParametersTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxRefreshTokenParametersTests.m; sourceTree = "<group>"; };
 		AFC5CD4C1A1714BB006A95C0 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		AFC5CD4E1A171C32006A95C0 /* BoxSimpleOAuthViewControllerXibTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxSimpleOAuthViewControllerXibTests.m; sourceTree = "<group>"; };
 		AFC5CD501A17A852006A95C0 /* JustAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JustAViewController.h; sourceTree = "<group>"; };
@@ -177,6 +183,8 @@
 				AF8AAFBB1A13AB8100147063 /* BoxLoginResponse.m */,
 				AFC0AAF61A17CB7400025EF8 /* BoxTokenParameters.h */,
 				AFC0AAF71A17CB7400025EF8 /* BoxTokenParameters.m */,
+				AFC3EBB21A19BA130089FEB4 /* BoxRefreshTokenParameters.h */,
+				AFC3EBB31A19BA130089FEB4 /* BoxRefreshTokenParameters.m */,
 				AFC0AAF21A17CA9800025EF8 /* BoxAuthenticationManager.h */,
 				AFC0AAF31A17CA9800025EF8 /* BoxAuthenticationManager.m */,
 				AF4CF5171A132AF90013D8A6 /* AppCode */,
@@ -204,6 +212,7 @@
 				AFC5CD4E1A171C32006A95C0 /* BoxSimpleOAuthViewControllerXibTests.m */,
 				AF8AAFB41A13A9C100147063 /* BoxLoginResponseTests.m */,
 				AFC0AAFA1A17CD7F00025EF8 /* BoxTokenParametersTests.m */,
+				AFC3EBB61A19BFD80089FEB4 /* BoxRefreshTokenParametersTests.m */,
 				AFC0AAEC1A17C95400025EF8 /* BoxAuthenticationManagerTests.m */,
 				AF4CF50B1A1327990013D8A6 /* Supporting Files */,
 			);
@@ -449,6 +458,7 @@
 				AFC5CD531A17A852006A95C0 /* JustAViewController.m in Sources */,
 				AFC0AAF81A17CB7400025EF8 /* BoxTokenParameters.m in Sources */,
 				AF4CF51A1A132B4B0013D8A6 /* BoxSimpleOAuthViewController.m in Sources */,
+				AFC3EBB41A19BA130089FEB4 /* BoxRefreshTokenParameters.m in Sources */,
 				AF27D4331A16513500820FC2 /* BoxConstants.m in Sources */,
 				AF4CF4FA1A1327990013D8A6 /* MainViewController.m in Sources */,
 				AF4CF4F71A1327990013D8A6 /* AppDelegate.m in Sources */,
@@ -463,6 +473,7 @@
 				AF8AAFB51A13A9C100147063 /* BoxLoginResponseTests.m in Sources */,
 				AF8AAFB91A13AA3500147063 /* FakeBoxOAuthResponse.m in Sources */,
 				AF27D4341A16513500820FC2 /* BoxConstants.m in Sources */,
+				AFC3EBB51A19BA130089FEB4 /* BoxRefreshTokenParameters.m in Sources */,
 				AF4CF51B1A132B4B0013D8A6 /* BoxSimpleOAuthViewController.m in Sources */,
 				AFC5CD4F1A171C32006A95C0 /* BoxSimpleOAuthViewControllerXibTests.m in Sources */,
 				AFC0AAF91A17CB7400025EF8 /* BoxTokenParameters.m in Sources */,
@@ -472,6 +483,7 @@
 				AF8AAFBD1A13AB8100147063 /* BoxLoginResponse.m in Sources */,
 				AFC0AAF51A17CA9800025EF8 /* BoxAuthenticationManager.m in Sources */,
 				AFC0AAEB1A17BD8B00025EF8 /* NSLayoutConstraint+TestUtils.m in Sources */,
+				AFC3EBB71A19BFD80089FEB4 /* BoxRefreshTokenParametersTests.m in Sources */,
 				AFC0AAE81A17BD4E00025EF8 /* UIAlertView+TestUtils.m in Sources */,
 				AFC0AAFE1A17D5B800025EF8 /* FakeBoxAuthenticationManager.m in Sources */,
 				AFC0AAFB1A17CD7F00025EF8 /* BoxTokenParametersTests.m in Sources */,

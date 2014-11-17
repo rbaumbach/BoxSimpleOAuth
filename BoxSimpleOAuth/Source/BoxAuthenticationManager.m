@@ -3,6 +3,7 @@
 #import "BoxLoginResponse.h"
 #import "BoxConstants.h"
 #import "BoxTokenParameters.h"
+#import "BoxRefreshTokenParameters.h"
 
 
 NSString *const BoxTokenEndpoint = @"/api/oauth2/token";
@@ -37,13 +38,27 @@ NSString *const BoxTokenEndpoint = @"/api/oauth2/token";
 #pragma mark - Public Methods
 
 - (void)authenticateClientWithAuthCode:(NSString *)authCode
-                               success:(void (^)(BoxLoginResponse *reponse))success
+                               success:(void (^)(BoxLoginResponse *response))success
                                failure:(void (^)(NSError *error))failure
 {
     NSString *authenticationURLString = [NSString stringWithFormat:@"%@%@", BoxAuthURL, BoxTokenEndpoint];
     
     [self.simpleOAuth2AuthenticationManager authenticateOAuthClient:[NSURL URLWithString:authenticationURLString]
                                                     tokenParameters:[self boxTokenParametersFromAuthCode:authCode]
+                                                            success:^(id authResponseObject) {
+                                                                BoxLoginResponse *loginResponse = [[BoxLoginResponse alloc] initWithBoxOAuthResponse:authResponseObject];
+                                                                success(loginResponse);
+                                                            } failure:failure];
+}
+
+- (void)refreshAccessTokenWithRefreshToken:(NSString *)refreshToken
+                                   success:(void (^)(BoxLoginResponse *response))success
+                                   failure:(void (^)(NSError *error))failure
+{
+    NSString *authenticationURLString = [NSString stringWithFormat:@"%@%@", BoxAuthURL, BoxTokenEndpoint];
+    
+    [self.simpleOAuth2AuthenticationManager authenticateOAuthClient:[NSURL URLWithString:authenticationURLString]
+                                                    tokenParameters:[self boxRefreshTokenParametersFromRefreshToken:refreshToken]
                                                             success:^(id authResponseObject) {
                                                                 BoxLoginResponse *loginResponse = [[BoxLoginResponse alloc] initWithBoxOAuthResponse:authResponseObject];
                                                                 success(loginResponse);
@@ -61,6 +76,16 @@ NSString *const BoxTokenEndpoint = @"/api/oauth2/token";
     boxTokenParameters.authorizationCode = authCode;
     
     return boxTokenParameters;
+}
+
+- (id<TokenParameters>)boxRefreshTokenParametersFromRefreshToken:(NSString *)refreshToken
+{
+    BoxRefreshTokenParameters *boxRefreshTokenParameters = [[BoxRefreshTokenParameters alloc] init];
+    boxRefreshTokenParameters.clientID = self.clientID;
+    boxRefreshTokenParameters.clientSecret = self.clientSecret;
+    boxRefreshTokenParameters.refreshToken = refreshToken;
+    
+    return boxRefreshTokenParameters;
 }
 
 @end

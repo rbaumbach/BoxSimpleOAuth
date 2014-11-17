@@ -70,8 +70,8 @@ NSString *const BoxLoginCancelButtonTitle = @"OK";
     
     if (authorizationCode) {
         [self.boxAuthenticationManager authenticateClientWithAuthCode:authorizationCode
-                                                              success:^(BoxLoginResponse *reponse) {
-                                                                  [self completeAuthWithLoginResponse:reponse];
+                                                              success:^(BoxLoginResponse *response) {
+                                                                  [self completeAuthWithLoginResponse:response];
                                                               } failure:^(NSError *error) {
                                                                   [self completeWithError:error];
                                                               }];

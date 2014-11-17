@@ -19,7 +19,7 @@ NSString *const CodeKey = @"code";
               GrantTypeKey    : GrantTypeValue,
               RedirectURIKey  : self.callbackURLString,
               CodeKey         : self.authorizationCode
-              };
+            };
 }
 
 @end

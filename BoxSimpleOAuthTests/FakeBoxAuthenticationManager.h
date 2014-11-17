@@ -7,4 +7,6 @@
 @property (copy, nonatomic) void (^success)(BoxLoginResponse *response);
 @property (copy, nonatomic) void (^failure)(NSError *error);
 
+@property (copy, nonatomic) NSString *refreshToken;
+
 @end

@@ -8,6 +8,7 @@
 #import "BoxAuthenticationManager.h"
 #import "BoxLoginResponse.h"
 #import "BoxTokenParameters.h"
+#import "BoxRefreshTokenParameters.h"
 
 
 @interface BoxAuthenticationManager ()
@@ -48,7 +49,7 @@ describe(@"BoxAuthenticationManager", ^{
     
     describe(@"#authenticateClientWithAuthCode:success:failure:", ^{
         __block FakeSimpleOAuth2AuthenticationManager *fakeSimpleAuthManager;
-        __block BoxLoginResponse *boxLoginResponse;
+        __block BoxLoginResponse *retBoxLoginResponse;
         __block NSError *authError;
         
         beforeEach(^{
@@ -57,7 +58,7 @@ describe(@"BoxAuthenticationManager", ^{
             
             [boxAuthenticationManager authenticateClientWithAuthCode:@"SF-Giants-The-Best"
                                                              success:^(BoxLoginResponse *response) {
-                                                                 boxLoginResponse = response;
+                                                                 retBoxLoginResponse = response;
                                                              } failure:^(NSError *error) {
                                                                  authError = error;
                                                              }];
@@ -84,11 +85,67 @@ describe(@"BoxAuthenticationManager", ^{
             });
             
             it(@"calls success block with BoxLoginResponse", ^{
-                expect(boxLoginResponse.accessToken).to.equal(@"token123");
-                expect(boxLoginResponse.accessTokenExpiry).to.equal(@5000);
-                expect(boxLoginResponse.restrictedTo).to.equal(@[@"i-hope-this-is-a-string"]);
-                expect(boxLoginResponse.accessTokenType).to.equal(@"tokenTypeO+");
-                expect(boxLoginResponse.refreshToken).to.equal(@"very-refreshing...");
+                expect(retBoxLoginResponse.accessToken).to.equal(@"token123");
+                expect(retBoxLoginResponse.accessTokenExpiry).to.equal(@5000);
+                expect(retBoxLoginResponse.restrictedTo).to.equal(@[@"i-hope-this-is-a-string"]);
+                expect(retBoxLoginResponse.accessTokenType).to.equal(@"tokenTypeO+");
+                expect(retBoxLoginResponse.refreshToken).to.equal(@"very-refreshing...");
+            });
+        });
+        
+        context(@"On Failure", ^{
+            __block id fakeError;
+            
+            beforeEach(^{
+                fakeError = OCMClassMock([NSError class]);
+                
+                if (fakeSimpleAuthManager.failure) {
+                    fakeSimpleAuthManager.failure(fakeError);
+                }
+            });
+            
+            it(@"calls simpleOAuth failure block with error", ^{
+                expect(authError).to.equal(fakeError);
+            });
+        });
+    });
+    
+    describe(@"#refreshAccessTokenWithRefreshToken:success:failure:", ^{
+        __block FakeSimpleOAuth2AuthenticationManager *fakeSimpleAuthManager;
+        __block BoxLoginResponse *retBoxLoginResponse;
+        __block NSError *authError;
+        
+        beforeEach(^{
+            fakeSimpleAuthManager = [[FakeSimpleOAuth2AuthenticationManager alloc] init];
+            boxAuthenticationManager.simpleOAuth2AuthenticationManager = fakeSimpleAuthManager;
+            
+            [boxAuthenticationManager refreshAccessTokenWithRefreshToken:@"give-me-mas-access"
+                                                                 success:^(BoxLoginResponse *response) {
+                                                                     retBoxLoginResponse = response;
+                                                                 } failure:^(NSError *error) {
+                                                                     authError = error;
+                                                                 }];
+        });
+        
+        it(@"is called with refresh token", ^{
+            BoxRefreshTokenParameters *tokenParameters = (BoxRefreshTokenParameters *)fakeSimpleAuthManager.tokenParameters;
+            
+            expect(tokenParameters.refreshToken).to.equal(@"give-me-mas-access");
+        });
+        
+        context(@"On Success", ^{
+            beforeEach(^{
+                if (fakeSimpleAuthManager.success) {
+                    fakeSimpleAuthManager.success([FakeBoxOAuthResponse response]);
+                }
+            });
+            
+            it(@"calls success block with BoxLoginResponse", ^{
+                expect(retBoxLoginResponse.accessToken).to.equal(@"token123");
+                expect(retBoxLoginResponse.accessTokenExpiry).to.equal(@5000);
+                expect(retBoxLoginResponse.restrictedTo).to.equal(@[@"i-hope-this-is-a-string"]);
+                expect(retBoxLoginResponse.accessTokenType).to.equal(@"tokenTypeO+");
+                expect(retBoxLoginResponse.refreshToken).to.equal(@"very-refreshing...");
             });
         });
         

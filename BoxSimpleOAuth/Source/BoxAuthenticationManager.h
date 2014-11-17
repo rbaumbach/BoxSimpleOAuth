@@ -10,7 +10,11 @@
                callbackURLString:(NSString *)callbackURLString;
 
 - (void)authenticateClientWithAuthCode:(NSString *)authCode
-                               success:(void (^)(BoxLoginResponse *reponse))success
+                               success:(void (^)(BoxLoginResponse *response))success
                                failure:(void (^)(NSError *error))failure;
+
+- (void)refreshAccessTokenWithRefreshToken:(NSString *)refreshToken
+                                   success:(void (^)(BoxLoginResponse *response))success
+                                   failure:(void (^)(NSError *error))failure;
 
 @end
