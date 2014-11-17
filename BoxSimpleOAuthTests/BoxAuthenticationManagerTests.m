@@ -24,11 +24,16 @@ SpecBegin(BoxAuthenticationManagerTests)
 
 describe(@"BoxAuthenticationManager", ^{
     __block BoxAuthenticationManager *boxAuthenticationManager;
+    __block FakeSimpleOAuth2AuthenticationManager *fakeSimpleAuthManager;
+    __block BoxLoginResponse *retBoxLoginResponse;
+    __block NSError *authError;
     
     beforeEach(^{
         boxAuthenticationManager = [[BoxAuthenticationManager alloc] initWithClientID:@"give-me-the-keys"
                                                                          clientSecret:@"spilling-beans"
                                                                     callbackURLString:@"http://call-me-back.8675309"];
+        
+        fakeSimpleAuthManager = [[FakeSimpleOAuth2AuthenticationManager alloc] init];
     });
     
     it(@"has an appKey", ^{
@@ -48,14 +53,9 @@ describe(@"BoxAuthenticationManager", ^{
     });
     
     describe(@"#authenticateClientWithAuthCode:success:failure:", ^{
-        __block FakeSimpleOAuth2AuthenticationManager *fakeSimpleAuthManager;
-        __block BoxLoginResponse *retBoxLoginResponse;
-        __block NSError *authError;
-        
         beforeEach(^{
-            fakeSimpleAuthManager = [[FakeSimpleOAuth2AuthenticationManager alloc] init];
             boxAuthenticationManager.simpleOAuth2AuthenticationManager = fakeSimpleAuthManager;
-            
+
             [boxAuthenticationManager authenticateClientWithAuthCode:@"SF-Giants-The-Best"
                                                              success:^(BoxLoginResponse *response) {
                                                                  retBoxLoginResponse = response;
@@ -111,14 +111,9 @@ describe(@"BoxAuthenticationManager", ^{
     });
     
     describe(@"#refreshAccessTokenWithRefreshToken:success:failure:", ^{
-        __block FakeSimpleOAuth2AuthenticationManager *fakeSimpleAuthManager;
-        __block BoxLoginResponse *retBoxLoginResponse;
-        __block NSError *authError;
-        
         beforeEach(^{
-            fakeSimpleAuthManager = [[FakeSimpleOAuth2AuthenticationManager alloc] init];
             boxAuthenticationManager.simpleOAuth2AuthenticationManager = fakeSimpleAuthManager;
-            
+
             [boxAuthenticationManager refreshAccessTokenWithRefreshToken:@"give-me-mas-access"
                                                                  success:^(BoxLoginResponse *response) {
                                                                      retBoxLoginResponse = response;
