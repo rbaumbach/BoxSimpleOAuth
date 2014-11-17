@@ -41,9 +41,7 @@ NSString *const BoxTokenEndpoint = @"/api/oauth2/token";
                                success:(void (^)(BoxLoginResponse *response))success
                                failure:(void (^)(NSError *error))failure
 {
-    NSString *authenticationURLString = [NSString stringWithFormat:@"%@%@", BoxAuthURL, BoxTokenEndpoint];
-    
-    [self.simpleOAuth2AuthenticationManager authenticateOAuthClient:[NSURL URLWithString:authenticationURLString]
+    [self.simpleOAuth2AuthenticationManager authenticateOAuthClient:[self authenticationURLString]
                                                     tokenParameters:[self boxTokenParametersFromAuthCode:authCode]
                                                             success:^(id authResponseObject) {
                                                                 BoxLoginResponse *loginResponse = [[BoxLoginResponse alloc] initWithBoxOAuthResponse:authResponseObject];
@@ -55,9 +53,7 @@ NSString *const BoxTokenEndpoint = @"/api/oauth2/token";
                                    success:(void (^)(BoxLoginResponse *response))success
                                    failure:(void (^)(NSError *error))failure
 {
-    NSString *authenticationURLString = [NSString stringWithFormat:@"%@%@", BoxAuthURL, BoxTokenEndpoint];
-    
-    [self.simpleOAuth2AuthenticationManager authenticateOAuthClient:[NSURL URLWithString:authenticationURLString]
+    [self.simpleOAuth2AuthenticationManager authenticateOAuthClient:[self authenticationURLString]
                                                     tokenParameters:[self boxRefreshTokenParametersFromRefreshToken:refreshToken]
                                                             success:^(id authResponseObject) {
                                                                 BoxLoginResponse *loginResponse = [[BoxLoginResponse alloc] initWithBoxOAuthResponse:authResponseObject];
@@ -86,6 +82,13 @@ NSString *const BoxTokenEndpoint = @"/api/oauth2/token";
     boxRefreshTokenParameters.refreshToken = refreshToken;
     
     return boxRefreshTokenParameters;
+}
+
+- (NSURL *)authenticationURLString
+{
+    NSString *authenticationURLString = [NSString stringWithFormat:@"%@%@", BoxAuthURL, BoxTokenEndpoint];
+    
+    return [NSURL URLWithString:authenticationURLString];
 }
 
 @end
