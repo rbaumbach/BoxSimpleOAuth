@@ -14,7 +14,6 @@
 
 @property (weak, nonatomic) IBOutlet UIWebView *boxWebView;
 @property (strong, nonatomic) BoxAuthenticationManager *boxAuthenticationManager;
-@property (strong, nonatomic) NSURLRequest *webLoginRequestBuilder;
 
 @end
 
@@ -89,10 +88,6 @@ describe(@"BoxSimpleOAuthViewController", ^{
         expect(controller.boxAuthenticationManager.callbackURLString).to.equal(@"http://beansAndCheese.ios");
     });
     
-    it(@"has a webRequestBuiler", ^{
-        expect(controller.webLoginRequestBuilder).to.beInstanceOf([NSURLRequest class]);
-    });
-    
     describe(@"#viewDidAppear", ^{
         __block Swizzlean *superSwizz;
         __block BOOL isSuperCalled;
@@ -117,10 +112,9 @@ describe(@"BoxSimpleOAuthViewController", ^{
             controller.boxWebView = fakeWebView;
             
             fakeLoginRequest = OCMClassMock([NSURLRequest class]);
-            controller.webLoginRequestBuilder = fakeLoginRequest;
             
             NSURL *expectedLoginURL = [NSURL URLWithString:@"https://app.box.com/api/oauth2/authorize?client_id=They-call-me-number-two&response_type=code&redirect_uri=http://beansAndCheese.ios"];
-            OCMStub([fakeLoginRequest buildWebLoginRequestWithURL:expectedLoginURL permissionScope:nil]).andReturn(fakeLoginRequest);
+            OCMStub(ClassMethod([fakeLoginRequest buildWebLoginRequestWithURL:expectedLoginURL])).andReturn(fakeLoginRequest);
             
             [controller viewDidAppear:YES];
         });

@@ -36,7 +36,6 @@ NSString *const BoxLoginCancelButtonTitle = @"OK";
 
 @property (weak, nonatomic) IBOutlet UIWebView *boxWebView;
 @property (strong, nonatomic) BoxAuthenticationManager *boxAuthenticationManager;
-@property (strong, nonatomic) NSURLRequest *webLoginRequestBuilder;
 
 @end
 
@@ -59,7 +58,6 @@ NSString *const BoxLoginCancelButtonTitle = @"OK";
         self.boxAuthenticationManager = [[BoxAuthenticationManager alloc] initWithClientID:self.clientID
                                                                               clientSecret:self.clientSecret
                                                                          callbackURLString:self.callbackURL.absoluteString];
-        self.webLoginRequestBuilder = [[NSURLRequest alloc] init];
     }
     return self;
 }
@@ -134,8 +132,7 @@ NSString *const BoxLoginCancelButtonTitle = @"OK";
                                 self.callbackURL.absoluteString];
     
     NSURL *loginURL = [NSURL URLWithString:loginURLString];
-    NSURLRequest *requestBuilder = [self.webLoginRequestBuilder buildWebLoginRequestWithURL:loginURL
-                                                                            permissionScope:nil];
+    NSURLRequest *requestBuilder = [NSURLRequest buildWebLoginRequestWithURL:loginURL];
     
     [self.boxWebView loadRequest:requestBuilder];
 }
