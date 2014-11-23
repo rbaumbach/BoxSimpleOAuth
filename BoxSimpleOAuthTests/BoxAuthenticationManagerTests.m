@@ -3,6 +3,7 @@
 #import <Expecta/Expecta.h>
 #import <OCMock/OCMock.h>
 #import <SimpleOAuth2/SimpleOAuth2.h>
+#import <RealFakes/RealFakes.h>
 #import "FakeBoxOAuthResponse.h"
 #import "FakeSimpleOAuth2AuthenticationManager.h"
 #import "BoxAuthenticationManager.h"

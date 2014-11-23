@@ -1,11 +1,11 @@
 PODS:
   - AFNetworking (2.4.1):
-    - AFNetworking/NSURLConnection
-    - AFNetworking/NSURLSession
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-    - AFNetworking/UIKit
+    - AFNetworking/NSURLConnection (= 2.4.1)
+    - AFNetworking/NSURLSession (= 2.4.1)
+    - AFNetworking/Reachability (= 2.4.1)
+    - AFNetworking/Security (= 2.4.1)
+    - AFNetworking/Serialization (= 2.4.1)
+    - AFNetworking/UIKit (= 2.4.1)
   - AFNetworking/NSURLConnection (2.4.1):
     - AFNetworking/Reachability
     - AFNetworking/Security
@@ -23,6 +23,9 @@ PODS:
   - Expecta (0.2.4)
   - MBProgressHUD (0.9)
   - OCMock (3.0.2)
+  - RealFakes (0.0.4):
+    - AFNetworking (~> 2.0)
+    - SimpleOAuth2 (~> 0.0.3)
   - SimpleOAuth2 (0.0.3):
     - AFNetworking (~> 2.0)
   - Specta (0.3.0.beta1)
@@ -32,6 +35,7 @@ DEPENDENCIES:
   - Expecta (~> 0.2.1)
   - MBProgressHUD (~> 0.9)
   - OCMock (~> 3.0.2)
+  - RealFakes (~> 0.0.4)
   - SimpleOAuth2 (= 0.0.3)
   - Specta (from `https://github.com/specta/specta.git`, tag `v0.3.0.beta1`)
   - Swizzlean (= 0.2.0)
@@ -46,8 +50,9 @@ SPEC CHECKSUMS:
   Expecta: 112bcafa2304ee0f3c5e586505f24555a47b25d5
   MBProgressHUD: 2038dbcf3dce73215abed6001657043d53aa79a8
   OCMock: b9836ab89d8d5e66cbe6333f93857037c310ee62
+  RealFakes: 386619ccc84d7bf108892068e9a7751dd9a3fff6
   SimpleOAuth2: e0239a4458ed279d6b8bddccbcf8f782300379ee
   Specta: 63e8ac8e07db6675c7096d37f77a266a1be4c02d
   Swizzlean: dc03ad1d847a3748f456982b7ede4e3bad4a9630
 
-COCOAPODS: 0.34.4
+COCOAPODS: 0.35.0

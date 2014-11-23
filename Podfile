@@ -13,5 +13,6 @@ target "BoxSimpleOAuthTests" do
     pod 'Expecta', '~> 0.2.1'
     pod 'OCMock', '~> 3.0.2'
     pod 'Swizzlean', '0.2.0'
+    pod 'RealFakes', '~> 0.0.4'
 end
 
