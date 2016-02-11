@@ -9,7 +9,7 @@ A quick and simple way to authenticate a Box user in your iPhone or iPad app.
 
 ## Adding BoxSimpleOAuth to your project
 
-### Cocoapods
+### CocoaPods
 
 [CocoaPods](http://cocoapods.org) is the recommended way to add BoxSimpleOAuth to your project.
 
