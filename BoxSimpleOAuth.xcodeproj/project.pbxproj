@@ -10,7 +10,6 @@
 		42895D3B62BDC5891C5C7B0C /* libPods-BoxSimpleOAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 806F62EC2F43E04C075A5D26 /* libPods-BoxSimpleOAuth.a */; };
 		47F8DC7966B9B858EF9CC5B5 /* libPods-BoxSimpleOAuthTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD61102C2D674C44E147EC09 /* libPods-BoxSimpleOAuthTests.a */; };
 		AF27D4331A16513500820FC2 /* BoxConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = AF27D4321A16513500820FC2 /* BoxConstants.m */; };
-		AF27D4341A16513500820FC2 /* BoxConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = AF27D4321A16513500820FC2 /* BoxConstants.m */; };
 		AF4CF4F41A1327990013D8A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4CF4F31A1327990013D8A6 /* main.m */; };
 		AF4CF4F71A1327990013D8A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4CF4F61A1327990013D8A6 /* AppDelegate.m */; };
 		AF4CF4FA1A1327990013D8A6 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4CF4F91A1327990013D8A6 /* MainViewController.m */; };
@@ -18,24 +17,18 @@
 		AF4CF5021A1327990013D8A6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF4CF5001A1327990013D8A6 /* LaunchScreen.xib */; };
 		AF4CF50E1A1327990013D8A6 /* BoxSimpleOAuthViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4CF50D1A1327990013D8A6 /* BoxSimpleOAuthViewControllerTests.m */; };
 		AF4CF51A1A132B4B0013D8A6 /* BoxSimpleOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4CF5191A132B4B0013D8A6 /* BoxSimpleOAuthViewController.m */; };
-		AF4CF51B1A132B4B0013D8A6 /* BoxSimpleOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4CF5191A132B4B0013D8A6 /* BoxSimpleOAuthViewController.m */; };
 		AF8AAFB21A13A94000147063 /* BoxSimpleOAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF8AAFB11A13A94000147063 /* BoxSimpleOAuthViewController.xib */; };
-		AF8AAFB31A13A94000147063 /* BoxSimpleOAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF8AAFB11A13A94000147063 /* BoxSimpleOAuthViewController.xib */; };
 		AF8AAFB51A13A9C100147063 /* BoxLoginResponseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8AAFB41A13A9C100147063 /* BoxLoginResponseTests.m */; };
 		AF8AAFB91A13AA3500147063 /* FakeBoxOAuthResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8AAFB81A13AA3500147063 /* FakeBoxOAuthResponse.m */; };
 		AF8AAFBC1A13AB8100147063 /* BoxLoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8AAFBB1A13AB8100147063 /* BoxLoginResponse.m */; };
-		AF8AAFBD1A13AB8100147063 /* BoxLoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8AAFBB1A13AB8100147063 /* BoxLoginResponse.m */; };
 		AFC0AAE81A17BD4E00025EF8 /* UIAlertView+TestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AAE71A17BD4E00025EF8 /* UIAlertView+TestUtils.m */; };
 		AFC0AAEB1A17BD8B00025EF8 /* NSLayoutConstraint+TestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AAEA1A17BD8B00025EF8 /* NSLayoutConstraint+TestUtils.m */; };
 		AFC0AAED1A17C95400025EF8 /* BoxAuthenticationManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AAEC1A17C95400025EF8 /* BoxAuthenticationManagerTests.m */; };
 		AFC0AAF41A17CA9800025EF8 /* BoxAuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AAF31A17CA9800025EF8 /* BoxAuthenticationManager.m */; };
-		AFC0AAF51A17CA9800025EF8 /* BoxAuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AAF31A17CA9800025EF8 /* BoxAuthenticationManager.m */; };
 		AFC0AAF81A17CB7400025EF8 /* BoxTokenParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AAF71A17CB7400025EF8 /* BoxTokenParameters.m */; };
-		AFC0AAF91A17CB7400025EF8 /* BoxTokenParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AAF71A17CB7400025EF8 /* BoxTokenParameters.m */; };
 		AFC0AAFB1A17CD7F00025EF8 /* BoxTokenParametersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AAFA1A17CD7F00025EF8 /* BoxTokenParametersTests.m */; };
 		AFC0AAFE1A17D5B800025EF8 /* FakeBoxAuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AAFD1A17D5B800025EF8 /* FakeBoxAuthenticationManager.m */; };
 		AFC3EBB41A19BA130089FEB4 /* BoxRefreshTokenParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC3EBB31A19BA130089FEB4 /* BoxRefreshTokenParameters.m */; };
-		AFC3EBB51A19BA130089FEB4 /* BoxRefreshTokenParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC3EBB31A19BA130089FEB4 /* BoxRefreshTokenParameters.m */; };
 		AFC3EBB71A19BFD80089FEB4 /* BoxRefreshTokenParametersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC3EBB61A19BFD80089FEB4 /* BoxRefreshTokenParametersTests.m */; };
 		AFC5CD4D1A1714BB006A95C0 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC5CD4C1A1714BB006A95C0 /* MainViewController.xib */; };
 		AFC5CD4F1A171C32006A95C0 /* BoxSimpleOAuthViewControllerXibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC5CD4E1A171C32006A95C0 /* BoxSimpleOAuthViewControllerXibTests.m */; };
@@ -290,6 +283,7 @@
 				AF4CF4EB1A1327990013D8A6 /* Frameworks */,
 				AF4CF4EC1A1327990013D8A6 /* Resources */,
 				E4974B8C67FA3555517B0344 /* Copy Pods Resources */,
+				12E93426B9D5B4F891077344 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -309,6 +303,7 @@
 				AF4CF5041A1327990013D8A6 /* Frameworks */,
 				AF4CF5051A1327990013D8A6 /* Resources */,
 				E937FB2362F0F81909B1332C /* Copy Pods Resources */,
+				395BEADEA2063281D5AB07C4 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -326,7 +321,7 @@
 		AF4CF4E61A1327990013D8A6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = rkb;
 				TargetAttributes = {
 					AF4CF4ED1A1327990013D8A6 = {
@@ -374,13 +369,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF8AAFB31A13A94000147063 /* BoxSimpleOAuthViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		12E93426B9D5B4F891077344 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BoxSimpleOAuth/Pods-BoxSimpleOAuth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2914590E9DAEBA9FAB77B2F6 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -394,6 +403,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		395BEADEA2063281D5AB07C4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BoxSimpleOAuthTests/Pods-BoxSimpleOAuthTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E4974B8C67FA3555517B0344 /* Copy Pods Resources */ = {
@@ -467,15 +491,9 @@
 			files = (
 				AF8AAFB51A13A9C100147063 /* BoxLoginResponseTests.m in Sources */,
 				AF8AAFB91A13AA3500147063 /* FakeBoxOAuthResponse.m in Sources */,
-				AF27D4341A16513500820FC2 /* BoxConstants.m in Sources */,
-				AFC3EBB51A19BA130089FEB4 /* BoxRefreshTokenParameters.m in Sources */,
-				AF4CF51B1A132B4B0013D8A6 /* BoxSimpleOAuthViewController.m in Sources */,
 				AFC5CD4F1A171C32006A95C0 /* BoxSimpleOAuthViewControllerXibTests.m in Sources */,
-				AFC0AAF91A17CB7400025EF8 /* BoxTokenParameters.m in Sources */,
 				AFC0AAED1A17C95400025EF8 /* BoxAuthenticationManagerTests.m in Sources */,
 				AF4CF50E1A1327990013D8A6 /* BoxSimpleOAuthViewControllerTests.m in Sources */,
-				AF8AAFBD1A13AB8100147063 /* BoxLoginResponse.m in Sources */,
-				AFC0AAF51A17CA9800025EF8 /* BoxAuthenticationManager.m in Sources */,
 				AFC0AAEB1A17BD8B00025EF8 /* NSLayoutConstraint+TestUtils.m in Sources */,
 				AFC3EBB71A19BFD80089FEB4 /* BoxRefreshTokenParametersTests.m in Sources */,
 				AFC0AAE81A17BD4E00025EF8 /* UIAlertView+TestUtils.m in Sources */,
@@ -526,6 +544,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -593,6 +612,7 @@
 				INFOPLIST_FILE = BoxSimpleOAuth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "rkb.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -606,6 +626,7 @@
 				INFOPLIST_FILE = BoxSimpleOAuth/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "rkb.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -625,6 +646,7 @@
 				);
 				INFOPLIST_FILE = BoxSimpleOAuthTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "rkb.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoxSimpleOAuth.app/BoxSimpleOAuth";
 			};
@@ -641,6 +663,7 @@
 				);
 				INFOPLIST_FILE = BoxSimpleOAuthTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "rkb.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoxSimpleOAuth.app/BoxSimpleOAuth";
 			};

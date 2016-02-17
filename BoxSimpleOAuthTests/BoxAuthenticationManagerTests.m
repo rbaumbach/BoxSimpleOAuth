@@ -1,6 +1,5 @@
-#import <Specta/Specta.h>
-#define EXP_SHORTHAND
 #import <Expecta/Expecta.h>
+#import <Specta/Specta.h>
 #import <OCMock/OCMock.h>
 #import <SimpleOAuth2/SimpleOAuth2.h>
 #import <RealFakes/RealFakes.h>
@@ -50,7 +49,8 @@ describe(@"BoxAuthenticationManager", ^{
     });
     
     it(@"has a simpleOAuth2AuthenticationManager", ^{
-        expect(boxAuthenticationManager.simpleOAuth2AuthenticationManager).to.beInstanceOf([SimpleOAuth2AuthenticationManager class]);
+        NSString *expectedAuthManagerClassName = NSStringFromClass([boxAuthenticationManager.simpleOAuth2AuthenticationManager class]);
+        expect(expectedAuthManagerClassName).to.equal(@"SimpleOAuth2AuthenticationManager");
     });
     
     describe(@"#authenticateClientWithAuthCode:success:failure:", ^{
@@ -101,7 +101,13 @@ describe(@"BoxAuthenticationManager", ^{
                 fakeError = OCMClassMock([NSError class]);
                 
                 if (fakeSimpleAuthManager.failure) {
-                    fakeSimpleAuthManager.failure(fakeError);
+                    // This is here because the Expecta short hand methods #define "failure"
+                    // #define failure(...) EXP_failure((__VA_ARGS__))
+                    void(^authFailure)(NSError *error) = [fakeSimpleAuthManager.failure copy];
+                    
+                    authFailure(fakeError);
+                    
+//                    fakeSimpleAuthManager.failure(fakeError);
                 }
             });
             
@@ -152,7 +158,13 @@ describe(@"BoxAuthenticationManager", ^{
                 fakeError = OCMClassMock([NSError class]);
                 
                 if (fakeSimpleAuthManager.failure) {
-                    fakeSimpleAuthManager.failure(fakeError);
+                    // This is here because the Expecta short hand methods #define "failure"
+                    // #define failure(...) EXP_failure((__VA_ARGS__))
+                    void(^authFailure)(NSError *error) = [fakeSimpleAuthManager.failure copy];
+                    
+                    authFailure(fakeError);
+                    
+//                    fakeSimpleAuthManager.failure(fakeError);
                 }
             });
             

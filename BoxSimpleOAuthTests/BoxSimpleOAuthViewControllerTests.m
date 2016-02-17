@@ -1,6 +1,5 @@
-#import <Specta/Specta.h>
-#define EXP_SHORTHAND
 #import <Expecta/Expecta.h>
+#import <Specta/Specta.h>
 #import <OCMock/OCMock.h>
 #import <Swizzlean/Swizzlean.h>
 #import <SimpleOAuth2/SimpleOAuth2.h>
@@ -40,6 +39,10 @@ describe(@"BoxSimpleOAuthViewController", ^{
                                                                      retLoginResponse = response;
                                                                      retError = error;
                                                                  }];
+    });
+    
+    afterEach(^{
+        [UIAlertView reset];
     });
     
     describe(@"init", ^{
@@ -134,12 +137,19 @@ describe(@"BoxSimpleOAuthViewController", ^{
     });
     
     describe(@"<UIWebViewDelegate>", ^{
+        __block id fakeWebView;
+        
+        beforeEach(^{
+            fakeWebView = OCMClassMock([UIWebView class]);
+        });
+        
         describe(@"#webViewDidFinishLoad:", ^{
             __block id hudClassMethodMock;
+            __block id fakeWebView;
             
             beforeEach(^{
                 hudClassMethodMock = OCMClassMock([MBProgressHUD class]);
-                [controller webViewDidFinishLoad:nil];
+                [controller webViewDidFinishLoad:fakeWebView];
             });
             
             it(@"removes the progress HUD", ^{
@@ -164,9 +174,9 @@ describe(@"BoxSimpleOAuthViewController", ^{
                     OCMStub([fakeURLRequest oAuth2AuthorizationCode]).andReturn(@"authorization-sir");
                     
                     fakeAuthManager = [[FakeBoxAuthenticationManager alloc] init];
-                    controller.BoxAuthenticationManager = fakeAuthManager;
+                    controller.boxAuthenticationManager = fakeAuthManager;
                     
-                    shouldStartLoad = [controller webView:nil
+                    shouldStartLoad = [controller webView:fakeWebView
                                shouldStartLoadWithRequest:fakeURLRequest
                                            navigationType:UIWebViewNavigationTypeFormSubmitted];
                 });
@@ -242,7 +252,7 @@ describe(@"BoxSimpleOAuthViewController", ^{
                     context(@"shouldShowErrorAlert == YES", ^{
                         beforeEach(^{
                             controller.shouldShowErrorAlert = YES;
-                            [controller webView:nil didFailLoadWithError:bogusError];
+                            [controller webView:fakeWebView didFailLoadWithError:bogusError];
                         });
                         
                         it(@"displays a UIAlertView with proper error", ^{
@@ -255,7 +265,7 @@ describe(@"BoxSimpleOAuthViewController", ^{
                     context(@"shouldShowErrorAlert == NO", ^{
                         beforeEach(^{
                             controller.shouldShowErrorAlert = NO;
-                            [controller webView:nil didFailLoadWithError:bogusError];
+                            [controller webView:fakeWebView didFailLoadWithError:bogusError];
                         });
                         
                         it(@"does not display alert view for the error", ^{
@@ -270,7 +280,13 @@ describe(@"BoxSimpleOAuthViewController", ^{
                             partialMock = OCMPartialMock(navigationController);
                             
                             if (fakeAuthManager.failure) {
-                                fakeAuthManager.failure(bogusError);
+                                // This is here because the Expecta short hand methods #define "failure"
+                                // #define failure(...) EXP_failure((__VA_ARGS__))
+                                void(^authFailure)(NSError *error) = [fakeAuthManager.failure copy];
+                                
+                                authFailure(bogusError);
+                                
+//                                fakeAuthManager.failure(bogusError);
                             }
                         });
                         
@@ -297,7 +313,13 @@ describe(@"BoxSimpleOAuthViewController", ^{
                             partialMock = OCMPartialMock(controller);
                             
                             if (fakeAuthManager.failure) {
-                                fakeAuthManager.failure(bogusError);
+                                // This is here because the Expecta short hand methods #define "failure"
+                                // #define failure(...) EXP_failure((__VA_ARGS__))
+                                void(^authFailure)(NSError *error) = [fakeAuthManager.failure copy];
+
+                                authFailure(bogusError);
+                                
+//                                fakeAuthManager.failure(bogusError);
                             }
                         });
                         
@@ -330,7 +352,7 @@ describe(@"BoxSimpleOAuthViewController", ^{
                     fakeURLRequest = OCMClassMock([NSURLRequest class]);
                     OCMStub([fakeURLRequest oAuth2AuthorizationCode]).andReturn(nil);
                     
-                    shouldStartLoad = [controller webView:nil
+                    shouldStartLoad = [controller webView:fakeWebView
                                shouldStartLoadWithRequest:fakeURLRequest
                                            navigationType:UIWebViewNavigationTypeFormSubmitted];
                 });
@@ -346,7 +368,7 @@ describe(@"BoxSimpleOAuthViewController", ^{
             
             beforeEach(^{
                 hudClassMethodMock = OCMClassMock([MBProgressHUD class]);
-                [controller webViewDidFinishLoad:nil];
+                [controller webViewDidFinishLoad:fakeWebView];
             });
             
             it(@"removes the progress HUD", ^{
@@ -369,7 +391,7 @@ describe(@"BoxSimpleOAuthViewController", ^{
                                                             code:102
                                                         userInfo:@{ @"NSLocalizedDescription" : @"WTH Error"}];
                     
-                    [controller webView:nil didFailLoadWithError:bogusRequestError];
+                    [controller webView:fakeWebView didFailLoadWithError:bogusRequestError];
                 });
                 
                 it(@"does not display alert view for the error", ^{
@@ -395,7 +417,7 @@ describe(@"BoxSimpleOAuthViewController", ^{
                 context(@"shouldShowErrorAlert == YES", ^{
                     beforeEach(^{
                         controller.shouldShowErrorAlert = YES;
-                        [controller webView:nil didFailLoadWithError:bogusRequestError];
+                        [controller webView:fakeWebView didFailLoadWithError:bogusRequestError];
                     });
                     
                     it(@"displays a UIAlertView with proper error", ^{
@@ -408,7 +430,7 @@ describe(@"BoxSimpleOAuthViewController", ^{
                 context(@"shouldShowErrorAlert == NO", ^{
                     beforeEach(^{
                         controller.shouldShowErrorAlert = NO;
-                        [controller webView:nil didFailLoadWithError:bogusRequestError];
+                        [controller webView:fakeWebView didFailLoadWithError:bogusRequestError];
                     });
                     
                     it(@"does not display alert view for the error", ^{
@@ -422,7 +444,7 @@ describe(@"BoxSimpleOAuthViewController", ^{
                         UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
                         partialMock = OCMPartialMock(navigationController);
                         
-                        [controller webView:nil didFailLoadWithError:bogusRequestError];
+                        [controller webView:fakeWebView didFailLoadWithError:bogusRequestError];
                     });
                     
                     it(@"pops itself off the navigation controller", ^{
@@ -447,7 +469,7 @@ describe(@"BoxSimpleOAuthViewController", ^{
                     beforeEach(^{
                         partialMock = OCMPartialMock(controller);
                         
-                        [controller webView:nil didFailLoadWithError:bogusRequestError];
+                        [controller webView:fakeWebView didFailLoadWithError:bogusRequestError];
                     });
                     
                     it(@"pops itself off the view controller", ^{
