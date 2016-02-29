@@ -65,28 +65,20 @@ viewController.shouldShowErrorAlert = NO;
 
 * Prerequisites: [ruby](https://github.com/sstephenson/rbenv), [ruby gems](https://rubygems.org/pages/download), [bundler](http://bundler.io)
 
-To use the included Rakefile to run Specta tests, run the setup.sh script to bundle required gems and cocoapods:
+This project has been setup to use [fastlane](https://fastlane.tools) to run the tests.
+
+First, run the setup.sh script to bundle required gems and cocoapods when in the project directory:
 
 ```bash
 $ ./setup.sh
 ```
 
-Then run rake to run the tests on the command line:
+And then use fastlane to run all (Debug and Release) the tests on the command line:
 
 ```bash
-$ bundle exec rake
-```
-
-Additional rake tasks can be seen using rake -T:
-
-```bash
-$ rake -T
-rake build  # Build BoxSimpleOAuth
-rake clean  # Clean
-rake test   # Run Tests
+$ bundle exec fastlane test
 ```
 
 ## Suggestions, requests, and feedback
 
-Thanks for checking out BoxSimpleOAuth for your in-app Box authentication.  Any feedback can be
-can be sent to: rbaumbach.github@gmail.com.
+Thanks for checking out BoxSimpleOAuth for your in-app Box Authentication.  Any feedback can be can be sent to: github@ryan.codes.
