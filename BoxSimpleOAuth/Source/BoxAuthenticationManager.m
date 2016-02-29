@@ -1,4 +1,4 @@
-//Copyright (c) 2014 Ryan Baumbach <rbaumbach.github@gmail.com>
+//Copyright (c) 2016 Ryan Baumbach <github@ryan.codes>
 //
 //Permission is hereby granted, free of charge, to any person obtaining
 //a copy of this software and associated documentation files (the "Software"),
@@ -91,7 +91,7 @@ NSString *const BoxTokenEndpoint = @"/api/oauth2/token";
     boxTokenParameters.clientSecret = self.clientSecret;
     boxTokenParameters.callbackURLString = self.callbackURLString;
     boxTokenParameters.authorizationCode = authCode;
-    
+
     return boxTokenParameters;
 }
 
@@ -101,14 +101,14 @@ NSString *const BoxTokenEndpoint = @"/api/oauth2/token";
     boxRefreshTokenParameters.clientID = self.clientID;
     boxRefreshTokenParameters.clientSecret = self.clientSecret;
     boxRefreshTokenParameters.refreshToken = refreshToken;
-    
+
     return boxRefreshTokenParameters;
 }
 
 - (NSURL *)authenticationURLString
 {
     NSString *authenticationURLString = [NSString stringWithFormat:@"%@%@", BoxAuthURL, BoxTokenEndpoint];
-    
+
     return [NSURL URLWithString:authenticationURLString];
 }
 

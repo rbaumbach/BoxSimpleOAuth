@@ -1,4 +1,4 @@
-//Copyright (c) 2014 Ryan Baumbach <rbaumbach.github@gmail.com>
+//Copyright (c) 2016 Ryan Baumbach <github@ryan.codes>
 //
 //Permission is hereby granted, free of charge, to any person obtaining
 //a copy of this software and associated documentation files (the "Software"),
@@ -75,7 +75,7 @@ NSString *const BoxLoginCancelButtonTitle = @"OK";
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    
+
     [self loadBoxLogin];
 }
 
@@ -84,7 +84,7 @@ NSString *const BoxLoginCancelButtonTitle = @"OK";
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType;
 {
     NSString *authorizationCode = [request oAuth2AuthorizationCode];
-    
+
     if (authorizationCode) {
         [self.boxAuthenticationManager authenticateClientWithAuthCode:authorizationCode
                                                               success:^(BoxLoginResponse *response) {
@@ -94,7 +94,7 @@ NSString *const BoxLoginCancelButtonTitle = @"OK";
                                                               }];
         return NO;
     }
-    
+
     return YES;
 }
 
@@ -107,14 +107,14 @@ NSString *const BoxLoginCancelButtonTitle = @"OK";
 {
     if (error.code != 102) {
         [self completeWithError:error];
-        
+
         if (self.shouldShowErrorAlert) {
             [self showErrorAlert:error];
         }
-        
+
         [self dismissViewController];
     }
-    
+
     [self hideProgressHUD];
 }
 
@@ -123,17 +123,17 @@ NSString *const BoxLoginCancelButtonTitle = @"OK";
 - (void)loadBoxLogin
 {
     [self showProgressHUD];
-    
+
     NSString *loginURLString = [NSString stringWithFormat:@"%@%@%@%@%@",
                                 BoxAuthURL,
                                 BoxAuthClientIDEndpoint,
                                 self.clientID,
                                 BoxAuthRequestParams,
                                 self.callbackURL.absoluteString];
-    
+
     NSURL *loginURL = [NSURL URLWithString:loginURLString];
     NSURLRequest *requestBuilder = [NSURLRequest buildWebLoginRequestWithURL:loginURL];
-    
+
     [self.boxWebView loadRequest:requestBuilder];
 }
 
@@ -141,7 +141,7 @@ NSString *const BoxLoginCancelButtonTitle = @"OK";
 {
     [self dismissViewController];
     [self hideProgressHUD];
-    
+
     self.completion(response, nil);
 }
 
@@ -149,11 +149,11 @@ NSString *const BoxLoginCancelButtonTitle = @"OK";
 {
     [self dismissViewController];
     [self hideProgressHUD];
-    
+
     if (self.shouldShowErrorAlert) {
         [self showErrorAlert:error];
     }
-    
+
     self.completion(nil, error);
 }
 
@@ -170,7 +170,7 @@ NSString *const BoxLoginCancelButtonTitle = @"OK";
 - (void)showErrorAlert:(NSError *)error
 {
     NSString *errorMessage = [NSString stringWithFormat:@"%@ - %@", error.domain, error.userInfo[NSLocalizedDescriptionKey]];
-    
+
     UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:BoxLoginErrorAlertTitle
                                                          message:errorMessage
                                                         delegate:nil

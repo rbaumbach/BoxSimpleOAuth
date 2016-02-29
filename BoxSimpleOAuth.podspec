@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.summary               = 'A quick and simple way to authenticate a Box user in your iPhone or iPad app.'
   s.homepage              = 'https://github.com/rbaumbach/BoxSimpleOAuth'
   s.license               = { :type => 'MIT', :file => 'MIT-LICENSE.txt' }
-  s.author                = { 'Ryan Baumbach' => 'rbaumbach.github@gmail.com' }
+  s.author                = { 'Ryan Baumbach' => 'github@ryan.codes' }
   s.source                = { :git => 'https://github.com/rbaumbach/BoxSimpleOAuth.git', :tag => s.version.to_s }
   s.requires_arc          = true
   s.platform              = :ios
