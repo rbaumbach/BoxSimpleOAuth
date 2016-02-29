@@ -1,4 +1,4 @@
-# BoxSimpleOAuth [![Build Status](https://travis-ci.org/rbaumbach/BoxSimpleOAuth.svg?branch=master)](https://travis-ci.org/rbaumbach/BoxSimpleOAuth) [![License](http://b.repl.ca/v1/License-MIT-blue.png)](https://github.com/rbaumbach/BxSimpleOAuth/blob/master/MIT.LICENSE) [![Cocoapod Version](http://img.shields.io/badge/pod-v0.1.0-blue.svg)](http://cocoapods.org/?q=BoxSimpleOAuth) [![Cocoapod Platform](http://img.shields.io/badge/platform-iOS-blue.svg)](http://cocoapods.org/?q=BoxSimpleOAuth)
+# BoxSimpleOAuth [![Build Status](https://travis-ci.org/rbaumbach/BoxSimpleOAuth.svg?branch=master)](https://travis-ci.org/rbaumbach/BoxSimpleOAuth) [![codecov.io](https://codecov.io/github/rbaumbach/BoxSimpleOAuth/coverage.svg?branch=master)](https://codecov.io/github/rbaumbach/BoxSimpleOAuth?branch=master) [![Cocoapod Version](https://img.shields.io/cocoapods/v/BoxSimpleOAuth.svg)](http://cocoapods.org/?q=BoxSimpleOAuth) [![Cocoapod Platform](https://img.shields.io/badge/platform-iOS-blue.svg)](http://cocoapods.org/?q=BoxSimpleOAuth) [![License](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/rbaumbach/BoxSimpleOAuth/blob/master/MIT-LICENSE.txt)
 
 A quick and simple way to authenticate a Box user in your iPhone or iPad app.
 
@@ -9,7 +9,7 @@ A quick and simple way to authenticate a Box user in your iPhone or iPad app.
 
 ## Adding BoxSimpleOAuth to your project
 
-### Cocoapods
+### CocoaPods
 
 [CocoaPods](http://cocoapods.org) is the recommended way to add BoxSimpleOAuth to your project.
 
@@ -27,8 +27,8 @@ A quick and simple way to authenticate a Box user in your iPhone or iPad app.
 * Create an instance of `BoxSimpleOAuthViewController` and pass in an [Box client ID, client secret, client callback URL](https://developers.box.com) and completion block to be executed with `BoxLoginResponse` and `NSError` arguments.
 * Once the instance of `BoxSimpleOAuthViewController` is presented (either as a modal or pushed on the navigation stack), it will allow the user to login.  After the user logs in, the completion block given in the initialization of the view controller will be executed.  The argument in the completion block, `BoxLoginResponse`, contains an accessToken and other login information for the authenticated user provided by [Box API Response](https://developers.box.com/oauth/).  If there is an issue attempting to authenticate, an error will be given instead.
 * By default, if there are issues with authentication, an UIAlertView will be given to the user.  To disable this, and rely on the NSError directly, set the property `shouldShowErrorAlert` to NO.
-* A access_token can be refreshed using the underlying BoxAuthenticationManager.
-* Note: Even though an instance of the view controller itself can be initalized without client ID, client secret, client callback and completion block (to help with testing), this data must be set using the view controller's properties before it is presented to the user.
+* An access_token can be refreshed using the underlying BoxAuthenticationManager.
+* Note: Even though an instance of the view controller itself can be initialized without client ID, client secret, client callback and completion block (to help with testing), this data must be set using the view controller's properties before it is presented to the user.
 
 ### Example Usage
 
@@ -67,7 +67,7 @@ viewController.shouldShowErrorAlert = NO;
 
 This project has been setup to use [fastlane](https://fastlane.tools) to run the tests.
 
-First, run the setup.sh script to bundle required gems and cocoapods when in the project directory:
+First, run the setup.sh script to bundle required gems and CocoaPods when in the project directory:
 
 ```bash
 $ ./setup.sh
