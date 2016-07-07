@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		42895D3B62BDC5891C5C7B0C /* libPods-BoxSimpleOAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 806F62EC2F43E04C075A5D26 /* libPods-BoxSimpleOAuth.a */; };
-		47F8DC7966B9B858EF9CC5B5 /* libPods-BoxSimpleOAuthTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD61102C2D674C44E147EC09 /* libPods-BoxSimpleOAuthTests.a */; };
+		0C337912D034EAA0992F3D33 /* libPods-BoxSimpleOAuthTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A02C51345717EAC558ED1EF0 /* libPods-BoxSimpleOAuthTests.a */; };
 		9402BF431C84095C00EE7BC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9402BF3C1C84095C00EE7BC1 /* AppDelegate.m */; };
 		9402BF441C84095C00EE7BC1 /* JustAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9402BF3E1C84095C00EE7BC1 /* JustAViewController.m */; };
 		9402BF451C84095C00EE7BC1 /* JustAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9402BF3F1C84095C00EE7BC1 /* JustAViewController.xib */; };
 		9402BF461C84095C00EE7BC1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9402BF411C84095C00EE7BC1 /* MainViewController.m */; };
 		9402BF471C84095C00EE7BC1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9402BF421C84095C00EE7BC1 /* MainViewController.xib */; };
 		948DC4B11C83DB40000E0E87 /* FakeSimpleOAuth2AuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 948DC4B01C83DB40000E0E87 /* FakeSimpleOAuth2AuthenticationManager.m */; };
+		9F83E2D12785206BBC1E7711 /* libPods-BoxSimpleOAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1E4FA6D1AE75F7F02A78F3 /* libPods-BoxSimpleOAuth.a */; };
 		AF27D4331A16513500820FC2 /* BoxConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = AF27D4321A16513500820FC2 /* BoxConstants.m */; };
 		AF4CF4F41A1327990013D8A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4CF4F31A1327990013D8A6 /* main.m */; };
 		AF4CF4FF1A1327990013D8A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF4CF4FE1A1327990013D8A6 /* Images.xcassets */; };
@@ -48,9 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0017319A4E9A0B16B76AF2A2 /* Pods-BoxSimpleOAuthTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxSimpleOAuthTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BoxSimpleOAuthTests/Pods-BoxSimpleOAuthTests.release.xcconfig"; sourceTree = "<group>"; };
-		35674B29B39A4D40EC2FCA1F /* Pods-BoxSimpleOAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxSimpleOAuth.release.xcconfig"; path = "Pods/Target Support Files/Pods-BoxSimpleOAuth/Pods-BoxSimpleOAuth.release.xcconfig"; sourceTree = "<group>"; };
-		806F62EC2F43E04C075A5D26 /* libPods-BoxSimpleOAuth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BoxSimpleOAuth.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14B68633E9EAEF06C4EE8CB4 /* Pods-BoxSimpleOAuthTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxSimpleOAuthTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BoxSimpleOAuthTests/Pods-BoxSimpleOAuthTests.debug.xcconfig"; sourceTree = "<group>"; };
+		217E0269AA46094B0A933526 /* Pods-BoxSimpleOAuthTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxSimpleOAuthTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BoxSimpleOAuthTests/Pods-BoxSimpleOAuthTests.release.xcconfig"; sourceTree = "<group>"; };
+		3B1E4FA6D1AE75F7F02A78F3 /* libPods-BoxSimpleOAuth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BoxSimpleOAuth.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F4436E82683E65243BC7448 /* Pods-BoxSimpleOAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxSimpleOAuth.release.xcconfig"; path = "Pods/Target Support Files/Pods-BoxSimpleOAuth/Pods-BoxSimpleOAuth.release.xcconfig"; sourceTree = "<group>"; };
 		9402BF3B1C84095C00EE7BC1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AppCode/AppDelegate.h; sourceTree = "<group>"; };
 		9402BF3C1C84095C00EE7BC1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = AppCode/AppDelegate.m; sourceTree = "<group>"; };
 		9402BF3D1C84095C00EE7BC1 /* JustAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JustAViewController.h; path = AppCode/JustAViewController.h; sourceTree = "<group>"; };
@@ -61,6 +62,7 @@
 		9402BF421C84095C00EE7BC1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainViewController.xib; path = AppCode/MainViewController.xib; sourceTree = "<group>"; };
 		948DC4AF1C83DB40000E0E87 /* FakeSimpleOAuth2AuthenticationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeSimpleOAuth2AuthenticationManager.h; sourceTree = "<group>"; };
 		948DC4B01C83DB40000E0E87 /* FakeSimpleOAuth2AuthenticationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeSimpleOAuth2AuthenticationManager.m; sourceTree = "<group>"; };
+		A02C51345717EAC558ED1EF0 /* libPods-BoxSimpleOAuthTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BoxSimpleOAuthTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF27D4301A164EB100820FC2 /* BoxSimpleOAuth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BoxSimpleOAuth.h; path = Source/BoxSimpleOAuth.h; sourceTree = "<group>"; };
 		AF27D4311A16513500820FC2 /* BoxConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoxConstants.h; path = Source/BoxConstants.h; sourceTree = "<group>"; };
 		AF27D4321A16513500820FC2 /* BoxConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoxConstants.m; path = Source/BoxConstants.m; sourceTree = "<group>"; };
@@ -97,9 +99,7 @@
 		AFC3EBB61A19BFD80089FEB4 /* BoxRefreshTokenParametersTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxRefreshTokenParametersTests.m; sourceTree = "<group>"; };
 		AFC5CD4E1A171C32006A95C0 /* BoxSimpleOAuthViewControllerXibTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxSimpleOAuthViewControllerXibTests.m; sourceTree = "<group>"; };
 		AFDD773E1A132CC700B349AE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B042B58440F69176CCFBE0AF /* Pods-BoxSimpleOAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxSimpleOAuth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BoxSimpleOAuth/Pods-BoxSimpleOAuth.debug.xcconfig"; sourceTree = "<group>"; };
-		CD61102C2D674C44E147EC09 /* libPods-BoxSimpleOAuthTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BoxSimpleOAuthTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8FC09FC6580E69AAD565D3A /* Pods-BoxSimpleOAuthTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxSimpleOAuthTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BoxSimpleOAuthTests/Pods-BoxSimpleOAuthTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C9D0619FE2B617D848110501 /* Pods-BoxSimpleOAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxSimpleOAuth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BoxSimpleOAuth/Pods-BoxSimpleOAuth.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42895D3B62BDC5891C5C7B0C /* libPods-BoxSimpleOAuth.a in Frameworks */,
+				9F83E2D12785206BBC1E7711 /* libPods-BoxSimpleOAuth.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,31 +115,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47F8DC7966B9B858EF9CC5B5 /* libPods-BoxSimpleOAuthTests.a in Frameworks */,
+				0C337912D034EAA0992F3D33 /* libPods-BoxSimpleOAuthTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A4431B949514D1C71368ABD3 /* Pods */ = {
+		991CBF914F8C72753FE2E788 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B042B58440F69176CCFBE0AF /* Pods-BoxSimpleOAuth.debug.xcconfig */,
-				35674B29B39A4D40EC2FCA1F /* Pods-BoxSimpleOAuth.release.xcconfig */,
-				F8FC09FC6580E69AAD565D3A /* Pods-BoxSimpleOAuthTests.debug.xcconfig */,
-				0017319A4E9A0B16B76AF2A2 /* Pods-BoxSimpleOAuthTests.release.xcconfig */,
+				C9D0619FE2B617D848110501 /* Pods-BoxSimpleOAuth.debug.xcconfig */,
+				3F4436E82683E65243BC7448 /* Pods-BoxSimpleOAuth.release.xcconfig */,
+				14B68633E9EAEF06C4EE8CB4 /* Pods-BoxSimpleOAuthTests.debug.xcconfig */,
+				217E0269AA46094B0A933526 /* Pods-BoxSimpleOAuthTests.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		A93BF3EBE595AF3DC1375D3C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				806F62EC2F43E04C075A5D26 /* libPods-BoxSimpleOAuth.a */,
-				CD61102C2D674C44E147EC09 /* libPods-BoxSimpleOAuthTests.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		AF4CF4E51A1327990013D8A6 = {
@@ -149,8 +140,8 @@
 				AF4CF4F01A1327990013D8A6 /* BoxSimpleOAuth */,
 				AF4CF50A1A1327990013D8A6 /* BoxSimpleOAuthTests */,
 				AF4CF4EF1A1327990013D8A6 /* Products */,
-				A4431B949514D1C71368ABD3 /* Pods */,
-				A93BF3EBE595AF3DC1375D3C /* Frameworks */,
+				991CBF914F8C72753FE2E788 /* Pods */,
+				C2F7348F7BF791472A1CBF67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -276,6 +267,15 @@
 			name = Github;
 			sourceTree = "<group>";
 		};
+		C2F7348F7BF791472A1CBF67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B1E4FA6D1AE75F7F02A78F3 /* libPods-BoxSimpleOAuth.a */,
+				A02C51345717EAC558ED1EF0 /* libPods-BoxSimpleOAuthTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -283,12 +283,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF4CF5111A1327990013D8A6 /* Build configuration list for PBXNativeTarget "BoxSimpleOAuth" */;
 			buildPhases = (
-				F2AB3DB2C0A808FEA74614A7 /* Check Pods Manifest.lock */,
+				10712810A39DAACE89FF6E25 /* [CP] Check Pods Manifest.lock */,
 				AF4CF4EA1A1327990013D8A6 /* Sources */,
 				AF4CF4EB1A1327990013D8A6 /* Frameworks */,
 				AF4CF4EC1A1327990013D8A6 /* Resources */,
-				E4974B8C67FA3555517B0344 /* Copy Pods Resources */,
-				12E93426B9D5B4F891077344 /* Embed Pods Frameworks */,
+				B14C80B780EDE6892C9139E8 /* [CP] Embed Pods Frameworks */,
+				6C805B244622B81F16BF33C1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -303,12 +303,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF4CF5141A1327990013D8A6 /* Build configuration list for PBXNativeTarget "BoxSimpleOAuthTests" */;
 			buildPhases = (
-				2914590E9DAEBA9FAB77B2F6 /* Check Pods Manifest.lock */,
+				39E7F47C94BEB3A4D50286B6 /* [CP] Check Pods Manifest.lock */,
 				AF4CF5031A1327990013D8A6 /* Sources */,
 				AF4CF5041A1327990013D8A6 /* Frameworks */,
 				AF4CF5051A1327990013D8A6 /* Resources */,
-				E937FB2362F0F81909B1332C /* Copy Pods Resources */,
-				395BEADEA2063281D5AB07C4 /* Embed Pods Frameworks */,
+				30CD4965D5BA7DA3A5BEF040 /* [CP] Embed Pods Frameworks */,
+				D112040AA4F34B828F84E783 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -380,29 +380,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		12E93426B9D5B4F891077344 /* Embed Pods Frameworks */ = {
+		10712810A39DAACE89FF6E25 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BoxSimpleOAuth/Pods-BoxSimpleOAuth-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2914590E9DAEBA9FAB77B2F6 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,14 +395,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		395BEADEA2063281D5AB07C4 /* Embed Pods Frameworks */ = {
+		30CD4965D5BA7DA3A5BEF040 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,14 +410,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BoxSimpleOAuthTests/Pods-BoxSimpleOAuthTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E4974B8C67FA3555517B0344 /* Copy Pods Resources */ = {
+		39E7F47C94BEB3A4D50286B6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6C805B244622B81F16BF33C1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,34 +440,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BoxSimpleOAuth/Pods-BoxSimpleOAuth-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E937FB2362F0F81909B1332C /* Copy Pods Resources */ = {
+		B14C80B780EDE6892C9139E8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BoxSimpleOAuth/Pods-BoxSimpleOAuth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D112040AA4F34B828F84E783 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BoxSimpleOAuthTests/Pods-BoxSimpleOAuthTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F2AB3DB2C0A808FEA74614A7 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -611,7 +611,7 @@
 		};
 		AF4CF5121A1327990013D8A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B042B58440F69176CCFBE0AF /* Pods-BoxSimpleOAuth.debug.xcconfig */;
+			baseConfigurationReference = C9D0619FE2B617D848110501 /* Pods-BoxSimpleOAuth.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -628,7 +628,7 @@
 		};
 		AF4CF5131A1327990013D8A6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35674B29B39A4D40EC2FCA1F /* Pods-BoxSimpleOAuth.release.xcconfig */;
+			baseConfigurationReference = 3F4436E82683E65243BC7448 /* Pods-BoxSimpleOAuth.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -646,7 +646,7 @@
 		};
 		AF4CF5151A1327990013D8A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8FC09FC6580E69AAD565D3A /* Pods-BoxSimpleOAuthTests.debug.xcconfig */;
+			baseConfigurationReference = 14B68633E9EAEF06C4EE8CB4 /* Pods-BoxSimpleOAuthTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -666,7 +666,7 @@
 		};
 		AF4CF5161A1327990013D8A6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0017319A4E9A0B16B76AF2A2 /* Pods-BoxSimpleOAuthTests.release.xcconfig */;
+			baseConfigurationReference = 217E0269AA46094B0A933526 /* Pods-BoxSimpleOAuthTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
