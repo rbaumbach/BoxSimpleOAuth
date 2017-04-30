@@ -1,3 +1,0 @@
-scheme "BoxSimpleOAuth"
-clean true
-output_types "html"
