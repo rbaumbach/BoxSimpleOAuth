@@ -1,4 +1,4 @@
-# BoxSimpleOAuth [![CircleCI](https://circleci.com/gh/rbaumbach/BoxSimpleOAuth.svg?style=svg)](https://circleci.com/gh/rbaumbach/BoxSimpleOAuth) [![codecov.io](https://codecov.io/github/rbaumbach/BoxSimpleOAuth/coverage.svg?branch=master)](https://codecov.io/github/rbaumbach/BoxSimpleOAuth?branch=master) [![Cocoapod Version](https://img.shields.io/cocoapods/v/BoxSimpleOAuth.svg)](http://cocoapods.org/?q=BoxSimpleOAuth) [![Cocoapod Platform](https://img.shields.io/badge/platform-iOS-blue.svg)](http://cocoapods.org/?q=BoxSimpleOAuth) [![License](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/rbaumbach/BoxSimpleOAuth/blob/master/MIT-LICENSE.txt)
+# BoxSimpleOAuth [![CircleCI](https://circleci.com/gh/rbaumbach/BoxSimpleOAuth.svg?style=svg)](https://circleci.com/gh/rbaumbach/BoxSimpleOAuth) [![codecov.io](https://codecov.io/github/rbaumbach/BoxSimpleOAuth/coverage.svg?branch=master)](https://codecov.io/github/rbaumbach/BoxSimpleOAuth?branch=master) [![Cocoapod Version](https://img.shields.io/cocoapods/v/BoxSimpleOAuth.svg)](http://cocoapods.org/?q=BoxSimpleOAuth) [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)[![Cocoapod Platform](https://img.shields.io/badge/platform-iOS-blue.svg)](http://cocoapods.org/?q=BoxSimpleOAuth) [![License](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/rbaumbach/BoxSimpleOAuth/blob/master/MIT-LICENSE.txt)
 
 A quick and simple way to authenticate a Box user in your iPhone or iPad app.
 
@@ -16,6 +16,11 @@ A quick and simple way to authenticate a Box user in your iPhone or iPad app.
 1.  Add BoxSimpleOAuth to your Podfile `pod 'BoxSimpleOAuth'`.
 2.  Install the pod(s) by running `pod install`.
 3.  Add BoxSimpleOAuth to your files with `#import <BoxSimpleOAuth/BoxSimpleOAuth.h>`.
+
+### Carthage
+
+1. Add `github "rbaumbach/BoxSimpleOAuth"` to your Cartfile.
+2. [Follow the directions](https://github.com/Carthage/Carthage#getting-started) to add the dynamic framework to your target.
 
 ### Clone from Github
 
