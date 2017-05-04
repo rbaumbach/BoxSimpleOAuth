@@ -42,11 +42,33 @@
 		9434D5E71EB6972C00191952 /* BoxTokenParametersSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 9434D5E31EB6972C00191952 /* BoxTokenParametersSpecs.m */; };
 		9434D5E91EBAE94F00191952 /* BoxSimpleOAuthViewControllerXibSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 9434D5E81EBAE94F00191952 /* BoxSimpleOAuthViewControllerXibSpecs.m */; };
 		9434D5EB1EBAE99300191952 /* BoxSimpleOAuthViewControllerSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 9434D5EA1EBAE99300191952 /* BoxSimpleOAuthViewControllerSpecs.m */; };
+		946E58C21EBB79B6006C7C22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 946E58C11EBB79B6006C7C22 /* main.m */; };
+		946E58C51EBB79B6006C7C22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 946E58C41EBB79B6006C7C22 /* AppDelegate.m */; };
+		946E58CB1EBB79B6006C7C22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 946E58C91EBB79B6006C7C22 /* Main.storyboard */; };
+		946E58CD1EBB79B6006C7C22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 946E58CC1EBB79B6006C7C22 /* Assets.xcassets */; };
+		946E58D01EBB79B6006C7C22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 946E58CE1EBB79B6006C7C22 /* LaunchScreen.storyboard */; };
+		946E58DB1EBB7B50006C7C22 /* JustAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 946E58D81EBB7B50006C7C22 /* JustAViewController.m */; };
+		946E58DC1EBB7B50006C7C22 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 946E58DA1EBB7B50006C7C22 /* MainViewController.m */; };
+		946E58DD1EBB7DCB006C7C22 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9434D5961EB690C200191952 /* AFNetworking.framework */; };
+		946E58DE1EBB7DCB006C7C22 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9434D5961EB690C200191952 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		946E58DF1EBB7DCB006C7C22 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9434D5971EB690C200191952 /* MBProgressHUD.framework */; };
+		946E58E01EBB7DCB006C7C22 /* MBProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9434D5971EB690C200191952 /* MBProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		946E58E11EBB7DCB006C7C22 /* SimpleOAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9434D5981EB690C200191952 /* SimpleOAuth2.framework */; };
+		946E58E21EBB7DCB006C7C22 /* SimpleOAuth2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9434D5981EB690C200191952 /* SimpleOAuth2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		946E58E41EBB7DF3006C7C22 /* BoxSimpleOAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9434D58E1EB68FC200191952 /* BoxSimpleOAuth.framework */; };
+		946E58E51EBB7DF3006C7C22 /* BoxSimpleOAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9434D58E1EB68FC200191952 /* BoxSimpleOAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BEE97E06BE00F432C9CC588E /* libPods-Specs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5016B9E6B4CD58C6799E9FE4 /* libPods-Specs.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		9434D5C41EB6953200191952 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF4CF4E61A1327990013D8A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9434D58D1EB68FC200191952;
+			remoteInfo = BoxSimpleOAuth;
+		};
+		946E58E61EBB7DF3006C7C22 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AF4CF4E61A1327990013D8A6 /* Project object */;
 			proxyType = 1;
@@ -68,6 +90,20 @@
 				9434D5CD1EB695DB00191952 /* libPods-Specs.a in Carthage Copy Files */,
 			);
 			name = "Carthage Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		946E58E31EBB7DCB006C7C22 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				946E58E51EBB7DF3006C7C22 /* BoxSimpleOAuth.framework in Embed Frameworks */,
+				946E58E21EBB7DCB006C7C22 /* SimpleOAuth2.framework in Embed Frameworks */,
+				946E58E01EBB7DCB006C7C22 /* MBProgressHUD.framework in Embed Frameworks */,
+				946E58DE1EBB7DCB006C7C22 /* AFNetworking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -111,6 +147,18 @@
 		9434D5E31EB6972C00191952 /* BoxTokenParametersSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxTokenParametersSpecs.m; sourceTree = "<group>"; };
 		9434D5E81EBAE94F00191952 /* BoxSimpleOAuthViewControllerXibSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxSimpleOAuthViewControllerXibSpecs.m; sourceTree = "<group>"; };
 		9434D5EA1EBAE99300191952 /* BoxSimpleOAuthViewControllerSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxSimpleOAuthViewControllerSpecs.m; sourceTree = "<group>"; };
+		946E58BE1EBB79B6006C7C22 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		946E58C11EBB79B6006C7C22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		946E58C31EBB79B6006C7C22 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		946E58C41EBB79B6006C7C22 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		946E58CA1EBB79B6006C7C22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		946E58CC1EBB79B6006C7C22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		946E58CF1EBB79B6006C7C22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		946E58D11EBB79B6006C7C22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		946E58D71EBB7B50006C7C22 /* JustAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JustAViewController.h; sourceTree = "<group>"; };
+		946E58D81EBB7B50006C7C22 /* JustAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JustAViewController.m; sourceTree = "<group>"; };
+		946E58D91EBB7B50006C7C22 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		946E58DA1EBB7B50006C7C22 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +181,17 @@
 				9434D5D01EB695F100191952 /* SimpleOAuth2.framework in Frameworks */,
 				9434D5C31EB6953200191952 /* BoxSimpleOAuth.framework in Frameworks */,
 				BEE97E06BE00F432C9CC588E /* libPods-Specs.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		946E58BB1EBB79B6006C7C22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				946E58E41EBB7DF3006C7C22 /* BoxSimpleOAuth.framework in Frameworks */,
+				946E58E11EBB7DCB006C7C22 /* SimpleOAuth2.framework in Frameworks */,
+				946E58DF1EBB7DCB006C7C22 /* MBProgressHUD.framework in Frameworks */,
+				946E58DD1EBB7DCB006C7C22 /* AFNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +282,48 @@
 			name = Utils;
 			sourceTree = "<group>";
 		};
+		946E58BF1EBB79B6006C7C22 /* DemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				946E58D61EBB7AD7006C7C22 /* AppCode */,
+				946E58D51EBB7AC2006C7C22 /* Resources */,
+				946E58C01EBB79B6006C7C22 /* Supporting Files */,
+			);
+			path = DemoApp;
+			sourceTree = "<group>";
+		};
+		946E58C01EBB79B6006C7C22 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				946E58D11EBB79B6006C7C22 /* Info.plist */,
+				946E58C11EBB79B6006C7C22 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		946E58D51EBB7AC2006C7C22 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				946E58CC1EBB79B6006C7C22 /* Assets.xcassets */,
+				946E58CE1EBB79B6006C7C22 /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		946E58D61EBB7AD7006C7C22 /* AppCode */ = {
+			isa = PBXGroup;
+			children = (
+				946E58C31EBB79B6006C7C22 /* AppDelegate.h */,
+				946E58C41EBB79B6006C7C22 /* AppDelegate.m */,
+				946E58D71EBB7B50006C7C22 /* JustAViewController.h */,
+				946E58D81EBB7B50006C7C22 /* JustAViewController.m */,
+				946E58D91EBB7B50006C7C22 /* MainViewController.h */,
+				946E58DA1EBB7B50006C7C22 /* MainViewController.m */,
+				946E58C91EBB79B6006C7C22 /* Main.storyboard */,
+			);
+			name = AppCode;
+			sourceTree = "<group>";
+		};
 		991CBF914F8C72753FE2E788 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +336,7 @@
 		AF4CF4E51A1327990013D8A6 = {
 			isa = PBXGroup;
 			children = (
+				946E58BF1EBB79B6006C7C22 /* DemoApp */,
 				9434D58F1EB68FC200191952 /* BoxSimpleOAuth */,
 				9434D5BF1EB6953200191952 /* Specs */,
 				AF4CF4EF1A1327990013D8A6 /* Products */,
@@ -248,6 +350,7 @@
 			children = (
 				9434D58E1EB68FC200191952 /* BoxSimpleOAuth.framework */,
 				9434D5BE1EB6953200191952 /* Specs.xctest */,
+				946E58BE1EBB79B6006C7C22 /* DemoApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -323,6 +426,25 @@
 			productReference = 9434D5BE1EB6953200191952 /* Specs.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		946E58BD1EBB79B6006C7C22 /* DemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 946E58D21EBB79B6006C7C22 /* Build configuration list for PBXNativeTarget "DemoApp" */;
+			buildPhases = (
+				946E58BA1EBB79B6006C7C22 /* Sources */,
+				946E58BB1EBB79B6006C7C22 /* Frameworks */,
+				946E58BC1EBB79B6006C7C22 /* Resources */,
+				946E58E31EBB7DCB006C7C22 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				946E58E71EBB7DF3006C7C22 /* PBXTargetDependency */,
+			);
+			name = DemoApp;
+			productName = DemoApp;
+			productReference = 946E58BE1EBB79B6006C7C22 /* DemoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -337,6 +459,10 @@
 						ProvisioningStyle = Automatic;
 					};
 					9434D5BD1EB6953200191952 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					946E58BD1EBB79B6006C7C22 = {
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -355,6 +481,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				946E58BD1EBB79B6006C7C22 /* DemoApp */,
 				9434D58D1EB68FC200191952 /* BoxSimpleOAuth */,
 				9434D5BD1EB6953200191952 /* Specs */,
 			);
@@ -374,6 +501,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		946E58BC1EBB79B6006C7C22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				946E58D01EBB79B6006C7C22 /* LaunchScreen.storyboard in Resources */,
+				946E58CD1EBB79B6006C7C22 /* Assets.xcassets in Resources */,
+				946E58CB1EBB79B6006C7C22 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +595,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		946E58BA1EBB79B6006C7C22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				946E58DB1EBB7B50006C7C22 /* JustAViewController.m in Sources */,
+				946E58C51EBB79B6006C7C22 /* AppDelegate.m in Sources */,
+				946E58C21EBB79B6006C7C22 /* main.m in Sources */,
+				946E58DC1EBB7B50006C7C22 /* MainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -466,7 +614,31 @@
 			target = 9434D58D1EB68FC200191952 /* BoxSimpleOAuth */;
 			targetProxy = 9434D5C41EB6953200191952 /* PBXContainerItemProxy */;
 		};
+		946E58E71EBB7DF3006C7C22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9434D58D1EB68FC200191952 /* BoxSimpleOAuth */;
+			targetProxy = 946E58E61EBB7DF3006C7C22 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		946E58C91EBB79B6006C7C22 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				946E58CA1EBB79B6006C7C22 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		946E58CE1EBB79B6006C7C22 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				946E58CF1EBB79B6006C7C22 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9434D5941EB68FC200191952 /* Debug */ = {
@@ -565,6 +737,47 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rkb.Specs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		946E58D31EBB79B6006C7C22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = DemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rkb.DemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		946E58D41EBB79B6006C7C22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = DemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rkb.DemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -674,6 +887,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		946E58D21EBB79B6006C7C22 /* Build configuration list for PBXNativeTarget "DemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				946E58D31EBB79B6006C7C22 /* Debug */,
+				946E58D41EBB79B6006C7C22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		AF4CF4E91A1327990013D8A6 /* Build configuration list for PBXProject "BoxSimpleOAuth" */ = {
 			isa = XCConfigurationList;

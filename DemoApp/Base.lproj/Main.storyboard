@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6cE-5k-tIC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="uKW-a5-mrd">
+            <objects>
+                <viewController id="6cE-5k-tIC" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hUC-Uj-JfH"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Rr-mb-7L4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dVh-pc-2tq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="co7-hN-V28" userLabel="presentInstagramVCButton">
+                                <rect key="frame" x="136.5" y="283.5" width="102" height="30"/>
+                                <state key="normal" title="Present BoxVC"/>
+                                <connections>
+                                    <action selector="presentBoxVCTapped:" destination="6cE-5k-tIC" eventType="touchUpInside" id="YDp-SR-fEx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rqh-gA-ErC" userLabel="instagramVCOnNavControllerButton">
+                                <rect key="frame" x="106" y="353.5" width="163" height="30"/>
+                                <state key="normal" title="BoxVC on navController"/>
+                                <connections>
+                                    <segue destination="Sc1-g6-hFk" kind="presentation" id="xq3-xL-RPp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Rqh-gA-ErC" firstAttribute="centerX" secondItem="dVh-pc-2tq" secondAttribute="centerX" id="4J8-Wn-9l2"/>
+                            <constraint firstItem="Rqh-gA-ErC" firstAttribute="top" secondItem="dVh-pc-2tq" secondAttribute="centerY" constant="20" id="E2b-On-u2z"/>
+                            <constraint firstAttribute="centerY" secondItem="co7-hN-V28" secondAttribute="bottom" constant="20" id="d9K-ZZ-zUH"/>
+                            <constraint firstItem="co7-hN-V28" firstAttribute="centerX" secondItem="dVh-pc-2tq" secondAttribute="centerX" id="z0i-b9-pFL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Ay-6d-V2g" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1297" y="-251"/>
+        </scene>
+        <!--JustA View Controller-->
+        <scene sceneID="hdg-rn-pu3">
+            <objects>
+                <viewController id="zI6-o1-CyQ" customClass="JustAViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2be-tE-CeM"/>
+                        <viewControllerLayoutGuide type="bottom" id="aFw-Az-DDD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Vh-k4-1Ln">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bc-IE-B5l">
+                                <rect key="frame" x="100" y="318" width="174" height="30"/>
+                                <state key="normal" title="Push BoxVC on nav stack"/>
+                                <connections>
+                                    <action selector="pushBoxVCOnNavStackTapped:" destination="zI6-o1-CyQ" eventType="touchUpInside" id="CnU-L4-36v"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5bc-IE-B5l" firstAttribute="centerY" secondItem="6Vh-k4-1Ln" secondAttribute="centerY" id="MG1-DW-Dve"/>
+                            <constraint firstItem="5bc-IE-B5l" firstAttribute="centerX" secondItem="6Vh-k4-1Ln" secondAttribute="centerX" id="x3J-8T-vDv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KmJ-4b-GUI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GBL-Hh-Vl4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="506" y="242"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zRL-um-jNU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Sc1-g6-hFk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="A9F-lo-veY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zI6-o1-CyQ" kind="relationship" relationship="rootViewController" id="isY-9q-X0c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ER-Wc-YdE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-394" y="242"/>
+        </scene>
+    </scenes>
+</document>
