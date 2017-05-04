@@ -3,6 +3,6 @@
 # Install Gem Dependencies
 bundle
 
-# Install Cocoapod Dependencies
+# Install Project Dependencies
 bundle exec pod install
-
+carthage bootstrap --platform iOS

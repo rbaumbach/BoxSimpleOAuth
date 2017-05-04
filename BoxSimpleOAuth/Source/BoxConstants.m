@@ -1,4 +1,4 @@
-//Copyright (c) 2016 Ryan Baumbach <github@ryan.codes>
+//Copyright (c) 2017 Ryan Baumbach <github@ryan.codes>
 //
 //Permission is hereby granted, free of charge, to any person obtaining
 //a copy of this software and associated documentation files (the "Software"),
@@ -19,7 +19,6 @@
 //OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 //WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-@import Foundation;
-
+#import "BoxConstants.h"
 
 NSString *const BoxAuthURL = @"https://app.box.com";

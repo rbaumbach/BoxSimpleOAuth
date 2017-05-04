@@ -1,14 +1,12 @@
 #import <Expecta/Expecta.h>
 #import <Specta/Specta.h>
-#import <OCMock/OCMock.h>
-#import <SimpleOAuth2/SimpleOAuth2.h>
+
 #import "FakeBoxOAuthResponse.h"
 #import "FakeSimpleOAuth2AuthenticationManager.h"
 #import "BoxAuthenticationManager.h"
 #import "BoxLoginResponse.h"
 #import "BoxTokenParameters.h"
 #import "BoxRefreshTokenParameters.h"
-
 
 @interface BoxAuthenticationManager ()
 
@@ -19,7 +17,7 @@
 
 @end
 
-SpecBegin(BoxAuthenticationManagerTests)
+SpecBegin(BoxAuthenticationManager)
 
 describe(@"BoxAuthenticationManager", ^{
     __block BoxAuthenticationManager *boxAuthenticationManager;
@@ -97,7 +95,7 @@ describe(@"BoxAuthenticationManager", ^{
             __block id fakeError;
             
             beforeEach(^{
-                fakeError = OCMClassMock([NSError class]);
+                fakeError = [NSError errorWithDomain:@"fake domain" code:99 userInfo:nil];
                 
                 if (fakeSimpleAuthManager.failure) {
                     // This is here because the Expecta short hand methods #define "failure"
@@ -154,7 +152,7 @@ describe(@"BoxAuthenticationManager", ^{
             __block id fakeError;
             
             beforeEach(^{
-                fakeError = OCMClassMock([NSError class]);
+                fakeError = [NSError errorWithDomain:@"fake domain" code:99 userInfo:nil];
                 
                 if (fakeSimpleAuthManager.failure) {
                     // This is here because the Expecta short hand methods #define "failure"

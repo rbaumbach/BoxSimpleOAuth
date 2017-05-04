@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AF4CF4ED1A1327990013D8A6"
-               BuildableName = "BoxSimpleOAuth.app"
+               BlueprintIdentifier = "9434D58D1EB68FC200191952"
+               BuildableName = "BoxSimpleOAuth.framework"
                BlueprintName = "BoxSimpleOAuth"
                ReferencedContainer = "container:BoxSimpleOAuth.xcodeproj">
             </BuildableReference>
@@ -46,9 +46,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AF4CF5061A1327990013D8A6"
-               BuildableName = "BoxSimpleOAuthTests.xctest"
-               BlueprintName = "BoxSimpleOAuthTests"
+               BlueprintIdentifier = "9434D5BD1EB6953200191952"
+               BuildableName = "Specs.xctest"
+               BlueprintName = "Specs"
                ReferencedContainer = "container:BoxSimpleOAuth.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -56,8 +56,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AF4CF4ED1A1327990013D8A6"
-            BuildableName = "BoxSimpleOAuth.app"
+            BlueprintIdentifier = "9434D58D1EB68FC200191952"
+            BuildableName = "BoxSimpleOAuth.framework"
             BlueprintName = "BoxSimpleOAuth"
             ReferencedContainer = "container:BoxSimpleOAuth.xcodeproj">
          </BuildableReference>
@@ -79,8 +79,8 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AF4CF4ED1A1327990013D8A6"
-            BuildableName = "BoxSimpleOAuth.app"
+            BlueprintIdentifier = "9434D58D1EB68FC200191952"
+            BuildableName = "BoxSimpleOAuth.framework"
             BlueprintName = "BoxSimpleOAuth"
             ReferencedContainer = "container:BoxSimpleOAuth.xcodeproj">
          </BuildableReference>
@@ -98,8 +98,8 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AF4CF4ED1A1327990013D8A6"
-            BuildableName = "BoxSimpleOAuth.app"
+            BlueprintIdentifier = "9434D58D1EB68FC200191952"
+            BuildableName = "BoxSimpleOAuth.framework"
             BlueprintName = "BoxSimpleOAuth"
             ReferencedContainer = "container:BoxSimpleOAuth.xcodeproj">
          </BuildableReference>

@@ -1,6 +1,5 @@
 #import "FakeBoxOAuthResponse.h"
 
-
 @implementation FakeBoxOAuthResponse
 
 + (NSDictionary *)response

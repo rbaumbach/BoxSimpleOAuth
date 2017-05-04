@@ -1,6 +1,5 @@
 #import "FakeBoxAuthenticationManager.h"
 
-
 @implementation FakeBoxAuthenticationManager
 
 - (void)authenticateClientWithAuthCode:(NSString *)authCode

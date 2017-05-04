@@ -1,5 +1,6 @@
 #import <Expecta/Expecta.h>
 #import <Specta/Specta.h>
+
 #import "BoxSimpleOAuth.h"
 #import "NSLayoutConstraint+TestUtils.h"
 
@@ -14,7 +15,10 @@ describe(@"BoxSimpleOAuthViewControllerXib", ^{
     beforeEach(^{
         // controller is only loaded for ownership needs when loading the nib from the bundle
         controller = [[BoxSimpleOAuthViewController alloc] init];
-        NSArray *nibViews = [[NSBundle mainBundle] loadNibNamed:@"BoxSimpleOAuthViewController"
+        
+        NSBundle *bundle = [NSBundle bundleForClass:[BoxSimpleOAuthViewController class]];
+        
+        NSArray *nibViews = [bundle loadNibNamed:@"BoxSimpleOAuthViewController"
                                                           owner:controller
                                                         options:nil];
         

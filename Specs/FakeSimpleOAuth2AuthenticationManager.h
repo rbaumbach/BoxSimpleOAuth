@@ -1,5 +1,4 @@
-#import "SimpleOAuth2AuthenticationManager.h"
-
+#import <SimpleOAuth2/SimpleOAuth2.h>
 
 @interface FakeSimpleOAuth2AuthenticationManager : SimpleOAuth2AuthenticationManager
 

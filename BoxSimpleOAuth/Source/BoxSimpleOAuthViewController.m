@@ -1,4 +1,4 @@
-//Copyright (c) 2016 Ryan Baumbach <github@ryan.codes>
+//Copyright (c) 2017 Ryan Baumbach <github@ryan.codes>
 //
 //Permission is hereby granted, free of charge, to any person obtaining
 //a copy of this software and associated documentation files (the "Software"),
@@ -21,10 +21,10 @@
 
 #import <MBProgressHUD/MBProgressHUD.h>
 #import <SimpleOAuth2/SimpleOAuth2.h>
+
 #import "BoxSimpleOAuthViewController.h"
 #import "BoxConstants.h"
 #import "BoxAuthenticationManager.h"
-
 
 NSString *const BoxAuthClientIDEndpoint = @"/api/oauth2/authorize?client_id=";
 NSString *const BoxAuthRequestParams = @"&response_type=code&redirect_uri=";
@@ -48,7 +48,7 @@ NSString *const BoxLoginCancelButtonTitle = @"OK";
                      callbackURL:(NSURL *)callbackURL
                       completion:(void (^)(BoxLoginResponse *response, NSError *error))completion
 {
-    self = [super init];
+    self = [super initWithNibName:@"BoxSimpleOAuthViewController" bundle:[NSBundle bundleForClass:[BoxSimpleOAuthViewController class]]];
     if (self) {
         self.clientID = clientID;
         self.clientSecret = clientSecret;

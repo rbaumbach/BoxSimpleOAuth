@@ -4,10 +4,9 @@
 #import <Swizzlean/Swizzlean.h>
 #import <SimpleOAuth2/SimpleOAuth2.h>
 #import <MBProgressHUD/MBProgressHUD.h>
+
 #import "BoxSimpleOAuth.h"
 #import "FakeBoxAuthenticationManager.h"
-#import "UIAlertView+TestUtils.h"
-
 
 @interface BoxSimpleOAuthViewController () <UIWebViewDelegate>
 
@@ -40,11 +39,7 @@ describe(@"BoxSimpleOAuthViewController", ^{
                                                                      retError = error;
                                                                  }];
     });
-    
-    afterEach(^{
-        [UIAlertView reset];
-    });
-    
+
     describe(@"init", ^{
         it(@"calls -initWithAppKey:appSecret:callbackURL:completion: with nil parameters", ^{
             BoxSimpleOAuthViewController *basicController = [[BoxSimpleOAuthViewController alloc] init];
@@ -243,10 +238,27 @@ describe(@"BoxSimpleOAuthViewController", ^{
                 
                 context(@"failure while attempting to get auth token from box", ^{
                     __block id partialMock;
+                    __block Swizzlean *presentViewSwizz;
+                    __block UIViewController *retViewController;
+                    __block BOOL retAnimated;
+                    __block id retCompleted;
+
                     __block NSError *bogusError;
                     
                     beforeEach(^{
+                        presentViewSwizz = [[Swizzlean alloc] initWithClassToSwizzle:[UIViewController class]];
+                        [presentViewSwizz swizzleInstanceMethod:@selector(presentViewController:animated:completion:)
+                                  withReplacementImplementation:^(id _self, UIViewController *viewController, BOOL animated, id completion) {
+                                      retViewController = viewController;
+                                      retAnimated = animated;
+                                      retCompleted = [completion copy];
+                                  }];
+                        
                         bogusError = [[NSError alloc] initWithDomain:@"bogusDomain" code:177 userInfo:@{ @"NSLocalizedDescription" : @"boooogussss"}];
+                    });
+                    
+                    afterEach(^{
+                        retViewController = nil;
                     });
                     
                     context(@"shouldShowErrorAlert == YES", ^{
@@ -255,10 +267,11 @@ describe(@"BoxSimpleOAuthViewController", ^{
                             [controller webView:fakeWebView didFailLoadWithError:bogusError];
                         });
                         
-                        it(@"displays a UIAlertView with proper error", ^{
-                            UIAlertView *errorAlert = [UIAlertView currentAlertView];
-                            expect(errorAlert.title).to.equal(@"Box Login Error");
-                            expect(errorAlert.message).to.equal(@"bogusDomain - boooogussss");
+                        it(@"displays a UIAlertController with proper error", ^{
+                            UIAlertController *errorAlertController = (UIAlertController *)retViewController;
+                            
+                            expect(errorAlertController.title).to.equal(@"Box Login Error");
+                            expect(errorAlertController.message).to.equal(@"bogusDomain - boooogussss");
                         });
                     });
                     
@@ -268,9 +281,10 @@ describe(@"BoxSimpleOAuthViewController", ^{
                             [controller webView:fakeWebView didFailLoadWithError:bogusError];
                         });
                         
-                        it(@"does not display alert view for the error", ^{
-                            UIAlertView *errorAlert = [UIAlertView currentAlertView];
-                            expect(errorAlert).to.beNil();
+                        it(@"does not display UIAlertController for the error", ^{
+                            UIAlertController *errorAlertController = (UIAlertController *)retViewController;
+                            
+                            expect(errorAlertController).to.beNil();
                         });
                     });
                     
@@ -379,10 +393,26 @@ describe(@"BoxSimpleOAuthViewController", ^{
         
         describe(@"#webView:didFailLoadWithError:", ^{
             __block id hudClassMethodMock;
+            __block Swizzlean *presentViewSwizz;
+            __block UIViewController *retViewController;
+            __block BOOL retAnimated;
+            __block id retCompleted;
             __block NSError *bogusRequestError;
             
             beforeEach(^{
                 hudClassMethodMock = OCMClassMock([MBProgressHUD class]);
+                
+                presentViewSwizz = [[Swizzlean alloc] initWithClassToSwizzle:[UIViewController class]];
+                [presentViewSwizz swizzleInstanceMethod:@selector(presentViewController:animated:completion:)
+                          withReplacementImplementation:^(id _self, UIViewController *viewController, BOOL animated, id completion) {
+                              retViewController = viewController;
+                              retAnimated = animated;
+                              retCompleted = [completion copy];
+                          }];
+            });
+            
+            afterEach(^{
+                retViewController = nil;
             });
             
             context(@"error code 102 (WebKitErrorDomain)", ^{
@@ -394,9 +424,9 @@ describe(@"BoxSimpleOAuthViewController", ^{
                     [controller webView:fakeWebView didFailLoadWithError:bogusRequestError];
                 });
                 
-                it(@"does not display alert view for the error", ^{
-                    UIAlertView *errorAlert = [UIAlertView currentAlertView];
-                    expect(errorAlert).to.beNil();
+                it(@"does not display UIAlertController for the error", ^{
+                    UIAlertController *errorAlertController = (UIAlertController *)retViewController;
+                    expect(errorAlertController).to.beNil();
                 });
                 
                 it(@"removes the progress HUD", ^{
@@ -420,10 +450,10 @@ describe(@"BoxSimpleOAuthViewController", ^{
                         [controller webView:fakeWebView didFailLoadWithError:bogusRequestError];
                     });
                     
-                    it(@"displays a UIAlertView with proper error", ^{
-                        UIAlertView *errorAlert = [UIAlertView currentAlertView];
-                        expect(errorAlert.title).to.equal(@"Box Login Error");
-                        expect(errorAlert.message).to.equal(@"NSURLBlowUpDomainBOOM - You have no internetz and what not");
+                    it(@"displays a UIAlertController with proper error", ^{
+                        UIAlertController *errorAlertController = (UIAlertController *)retViewController;
+                        expect(errorAlertController.title).to.equal(@"Box Login Error");
+                        expect(errorAlertController.message).to.equal(@"NSURLBlowUpDomainBOOM - You have no internetz and what not");
                     });
                 });
                 
@@ -433,9 +463,9 @@ describe(@"BoxSimpleOAuthViewController", ^{
                         [controller webView:fakeWebView didFailLoadWithError:bogusRequestError];
                     });
                     
-                    it(@"does not display alert view for the error", ^{
-                        UIAlertView *errorAlert = [UIAlertView currentAlertView];
-                        expect(errorAlert).to.beNil();
+                    it(@"does not display UIAlertController for the error", ^{
+                        UIAlertController *errorAlertController = (UIAlertController *)retViewController;
+                        expect(errorAlertController).to.beNil();
                     });
                 });
                 

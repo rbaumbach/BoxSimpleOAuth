@@ -1,11 +1,10 @@
 #import <Expecta/Expecta.h>
 #import <Specta/Specta.h>
-#import <OCMock/OCMock.h>
+
 #import "BoxSimpleOAuth.h"
 #import "FakeBoxOAuthResponse.h"
 
-
-SpecBegin(BoxLoginResponseTests)
+SpecBegin(BoxLoginResponse)
 
 describe(@"BoxLoginResponse", ^{
     __block BoxLoginResponse *loginResponse;

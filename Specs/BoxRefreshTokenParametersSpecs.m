@@ -1,20 +1,18 @@
 #import <Expecta/Expecta.h>
 #import <Specta/Specta.h>
-#import <OCMock/OCMock.h>
-#import "BoxTokenParameters.h"
 
+#import "BoxRefreshTokenParameters.h"
 
-SpecBegin(BoxTokenParametersTests)
+SpecBegin(BoxRefreshTokenParameters)
 
-describe(@"BoxTokenParameters", ^{
-    __block BoxTokenParameters *tokenParameters;
+describe(@"BoxRefreshTokenParameters", ^{
+    __block BoxRefreshTokenParameters *tokenParameters;
     
     beforeEach(^{
-        tokenParameters = [[BoxTokenParameters alloc] init];
+        tokenParameters = [[BoxRefreshTokenParameters alloc] init];
         tokenParameters.clientID = @"client";
         tokenParameters.clientSecret = @"secret";
-        tokenParameters.callbackURLString = @"http://whatever.com";
-        tokenParameters.authorizationCode = @"iua0f9us09iasdf";
+        tokenParameters.refreshToken = @"i-got-the-hookup";
     });
     
     it(@"has clientID", ^{
@@ -25,12 +23,8 @@ describe(@"BoxTokenParameters", ^{
         expect(tokenParameters.clientSecret).to.equal(@"secret");
     });
     
-    it(@"has callbackURLString", ^{
-        expect(tokenParameters.callbackURLString).to.equal(@"http://whatever.com");
-    });
-    
-    it(@"has authorizationCode", ^{
-        expect(tokenParameters.authorizationCode).to.equal(@"iua0f9us09iasdf");
+    it(@"has refresh token", ^{
+        expect(tokenParameters.refreshToken).to.equal(@"i-got-the-hookup");
     });
     
     describe(@"<TokenParameters>", ^{
@@ -44,9 +38,8 @@ describe(@"BoxTokenParameters", ^{
             it(@"builds tokenParameters dictionary", ^{
                 NSDictionary *expectedTokenParametersDict = @{ @"client_id"     : tokenParameters.clientID,
                                                                @"client_secret" : tokenParameters.clientSecret,
-                                                               @"grant_type"    : @"authorization_code",
-                                                               @"redirect_uri"  : tokenParameters.callbackURLString,
-                                                               @"code"          : tokenParameters.authorizationCode
+                                                               @"grant_type"    : @"refresh_token",
+                                                               @"refresh_token" : tokenParameters.refreshToken
                                                              };
                 
                 expect(tokenParametersDict).to.equal(expectedTokenParametersDict);

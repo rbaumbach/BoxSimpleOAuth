@@ -7,128 +7,227 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C337912D034EAA0992F3D33 /* libPods-BoxSimpleOAuthTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A02C51345717EAC558ED1EF0 /* libPods-BoxSimpleOAuthTests.a */; };
-		9402BF431C84095C00EE7BC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9402BF3C1C84095C00EE7BC1 /* AppDelegate.m */; };
-		9402BF441C84095C00EE7BC1 /* JustAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9402BF3E1C84095C00EE7BC1 /* JustAViewController.m */; };
-		9402BF451C84095C00EE7BC1 /* JustAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9402BF3F1C84095C00EE7BC1 /* JustAViewController.xib */; };
-		9402BF461C84095C00EE7BC1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9402BF411C84095C00EE7BC1 /* MainViewController.m */; };
-		9402BF471C84095C00EE7BC1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9402BF421C84095C00EE7BC1 /* MainViewController.xib */; };
-		948DC4B11C83DB40000E0E87 /* FakeSimpleOAuth2AuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 948DC4B01C83DB40000E0E87 /* FakeSimpleOAuth2AuthenticationManager.m */; };
-		9F83E2D12785206BBC1E7711 /* libPods-BoxSimpleOAuth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1E4FA6D1AE75F7F02A78F3 /* libPods-BoxSimpleOAuth.a */; };
-		AF27D4331A16513500820FC2 /* BoxConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = AF27D4321A16513500820FC2 /* BoxConstants.m */; };
-		AF4CF4F41A1327990013D8A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4CF4F31A1327990013D8A6 /* main.m */; };
-		AF4CF4FF1A1327990013D8A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF4CF4FE1A1327990013D8A6 /* Images.xcassets */; };
-		AF4CF5021A1327990013D8A6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF4CF5001A1327990013D8A6 /* LaunchScreen.xib */; };
-		AF4CF50E1A1327990013D8A6 /* BoxSimpleOAuthViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4CF50D1A1327990013D8A6 /* BoxSimpleOAuthViewControllerTests.m */; };
-		AF4CF51A1A132B4B0013D8A6 /* BoxSimpleOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4CF5191A132B4B0013D8A6 /* BoxSimpleOAuthViewController.m */; };
-		AF8AAFB21A13A94000147063 /* BoxSimpleOAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF8AAFB11A13A94000147063 /* BoxSimpleOAuthViewController.xib */; };
-		AF8AAFB51A13A9C100147063 /* BoxLoginResponseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8AAFB41A13A9C100147063 /* BoxLoginResponseTests.m */; };
-		AF8AAFB91A13AA3500147063 /* FakeBoxOAuthResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8AAFB81A13AA3500147063 /* FakeBoxOAuthResponse.m */; };
-		AF8AAFBC1A13AB8100147063 /* BoxLoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8AAFBB1A13AB8100147063 /* BoxLoginResponse.m */; };
-		AFC0AAE81A17BD4E00025EF8 /* UIAlertView+TestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AAE71A17BD4E00025EF8 /* UIAlertView+TestUtils.m */; };
-		AFC0AAEB1A17BD8B00025EF8 /* NSLayoutConstraint+TestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AAEA1A17BD8B00025EF8 /* NSLayoutConstraint+TestUtils.m */; };
-		AFC0AAED1A17C95400025EF8 /* BoxAuthenticationManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AAEC1A17C95400025EF8 /* BoxAuthenticationManagerTests.m */; };
-		AFC0AAF41A17CA9800025EF8 /* BoxAuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AAF31A17CA9800025EF8 /* BoxAuthenticationManager.m */; };
-		AFC0AAF81A17CB7400025EF8 /* BoxTokenParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AAF71A17CB7400025EF8 /* BoxTokenParameters.m */; };
-		AFC0AAFB1A17CD7F00025EF8 /* BoxTokenParametersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AAFA1A17CD7F00025EF8 /* BoxTokenParametersTests.m */; };
-		AFC0AAFE1A17D5B800025EF8 /* FakeBoxAuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC0AAFD1A17D5B800025EF8 /* FakeBoxAuthenticationManager.m */; };
-		AFC3EBB41A19BA130089FEB4 /* BoxRefreshTokenParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC3EBB31A19BA130089FEB4 /* BoxRefreshTokenParameters.m */; };
-		AFC3EBB71A19BFD80089FEB4 /* BoxRefreshTokenParametersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC3EBB61A19BFD80089FEB4 /* BoxRefreshTokenParametersTests.m */; };
-		AFC5CD4F1A171C32006A95C0 /* BoxSimpleOAuthViewControllerXibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC5CD4E1A171C32006A95C0 /* BoxSimpleOAuthViewControllerXibTests.m */; };
+		9434D5991EB690C200191952 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9434D5961EB690C200191952 /* AFNetworking.framework */; };
+		9434D59A1EB690C200191952 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9434D5971EB690C200191952 /* MBProgressHUD.framework */; };
+		9434D59B1EB690C200191952 /* SimpleOAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9434D5981EB690C200191952 /* SimpleOAuth2.framework */; };
+		9434D5AB1EB6918100191952 /* BoxAuthenticationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9434D59D1EB6918100191952 /* BoxAuthenticationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9434D5AC1EB6918100191952 /* BoxAuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9434D59E1EB6918100191952 /* BoxAuthenticationManager.m */; };
+		9434D5AD1EB6918100191952 /* BoxConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 9434D59F1EB6918100191952 /* BoxConstants.h */; };
+		9434D5AE1EB6918100191952 /* BoxConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 9434D5A01EB6918100191952 /* BoxConstants.m */; };
+		9434D5AF1EB6918100191952 /* BoxLoginResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 9434D5A11EB6918100191952 /* BoxLoginResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9434D5B01EB6918100191952 /* BoxLoginResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9434D5A21EB6918100191952 /* BoxLoginResponse.m */; };
+		9434D5B11EB6918100191952 /* BoxRefreshTokenParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 9434D5A31EB6918100191952 /* BoxRefreshTokenParameters.h */; };
+		9434D5B21EB6918100191952 /* BoxRefreshTokenParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 9434D5A41EB6918100191952 /* BoxRefreshTokenParameters.m */; };
+		9434D5B31EB6918100191952 /* BoxSimpleOAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 9434D5A51EB6918100191952 /* BoxSimpleOAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9434D5B41EB6918100191952 /* BoxSimpleOAuthViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9434D5A61EB6918100191952 /* BoxSimpleOAuthViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9434D5B51EB6918100191952 /* BoxSimpleOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9434D5A71EB6918100191952 /* BoxSimpleOAuthViewController.m */; };
+		9434D5B61EB6918100191952 /* BoxSimpleOAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9434D5A81EB6918100191952 /* BoxSimpleOAuthViewController.xib */; };
+		9434D5B71EB6918100191952 /* BoxTokenParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 9434D5A91EB6918100191952 /* BoxTokenParameters.h */; };
+		9434D5B81EB6918100191952 /* BoxTokenParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 9434D5AA1EB6918100191952 /* BoxTokenParameters.m */; };
+		9434D5C31EB6953200191952 /* BoxSimpleOAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9434D58E1EB68FC200191952 /* BoxSimpleOAuth.framework */; };
+		9434D5CA1EB695D200191952 /* AFNetworking.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 9434D5961EB690C200191952 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9434D5CB1EB695D200191952 /* MBProgressHUD.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 9434D5971EB690C200191952 /* MBProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9434D5CC1EB695D200191952 /* SimpleOAuth2.framework in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 9434D5981EB690C200191952 /* SimpleOAuth2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9434D5CD1EB695DB00191952 /* libPods-Specs.a in Carthage Copy Files */ = {isa = PBXBuildFile; fileRef = 5016B9E6B4CD58C6799E9FE4 /* libPods-Specs.a */; };
+		9434D5CE1EB695F100191952 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9434D5961EB690C200191952 /* AFNetworking.framework */; };
+		9434D5CF1EB695F100191952 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9434D5971EB690C200191952 /* MBProgressHUD.framework */; };
+		9434D5D01EB695F100191952 /* SimpleOAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9434D5981EB690C200191952 /* SimpleOAuth2.framework */; };
+		9434D5DA1EB6970E00191952 /* FakeBoxAuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9434D5D51EB6970E00191952 /* FakeBoxAuthenticationManager.m */; };
+		9434D5DB1EB6970E00191952 /* FakeBoxOAuthResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9434D5D71EB6970E00191952 /* FakeBoxOAuthResponse.m */; };
+		9434D5DC1EB6970E00191952 /* FakeSimpleOAuth2AuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9434D5D91EB6970E00191952 /* FakeSimpleOAuth2AuthenticationManager.m */; };
+		9434D5DF1EB6971900191952 /* NSLayoutConstraint+TestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9434D5DE1EB6971900191952 /* NSLayoutConstraint+TestUtils.m */; };
+		9434D5E41EB6972C00191952 /* BoxAuthenticationManagerSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 9434D5E01EB6972C00191952 /* BoxAuthenticationManagerSpecs.m */; };
+		9434D5E51EB6972C00191952 /* BoxLoginResponseSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 9434D5E11EB6972C00191952 /* BoxLoginResponseSpecs.m */; };
+		9434D5E61EB6972C00191952 /* BoxRefreshTokenParametersSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 9434D5E21EB6972C00191952 /* BoxRefreshTokenParametersSpecs.m */; };
+		9434D5E71EB6972C00191952 /* BoxTokenParametersSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 9434D5E31EB6972C00191952 /* BoxTokenParametersSpecs.m */; };
+		9434D5E91EBAE94F00191952 /* BoxSimpleOAuthViewControllerXibSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 9434D5E81EBAE94F00191952 /* BoxSimpleOAuthViewControllerXibSpecs.m */; };
+		9434D5EB1EBAE99300191952 /* BoxSimpleOAuthViewControllerSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 9434D5EA1EBAE99300191952 /* BoxSimpleOAuthViewControllerSpecs.m */; };
+		BEE97E06BE00F432C9CC588E /* libPods-Specs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5016B9E6B4CD58C6799E9FE4 /* libPods-Specs.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AF4CF5081A1327990013D8A6 /* PBXContainerItemProxy */ = {
+		9434D5C41EB6953200191952 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AF4CF4E61A1327990013D8A6 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AF4CF4ED1A1327990013D8A6;
+			remoteGlobalIDString = 9434D58D1EB68FC200191952;
 			remoteInfo = BoxSimpleOAuth;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9434D5C91EB695BE00191952 /* Carthage Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9434D5CA1EB695D200191952 /* AFNetworking.framework in Carthage Copy Files */,
+				9434D5CB1EB695D200191952 /* MBProgressHUD.framework in Carthage Copy Files */,
+				9434D5CC1EB695D200191952 /* SimpleOAuth2.framework in Carthage Copy Files */,
+				9434D5CD1EB695DB00191952 /* libPods-Specs.a in Carthage Copy Files */,
+			);
+			name = "Carthage Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		14B68633E9EAEF06C4EE8CB4 /* Pods-BoxSimpleOAuthTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxSimpleOAuthTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BoxSimpleOAuthTests/Pods-BoxSimpleOAuthTests.debug.xcconfig"; sourceTree = "<group>"; };
-		217E0269AA46094B0A933526 /* Pods-BoxSimpleOAuthTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxSimpleOAuthTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BoxSimpleOAuthTests/Pods-BoxSimpleOAuthTests.release.xcconfig"; sourceTree = "<group>"; };
-		3B1E4FA6D1AE75F7F02A78F3 /* libPods-BoxSimpleOAuth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BoxSimpleOAuth.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F4436E82683E65243BC7448 /* Pods-BoxSimpleOAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxSimpleOAuth.release.xcconfig"; path = "Pods/Target Support Files/Pods-BoxSimpleOAuth/Pods-BoxSimpleOAuth.release.xcconfig"; sourceTree = "<group>"; };
-		9402BF3B1C84095C00EE7BC1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AppCode/AppDelegate.h; sourceTree = "<group>"; };
-		9402BF3C1C84095C00EE7BC1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = AppCode/AppDelegate.m; sourceTree = "<group>"; };
-		9402BF3D1C84095C00EE7BC1 /* JustAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JustAViewController.h; path = AppCode/JustAViewController.h; sourceTree = "<group>"; };
-		9402BF3E1C84095C00EE7BC1 /* JustAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JustAViewController.m; path = AppCode/JustAViewController.m; sourceTree = "<group>"; };
-		9402BF3F1C84095C00EE7BC1 /* JustAViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JustAViewController.xib; path = AppCode/JustAViewController.xib; sourceTree = "<group>"; };
-		9402BF401C84095C00EE7BC1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = AppCode/MainViewController.h; sourceTree = "<group>"; };
-		9402BF411C84095C00EE7BC1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = AppCode/MainViewController.m; sourceTree = "<group>"; };
-		9402BF421C84095C00EE7BC1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainViewController.xib; path = AppCode/MainViewController.xib; sourceTree = "<group>"; };
-		948DC4AF1C83DB40000E0E87 /* FakeSimpleOAuth2AuthenticationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeSimpleOAuth2AuthenticationManager.h; sourceTree = "<group>"; };
-		948DC4B01C83DB40000E0E87 /* FakeSimpleOAuth2AuthenticationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeSimpleOAuth2AuthenticationManager.m; sourceTree = "<group>"; };
-		A02C51345717EAC558ED1EF0 /* libPods-BoxSimpleOAuthTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BoxSimpleOAuthTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF27D4301A164EB100820FC2 /* BoxSimpleOAuth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BoxSimpleOAuth.h; path = Source/BoxSimpleOAuth.h; sourceTree = "<group>"; };
-		AF27D4311A16513500820FC2 /* BoxConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoxConstants.h; path = Source/BoxConstants.h; sourceTree = "<group>"; };
-		AF27D4321A16513500820FC2 /* BoxConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoxConstants.m; path = Source/BoxConstants.m; sourceTree = "<group>"; };
-		AF4CF4EE1A1327990013D8A6 /* BoxSimpleOAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoxSimpleOAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF4CF4F21A1327990013D8A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF4CF4F31A1327990013D8A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AF4CF4FE1A1327990013D8A6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		AF4CF5011A1327990013D8A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		AF4CF5071A1327990013D8A6 /* BoxSimpleOAuthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoxSimpleOAuthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF4CF50C1A1327990013D8A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AF4CF50D1A1327990013D8A6 /* BoxSimpleOAuthViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoxSimpleOAuthViewControllerTests.m; sourceTree = "<group>"; };
-		AF4CF5181A132B4B0013D8A6 /* BoxSimpleOAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoxSimpleOAuthViewController.h; path = Source/BoxSimpleOAuthViewController.h; sourceTree = "<group>"; };
-		AF4CF5191A132B4B0013D8A6 /* BoxSimpleOAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoxSimpleOAuthViewController.m; path = Source/BoxSimpleOAuthViewController.m; sourceTree = "<group>"; };
-		AF8AAFB11A13A94000147063 /* BoxSimpleOAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BoxSimpleOAuthViewController.xib; path = Source/BoxSimpleOAuthViewController.xib; sourceTree = "<group>"; };
-		AF8AAFB41A13A9C100147063 /* BoxLoginResponseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxLoginResponseTests.m; sourceTree = "<group>"; };
-		AF8AAFB71A13AA3500147063 /* FakeBoxOAuthResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeBoxOAuthResponse.h; sourceTree = "<group>"; };
-		AF8AAFB81A13AA3500147063 /* FakeBoxOAuthResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeBoxOAuthResponse.m; sourceTree = "<group>"; };
-		AF8AAFBA1A13AB8100147063 /* BoxLoginResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoxLoginResponse.h; path = Source/BoxLoginResponse.h; sourceTree = "<group>"; };
-		AF8AAFBB1A13AB8100147063 /* BoxLoginResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoxLoginResponse.m; path = Source/BoxLoginResponse.m; sourceTree = "<group>"; };
-		AFC0AAE61A17BD4E00025EF8 /* UIAlertView+TestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+TestUtils.h"; sourceTree = "<group>"; };
-		AFC0AAE71A17BD4E00025EF8 /* UIAlertView+TestUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+TestUtils.m"; sourceTree = "<group>"; };
-		AFC0AAE91A17BD8B00025EF8 /* NSLayoutConstraint+TestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+TestUtils.h"; sourceTree = "<group>"; };
-		AFC0AAEA1A17BD8B00025EF8 /* NSLayoutConstraint+TestUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+TestUtils.m"; sourceTree = "<group>"; };
-		AFC0AAEC1A17C95400025EF8 /* BoxAuthenticationManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxAuthenticationManagerTests.m; sourceTree = "<group>"; };
-		AFC0AAF21A17CA9800025EF8 /* BoxAuthenticationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoxAuthenticationManager.h; path = Source/BoxAuthenticationManager.h; sourceTree = "<group>"; };
-		AFC0AAF31A17CA9800025EF8 /* BoxAuthenticationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoxAuthenticationManager.m; path = Source/BoxAuthenticationManager.m; sourceTree = "<group>"; };
-		AFC0AAF61A17CB7400025EF8 /* BoxTokenParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoxTokenParameters.h; path = Source/BoxTokenParameters.h; sourceTree = "<group>"; };
-		AFC0AAF71A17CB7400025EF8 /* BoxTokenParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoxTokenParameters.m; path = Source/BoxTokenParameters.m; sourceTree = "<group>"; };
-		AFC0AAFA1A17CD7F00025EF8 /* BoxTokenParametersTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxTokenParametersTests.m; sourceTree = "<group>"; };
-		AFC0AAFC1A17D5B800025EF8 /* FakeBoxAuthenticationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeBoxAuthenticationManager.h; sourceTree = "<group>"; };
-		AFC0AAFD1A17D5B800025EF8 /* FakeBoxAuthenticationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeBoxAuthenticationManager.m; sourceTree = "<group>"; };
-		AFC3EBB21A19BA130089FEB4 /* BoxRefreshTokenParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoxRefreshTokenParameters.h; path = Source/BoxRefreshTokenParameters.h; sourceTree = "<group>"; };
-		AFC3EBB31A19BA130089FEB4 /* BoxRefreshTokenParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoxRefreshTokenParameters.m; path = Source/BoxRefreshTokenParameters.m; sourceTree = "<group>"; };
-		AFC3EBB61A19BFD80089FEB4 /* BoxRefreshTokenParametersTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxRefreshTokenParametersTests.m; sourceTree = "<group>"; };
-		AFC5CD4E1A171C32006A95C0 /* BoxSimpleOAuthViewControllerXibTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxSimpleOAuthViewControllerXibTests.m; sourceTree = "<group>"; };
-		AFDD773E1A132CC700B349AE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		C9D0619FE2B617D848110501 /* Pods-BoxSimpleOAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoxSimpleOAuth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BoxSimpleOAuth/Pods-BoxSimpleOAuth.debug.xcconfig"; sourceTree = "<group>"; };
+		3BE95E6CB247599F5E920DEE /* Pods-Specs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Specs/Pods-Specs.debug.xcconfig"; sourceTree = "<group>"; };
+		4971B291CC9CD5569CC5A079 /* Pods-Specs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Specs/Pods-Specs.release.xcconfig"; sourceTree = "<group>"; };
+		5016B9E6B4CD58C6799E9FE4 /* libPods-Specs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Specs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9434D58E1EB68FC200191952 /* BoxSimpleOAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BoxSimpleOAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9434D5911EB68FC200191952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9434D5961EB690C200191952 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
+		9434D5971EB690C200191952 /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBProgressHUD.framework; path = Carthage/Build/iOS/MBProgressHUD.framework; sourceTree = "<group>"; };
+		9434D5981EB690C200191952 /* SimpleOAuth2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SimpleOAuth2.framework; path = Carthage/Build/iOS/SimpleOAuth2.framework; sourceTree = "<group>"; };
+		9434D59D1EB6918100191952 /* BoxAuthenticationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoxAuthenticationManager.h; path = Source/BoxAuthenticationManager.h; sourceTree = "<group>"; };
+		9434D59E1EB6918100191952 /* BoxAuthenticationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoxAuthenticationManager.m; path = Source/BoxAuthenticationManager.m; sourceTree = "<group>"; };
+		9434D59F1EB6918100191952 /* BoxConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoxConstants.h; path = Source/BoxConstants.h; sourceTree = "<group>"; };
+		9434D5A01EB6918100191952 /* BoxConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoxConstants.m; path = Source/BoxConstants.m; sourceTree = "<group>"; };
+		9434D5A11EB6918100191952 /* BoxLoginResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoxLoginResponse.h; path = Source/BoxLoginResponse.h; sourceTree = "<group>"; };
+		9434D5A21EB6918100191952 /* BoxLoginResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoxLoginResponse.m; path = Source/BoxLoginResponse.m; sourceTree = "<group>"; };
+		9434D5A31EB6918100191952 /* BoxRefreshTokenParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoxRefreshTokenParameters.h; path = Source/BoxRefreshTokenParameters.h; sourceTree = "<group>"; };
+		9434D5A41EB6918100191952 /* BoxRefreshTokenParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoxRefreshTokenParameters.m; path = Source/BoxRefreshTokenParameters.m; sourceTree = "<group>"; };
+		9434D5A51EB6918100191952 /* BoxSimpleOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoxSimpleOAuth.h; path = Source/BoxSimpleOAuth.h; sourceTree = "<group>"; };
+		9434D5A61EB6918100191952 /* BoxSimpleOAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoxSimpleOAuthViewController.h; path = Source/BoxSimpleOAuthViewController.h; sourceTree = "<group>"; };
+		9434D5A71EB6918100191952 /* BoxSimpleOAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoxSimpleOAuthViewController.m; path = Source/BoxSimpleOAuthViewController.m; sourceTree = "<group>"; };
+		9434D5A81EB6918100191952 /* BoxSimpleOAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BoxSimpleOAuthViewController.xib; path = Source/BoxSimpleOAuthViewController.xib; sourceTree = "<group>"; };
+		9434D5A91EB6918100191952 /* BoxTokenParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoxTokenParameters.h; path = Source/BoxTokenParameters.h; sourceTree = "<group>"; };
+		9434D5AA1EB6918100191952 /* BoxTokenParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoxTokenParameters.m; path = Source/BoxTokenParameters.m; sourceTree = "<group>"; };
+		9434D5BE1EB6953200191952 /* Specs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9434D5C21EB6953200191952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9434D5D41EB6970E00191952 /* FakeBoxAuthenticationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeBoxAuthenticationManager.h; sourceTree = "<group>"; };
+		9434D5D51EB6970E00191952 /* FakeBoxAuthenticationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeBoxAuthenticationManager.m; sourceTree = "<group>"; };
+		9434D5D61EB6970E00191952 /* FakeBoxOAuthResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeBoxOAuthResponse.h; sourceTree = "<group>"; };
+		9434D5D71EB6970E00191952 /* FakeBoxOAuthResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeBoxOAuthResponse.m; sourceTree = "<group>"; };
+		9434D5D81EB6970E00191952 /* FakeSimpleOAuth2AuthenticationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeSimpleOAuth2AuthenticationManager.h; sourceTree = "<group>"; };
+		9434D5D91EB6970E00191952 /* FakeSimpleOAuth2AuthenticationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeSimpleOAuth2AuthenticationManager.m; sourceTree = "<group>"; };
+		9434D5DD1EB6971900191952 /* NSLayoutConstraint+TestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+TestUtils.h"; sourceTree = "<group>"; };
+		9434D5DE1EB6971900191952 /* NSLayoutConstraint+TestUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+TestUtils.m"; sourceTree = "<group>"; };
+		9434D5E01EB6972C00191952 /* BoxAuthenticationManagerSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxAuthenticationManagerSpecs.m; sourceTree = "<group>"; };
+		9434D5E11EB6972C00191952 /* BoxLoginResponseSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxLoginResponseSpecs.m; sourceTree = "<group>"; };
+		9434D5E21EB6972C00191952 /* BoxRefreshTokenParametersSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxRefreshTokenParametersSpecs.m; sourceTree = "<group>"; };
+		9434D5E31EB6972C00191952 /* BoxTokenParametersSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxTokenParametersSpecs.m; sourceTree = "<group>"; };
+		9434D5E81EBAE94F00191952 /* BoxSimpleOAuthViewControllerXibSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxSimpleOAuthViewControllerXibSpecs.m; sourceTree = "<group>"; };
+		9434D5EA1EBAE99300191952 /* BoxSimpleOAuthViewControllerSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxSimpleOAuthViewControllerSpecs.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AF4CF4EB1A1327990013D8A6 /* Frameworks */ = {
+		9434D58A1EB68FC200191952 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F83E2D12785206BBC1E7711 /* libPods-BoxSimpleOAuth.a in Frameworks */,
+				9434D5991EB690C200191952 /* AFNetworking.framework in Frameworks */,
+				9434D59A1EB690C200191952 /* MBProgressHUD.framework in Frameworks */,
+				9434D59B1EB690C200191952 /* SimpleOAuth2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF4CF5041A1327990013D8A6 /* Frameworks */ = {
+		9434D5BB1EB6953200191952 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C337912D034EAA0992F3D33 /* libPods-BoxSimpleOAuthTests.a in Frameworks */,
+				9434D5CE1EB695F100191952 /* AFNetworking.framework in Frameworks */,
+				9434D5CF1EB695F100191952 /* MBProgressHUD.framework in Frameworks */,
+				9434D5D01EB695F100191952 /* SimpleOAuth2.framework in Frameworks */,
+				9434D5C31EB6953200191952 /* BoxSimpleOAuth.framework in Frameworks */,
+				BEE97E06BE00F432C9CC588E /* libPods-Specs.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9434D58F1EB68FC200191952 /* BoxSimpleOAuth */ = {
+			isa = PBXGroup;
+			children = (
+				9434D59C1EB6917100191952 /* Source */,
+				9434D5B91EB694EF00191952 /* Supporting Files */,
+			);
+			path = BoxSimpleOAuth;
+			sourceTree = "<group>";
+		};
+		9434D59C1EB6917100191952 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9434D5A51EB6918100191952 /* BoxSimpleOAuth.h */,
+				9434D59D1EB6918100191952 /* BoxAuthenticationManager.h */,
+				9434D59E1EB6918100191952 /* BoxAuthenticationManager.m */,
+				9434D59F1EB6918100191952 /* BoxConstants.h */,
+				9434D5A01EB6918100191952 /* BoxConstants.m */,
+				9434D5A11EB6918100191952 /* BoxLoginResponse.h */,
+				9434D5A21EB6918100191952 /* BoxLoginResponse.m */,
+				9434D5A31EB6918100191952 /* BoxRefreshTokenParameters.h */,
+				9434D5A41EB6918100191952 /* BoxRefreshTokenParameters.m */,
+				9434D5A61EB6918100191952 /* BoxSimpleOAuthViewController.h */,
+				9434D5A71EB6918100191952 /* BoxSimpleOAuthViewController.m */,
+				9434D5A81EB6918100191952 /* BoxSimpleOAuthViewController.xib */,
+				9434D5A91EB6918100191952 /* BoxTokenParameters.h */,
+				9434D5AA1EB6918100191952 /* BoxTokenParameters.m */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		9434D5B91EB694EF00191952 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9434D5911EB68FC200191952 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9434D5BF1EB6953200191952 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				9434D5D21EB696E700191952 /* Fakes */,
+				9434D5D31EB696F200191952 /* Utils */,
+				9434D5EA1EBAE99300191952 /* BoxSimpleOAuthViewControllerSpecs.m */,
+				9434D5E81EBAE94F00191952 /* BoxSimpleOAuthViewControllerXibSpecs.m */,
+				9434D5E01EB6972C00191952 /* BoxAuthenticationManagerSpecs.m */,
+				9434D5E11EB6972C00191952 /* BoxLoginResponseSpecs.m */,
+				9434D5E21EB6972C00191952 /* BoxRefreshTokenParametersSpecs.m */,
+				9434D5E31EB6972C00191952 /* BoxTokenParametersSpecs.m */,
+				9434D5D11EB696DB00191952 /* Supporting Files */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		9434D5D11EB696DB00191952 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9434D5C21EB6953200191952 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9434D5D21EB696E700191952 /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				9434D5D41EB6970E00191952 /* FakeBoxAuthenticationManager.h */,
+				9434D5D51EB6970E00191952 /* FakeBoxAuthenticationManager.m */,
+				9434D5D61EB6970E00191952 /* FakeBoxOAuthResponse.h */,
+				9434D5D71EB6970E00191952 /* FakeBoxOAuthResponse.m */,
+				9434D5D81EB6970E00191952 /* FakeSimpleOAuth2AuthenticationManager.h */,
+				9434D5D91EB6970E00191952 /* FakeSimpleOAuth2AuthenticationManager.m */,
+			);
+			name = Fakes;
+			sourceTree = "<group>";
+		};
+		9434D5D31EB696F200191952 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9434D5DD1EB6971900191952 /* NSLayoutConstraint+TestUtils.h */,
+				9434D5DE1EB6971900191952 /* NSLayoutConstraint+TestUtils.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		991CBF914F8C72753FE2E788 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C9D0619FE2B617D848110501 /* Pods-BoxSimpleOAuth.debug.xcconfig */,
-				3F4436E82683E65243BC7448 /* Pods-BoxSimpleOAuth.release.xcconfig */,
-				14B68633E9EAEF06C4EE8CB4 /* Pods-BoxSimpleOAuthTests.debug.xcconfig */,
-				217E0269AA46094B0A933526 /* Pods-BoxSimpleOAuthTests.release.xcconfig */,
+				3BE95E6CB247599F5E920DEE /* Pods-Specs.debug.xcconfig */,
+				4971B291CC9CD5569CC5A079 /* Pods-Specs.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -136,9 +235,8 @@
 		AF4CF4E51A1327990013D8A6 = {
 			isa = PBXGroup;
 			children = (
-				AFDD773D1A132C9E00B349AE /* Github */,
-				AF4CF4F01A1327990013D8A6 /* BoxSimpleOAuth */,
-				AF4CF50A1A1327990013D8A6 /* BoxSimpleOAuthTests */,
+				9434D58F1EB68FC200191952 /* BoxSimpleOAuth */,
+				9434D5BF1EB6953200191952 /* Specs */,
 				AF4CF4EF1A1327990013D8A6 /* Products */,
 				991CBF914F8C72753FE2E788 /* Pods */,
 				C2F7348F7BF791472A1CBF67 /* Frameworks */,
@@ -148,147 +246,51 @@
 		AF4CF4EF1A1327990013D8A6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AF4CF4EE1A1327990013D8A6 /* BoxSimpleOAuth.app */,
-				AF4CF5071A1327990013D8A6 /* BoxSimpleOAuthTests.xctest */,
+				9434D58E1EB68FC200191952 /* BoxSimpleOAuth.framework */,
+				9434D5BE1EB6953200191952 /* Specs.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		AF4CF4F01A1327990013D8A6 /* BoxSimpleOAuth */ = {
-			isa = PBXGroup;
-			children = (
-				AF27D4301A164EB100820FC2 /* BoxSimpleOAuth.h */,
-				AF27D4311A16513500820FC2 /* BoxConstants.h */,
-				AF27D4321A16513500820FC2 /* BoxConstants.m */,
-				AF4CF5181A132B4B0013D8A6 /* BoxSimpleOAuthViewController.h */,
-				AF4CF5191A132B4B0013D8A6 /* BoxSimpleOAuthViewController.m */,
-				AF8AAFB11A13A94000147063 /* BoxSimpleOAuthViewController.xib */,
-				AF8AAFBA1A13AB8100147063 /* BoxLoginResponse.h */,
-				AF8AAFBB1A13AB8100147063 /* BoxLoginResponse.m */,
-				AFC0AAF61A17CB7400025EF8 /* BoxTokenParameters.h */,
-				AFC0AAF71A17CB7400025EF8 /* BoxTokenParameters.m */,
-				AFC3EBB21A19BA130089FEB4 /* BoxRefreshTokenParameters.h */,
-				AFC3EBB31A19BA130089FEB4 /* BoxRefreshTokenParameters.m */,
-				AFC0AAF21A17CA9800025EF8 /* BoxAuthenticationManager.h */,
-				AFC0AAF31A17CA9800025EF8 /* BoxAuthenticationManager.m */,
-				AF4CF5171A132AF90013D8A6 /* AppCode */,
-			);
-			path = BoxSimpleOAuth;
-			sourceTree = "<group>";
-		};
-		AF4CF4F11A1327990013D8A6 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AF4CF5001A1327990013D8A6 /* LaunchScreen.xib */,
-				AF4CF4FE1A1327990013D8A6 /* Images.xcassets */,
-				AF4CF4F21A1327990013D8A6 /* Info.plist */,
-				AF4CF4F31A1327990013D8A6 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		AF4CF50A1A1327990013D8A6 /* BoxSimpleOAuthTests */ = {
-			isa = PBXGroup;
-			children = (
-				AFC0AAEE1A17CA3100025EF8 /* Real Fakes */,
-				AF8AAFB61A13AA1800147063 /* Fakes */,
-				AFC0AAE51A17BD2A00025EF8 /* Test Utils */,
-				AF4CF50D1A1327990013D8A6 /* BoxSimpleOAuthViewControllerTests.m */,
-				AFC5CD4E1A171C32006A95C0 /* BoxSimpleOAuthViewControllerXibTests.m */,
-				AF8AAFB41A13A9C100147063 /* BoxLoginResponseTests.m */,
-				AFC0AAFA1A17CD7F00025EF8 /* BoxTokenParametersTests.m */,
-				AFC3EBB61A19BFD80089FEB4 /* BoxRefreshTokenParametersTests.m */,
-				AFC0AAEC1A17C95400025EF8 /* BoxAuthenticationManagerTests.m */,
-				AF4CF50B1A1327990013D8A6 /* Supporting Files */,
-			);
-			path = BoxSimpleOAuthTests;
-			sourceTree = "<group>";
-		};
-		AF4CF50B1A1327990013D8A6 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AF4CF50C1A1327990013D8A6 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		AF4CF5171A132AF90013D8A6 /* AppCode */ = {
-			isa = PBXGroup;
-			children = (
-				9402BF3B1C84095C00EE7BC1 /* AppDelegate.h */,
-				9402BF3C1C84095C00EE7BC1 /* AppDelegate.m */,
-				9402BF3D1C84095C00EE7BC1 /* JustAViewController.h */,
-				9402BF3E1C84095C00EE7BC1 /* JustAViewController.m */,
-				9402BF3F1C84095C00EE7BC1 /* JustAViewController.xib */,
-				9402BF401C84095C00EE7BC1 /* MainViewController.h */,
-				9402BF411C84095C00EE7BC1 /* MainViewController.m */,
-				9402BF421C84095C00EE7BC1 /* MainViewController.xib */,
-				AF4CF4F11A1327990013D8A6 /* Supporting Files */,
-			);
-			name = AppCode;
-			sourceTree = "<group>";
-		};
-		AF8AAFB61A13AA1800147063 /* Fakes */ = {
-			isa = PBXGroup;
-			children = (
-				AF8AAFB71A13AA3500147063 /* FakeBoxOAuthResponse.h */,
-				AF8AAFB81A13AA3500147063 /* FakeBoxOAuthResponse.m */,
-			);
-			name = Fakes;
-			sourceTree = "<group>";
-		};
-		AFC0AAE51A17BD2A00025EF8 /* Test Utils */ = {
-			isa = PBXGroup;
-			children = (
-				AFC0AAE91A17BD8B00025EF8 /* NSLayoutConstraint+TestUtils.h */,
-				AFC0AAEA1A17BD8B00025EF8 /* NSLayoutConstraint+TestUtils.m */,
-				AFC0AAE61A17BD4E00025EF8 /* UIAlertView+TestUtils.h */,
-				AFC0AAE71A17BD4E00025EF8 /* UIAlertView+TestUtils.m */,
-			);
-			name = "Test Utils";
-			sourceTree = "<group>";
-		};
-		AFC0AAEE1A17CA3100025EF8 /* Real Fakes */ = {
-			isa = PBXGroup;
-			children = (
-				AFC0AAFC1A17D5B800025EF8 /* FakeBoxAuthenticationManager.h */,
-				AFC0AAFD1A17D5B800025EF8 /* FakeBoxAuthenticationManager.m */,
-				948DC4AF1C83DB40000E0E87 /* FakeSimpleOAuth2AuthenticationManager.h */,
-				948DC4B01C83DB40000E0E87 /* FakeSimpleOAuth2AuthenticationManager.m */,
-			);
-			name = "Real Fakes";
-			sourceTree = "<group>";
-		};
-		AFDD773D1A132C9E00B349AE /* Github */ = {
-			isa = PBXGroup;
-			children = (
-				AFDD773E1A132CC700B349AE /* README.md */,
-			);
-			name = Github;
 			sourceTree = "<group>";
 		};
 		C2F7348F7BF791472A1CBF67 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3B1E4FA6D1AE75F7F02A78F3 /* libPods-BoxSimpleOAuth.a */,
-				A02C51345717EAC558ED1EF0 /* libPods-BoxSimpleOAuthTests.a */,
+				9434D5961EB690C200191952 /* AFNetworking.framework */,
+				9434D5971EB690C200191952 /* MBProgressHUD.framework */,
+				9434D5981EB690C200191952 /* SimpleOAuth2.framework */,
+				5016B9E6B4CD58C6799E9FE4 /* libPods-Specs.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		9434D58B1EB68FC200191952 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9434D5B31EB6918100191952 /* BoxSimpleOAuth.h in Headers */,
+				9434D5B41EB6918100191952 /* BoxSimpleOAuthViewController.h in Headers */,
+				9434D5AF1EB6918100191952 /* BoxLoginResponse.h in Headers */,
+				9434D5AB1EB6918100191952 /* BoxAuthenticationManager.h in Headers */,
+				9434D5B71EB6918100191952 /* BoxTokenParameters.h in Headers */,
+				9434D5B11EB6918100191952 /* BoxRefreshTokenParameters.h in Headers */,
+				9434D5AD1EB6918100191952 /* BoxConstants.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		AF4CF4ED1A1327990013D8A6 /* BoxSimpleOAuth */ = {
+		9434D58D1EB68FC200191952 /* BoxSimpleOAuth */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AF4CF5111A1327990013D8A6 /* Build configuration list for PBXNativeTarget "BoxSimpleOAuth" */;
+			buildConfigurationList = 9434D5931EB68FC200191952 /* Build configuration list for PBXNativeTarget "BoxSimpleOAuth" */;
 			buildPhases = (
-				10712810A39DAACE89FF6E25 /* [CP] Check Pods Manifest.lock */,
-				AF4CF4EA1A1327990013D8A6 /* Sources */,
-				AF4CF4EB1A1327990013D8A6 /* Frameworks */,
-				AF4CF4EC1A1327990013D8A6 /* Resources */,
-				B14C80B780EDE6892C9139E8 /* [CP] Embed Pods Frameworks */,
-				6C805B244622B81F16BF33C1 /* [CP] Copy Pods Resources */,
+				9434D5891EB68FC200191952 /* Sources */,
+				9434D58A1EB68FC200191952 /* Frameworks */,
+				9434D58B1EB68FC200191952 /* Headers */,
+				9434D58C1EB68FC200191952 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -296,28 +298,29 @@
 			);
 			name = BoxSimpleOAuth;
 			productName = BoxSimpleOAuth;
-			productReference = AF4CF4EE1A1327990013D8A6 /* BoxSimpleOAuth.app */;
-			productType = "com.apple.product-type.application";
+			productReference = 9434D58E1EB68FC200191952 /* BoxSimpleOAuth.framework */;
+			productType = "com.apple.product-type.framework";
 		};
-		AF4CF5061A1327990013D8A6 /* BoxSimpleOAuthTests */ = {
+		9434D5BD1EB6953200191952 /* Specs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AF4CF5141A1327990013D8A6 /* Build configuration list for PBXNativeTarget "BoxSimpleOAuthTests" */;
+			buildConfigurationList = 9434D5C61EB6953200191952 /* Build configuration list for PBXNativeTarget "Specs" */;
 			buildPhases = (
-				39E7F47C94BEB3A4D50286B6 /* [CP] Check Pods Manifest.lock */,
-				AF4CF5031A1327990013D8A6 /* Sources */,
-				AF4CF5041A1327990013D8A6 /* Frameworks */,
-				AF4CF5051A1327990013D8A6 /* Resources */,
-				30CD4965D5BA7DA3A5BEF040 /* [CP] Embed Pods Frameworks */,
-				D112040AA4F34B828F84E783 /* [CP] Copy Pods Resources */,
+				7F60786F372181105EFDB8CB /* [CP] Check Pods Manifest.lock */,
+				9434D5BA1EB6953200191952 /* Sources */,
+				9434D5BB1EB6953200191952 /* Frameworks */,
+				9434D5BC1EB6953200191952 /* Resources */,
+				3CE5996F5BE34115F70C42C0 /* [CP] Embed Pods Frameworks */,
+				CCE6ADC666C1D9C03FBDEC71 /* [CP] Copy Pods Resources */,
+				9434D5C91EB695BE00191952 /* Carthage Copy Files */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AF4CF5091A1327990013D8A6 /* PBXTargetDependency */,
+				9434D5C51EB6953200191952 /* PBXTargetDependency */,
 			);
-			name = BoxSimpleOAuthTests;
-			productName = BoxSimpleOAuthTests;
-			productReference = AF4CF5071A1327990013D8A6 /* BoxSimpleOAuthTests.xctest */;
+			name = Specs;
+			productName = Specs;
+			productReference = 9434D5BE1EB6953200191952 /* Specs.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -329,12 +332,13 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = rkb;
 				TargetAttributes = {
-					AF4CF4ED1A1327990013D8A6 = {
-						CreatedOnToolsVersion = 6.1;
+					9434D58D1EB68FC200191952 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
 					};
-					AF4CF5061A1327990013D8A6 = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = AF4CF4ED1A1327990013D8A6;
+					9434D5BD1EB6953200191952 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -351,26 +355,22 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AF4CF4ED1A1327990013D8A6 /* BoxSimpleOAuth */,
-				AF4CF5061A1327990013D8A6 /* BoxSimpleOAuthTests */,
+				9434D58D1EB68FC200191952 /* BoxSimpleOAuth */,
+				9434D5BD1EB6953200191952 /* Specs */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AF4CF4EC1A1327990013D8A6 /* Resources */ = {
+		9434D58C1EB68FC200191952 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF8AAFB21A13A94000147063 /* BoxSimpleOAuthViewController.xib in Resources */,
-				AF4CF5021A1327990013D8A6 /* LaunchScreen.xib in Resources */,
-				9402BF471C84095C00EE7BC1 /* MainViewController.xib in Resources */,
-				9402BF451C84095C00EE7BC1 /* JustAViewController.xib in Resources */,
-				AF4CF4FF1A1327990013D8A6 /* Images.xcassets in Resources */,
+				9434D5B61EB6918100191952 /* BoxSimpleOAuthViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF4CF5051A1327990013D8A6 /* Resources */ = {
+		9434D5BC1EB6953200191952 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -380,7 +380,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		10712810A39DAACE89FF6E25 /* [CP] Check Pods Manifest.lock */ = {
+		3CE5996F5BE34115F70C42C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Specs/Pods-Specs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F60786F372181105EFDB8CB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -395,37 +410,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		30CD4965D5BA7DA3A5BEF040 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BoxSimpleOAuthTests/Pods-BoxSimpleOAuthTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		39E7F47C94BEB3A4D50286B6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		6C805B244622B81F16BF33C1 /* [CP] Copy Pods Resources */ = {
+		CCE6ADC666C1D9C03FBDEC71 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -437,99 +422,153 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BoxSimpleOAuth/Pods-BoxSimpleOAuth-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B14C80B780EDE6892C9139E8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BoxSimpleOAuth/Pods-BoxSimpleOAuth-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D112040AA4F34B828F84E783 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BoxSimpleOAuthTests/Pods-BoxSimpleOAuthTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Specs/Pods-Specs-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AF4CF4EA1A1327990013D8A6 /* Sources */ = {
+		9434D5891EB68FC200191952 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9402BF441C84095C00EE7BC1 /* JustAViewController.m in Sources */,
-				AF8AAFBC1A13AB8100147063 /* BoxLoginResponse.m in Sources */,
-				AFC0AAF41A17CA9800025EF8 /* BoxAuthenticationManager.m in Sources */,
-				9402BF461C84095C00EE7BC1 /* MainViewController.m in Sources */,
-				AFC0AAF81A17CB7400025EF8 /* BoxTokenParameters.m in Sources */,
-				AF4CF51A1A132B4B0013D8A6 /* BoxSimpleOAuthViewController.m in Sources */,
-				9402BF431C84095C00EE7BC1 /* AppDelegate.m in Sources */,
-				AFC3EBB41A19BA130089FEB4 /* BoxRefreshTokenParameters.m in Sources */,
-				AF27D4331A16513500820FC2 /* BoxConstants.m in Sources */,
-				AF4CF4F41A1327990013D8A6 /* main.m in Sources */,
+				9434D5B01EB6918100191952 /* BoxLoginResponse.m in Sources */,
+				9434D5B51EB6918100191952 /* BoxSimpleOAuthViewController.m in Sources */,
+				9434D5AC1EB6918100191952 /* BoxAuthenticationManager.m in Sources */,
+				9434D5B81EB6918100191952 /* BoxTokenParameters.m in Sources */,
+				9434D5AE1EB6918100191952 /* BoxConstants.m in Sources */,
+				9434D5B21EB6918100191952 /* BoxRefreshTokenParameters.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF4CF5031A1327990013D8A6 /* Sources */ = {
+		9434D5BA1EB6953200191952 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF8AAFB51A13A9C100147063 /* BoxLoginResponseTests.m in Sources */,
-				AF8AAFB91A13AA3500147063 /* FakeBoxOAuthResponse.m in Sources */,
-				AFC5CD4F1A171C32006A95C0 /* BoxSimpleOAuthViewControllerXibTests.m in Sources */,
-				AFC0AAED1A17C95400025EF8 /* BoxAuthenticationManagerTests.m in Sources */,
-				AF4CF50E1A1327990013D8A6 /* BoxSimpleOAuthViewControllerTests.m in Sources */,
-				AFC0AAEB1A17BD8B00025EF8 /* NSLayoutConstraint+TestUtils.m in Sources */,
-				AFC3EBB71A19BFD80089FEB4 /* BoxRefreshTokenParametersTests.m in Sources */,
-				948DC4B11C83DB40000E0E87 /* FakeSimpleOAuth2AuthenticationManager.m in Sources */,
-				AFC0AAE81A17BD4E00025EF8 /* UIAlertView+TestUtils.m in Sources */,
-				AFC0AAFE1A17D5B800025EF8 /* FakeBoxAuthenticationManager.m in Sources */,
-				AFC0AAFB1A17CD7F00025EF8 /* BoxTokenParametersTests.m in Sources */,
+				9434D5E71EB6972C00191952 /* BoxTokenParametersSpecs.m in Sources */,
+				9434D5DA1EB6970E00191952 /* FakeBoxAuthenticationManager.m in Sources */,
+				9434D5E51EB6972C00191952 /* BoxLoginResponseSpecs.m in Sources */,
+				9434D5DF1EB6971900191952 /* NSLayoutConstraint+TestUtils.m in Sources */,
+				9434D5E41EB6972C00191952 /* BoxAuthenticationManagerSpecs.m in Sources */,
+				9434D5DC1EB6970E00191952 /* FakeSimpleOAuth2AuthenticationManager.m in Sources */,
+				9434D5E61EB6972C00191952 /* BoxRefreshTokenParametersSpecs.m in Sources */,
+				9434D5EB1EBAE99300191952 /* BoxSimpleOAuthViewControllerSpecs.m in Sources */,
+				9434D5DB1EB6970E00191952 /* FakeBoxOAuthResponse.m in Sources */,
+				9434D5E91EBAE94F00191952 /* BoxSimpleOAuthViewControllerXibSpecs.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AF4CF5091A1327990013D8A6 /* PBXTargetDependency */ = {
+		9434D5C51EB6953200191952 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AF4CF4ED1A1327990013D8A6 /* BoxSimpleOAuth */;
-			targetProxy = AF4CF5081A1327990013D8A6 /* PBXContainerItemProxy */;
+			target = 9434D58D1EB68FC200191952 /* BoxSimpleOAuth */;
+			targetProxy = 9434D5C41EB6953200191952 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		AF4CF5001A1327990013D8A6 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AF4CF5011A1327990013D8A6 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
+		9434D5941EB68FC200191952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = BoxSimpleOAuth/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rkb.BoxSimpleOAuth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9434D5951EB68FC200191952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = BoxSimpleOAuth/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rkb.BoxSimpleOAuth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9434D5C71EB6953200191952 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BE95E6CB247599F5E920DEE /* Pods-Specs.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Specs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rkb.Specs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9434D5C81EB6953200191952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4971B291CC9CD5569CC5A079 /* Pods-Specs.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Specs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rkb.Specs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		AF4CF50F1A1327990013D8A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -615,103 +654,32 @@
 			};
 			name = Release;
 		};
-		AF4CF5121A1327990013D8A6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9D0619FE2B617D848110501 /* Pods-BoxSimpleOAuth.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = BoxSimpleOAuth/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "rkb.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		AF4CF5131A1327990013D8A6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F4436E82683E65243BC7448 /* Pods-BoxSimpleOAuth.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				ENABLE_TESTABILITY = YES;
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = BoxSimpleOAuth/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "rkb.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		AF4CF5151A1327990013D8A6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14B68633E9EAEF06C4EE8CB4 /* Pods-BoxSimpleOAuthTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = BoxSimpleOAuthTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "rkb.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoxSimpleOAuth.app/BoxSimpleOAuth";
-			};
-			name = Debug;
-		};
-		AF4CF5161A1327990013D8A6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 217E0269AA46094B0A933526 /* Pods-BoxSimpleOAuthTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = BoxSimpleOAuthTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "rkb.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoxSimpleOAuth.app/BoxSimpleOAuth";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9434D5931EB68FC200191952 /* Build configuration list for PBXNativeTarget "BoxSimpleOAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9434D5941EB68FC200191952 /* Debug */,
+				9434D5951EB68FC200191952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9434D5C61EB6953200191952 /* Build configuration list for PBXNativeTarget "Specs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9434D5C71EB6953200191952 /* Debug */,
+				9434D5C81EB6953200191952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AF4CF4E91A1327990013D8A6 /* Build configuration list for PBXProject "BoxSimpleOAuth" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AF4CF50F1A1327990013D8A6 /* Debug */,
 				AF4CF5101A1327990013D8A6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AF4CF5111A1327990013D8A6 /* Build configuration list for PBXNativeTarget "BoxSimpleOAuth" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AF4CF5121A1327990013D8A6 /* Debug */,
-				AF4CF5131A1327990013D8A6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AF4CF5141A1327990013D8A6 /* Build configuration list for PBXNativeTarget "BoxSimpleOAuthTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AF4CF5151A1327990013D8A6 /* Debug */,
-				AF4CF5161A1327990013D8A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -3,12 +3,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 inhibit_all_warnings!
 
-target :BoxSimpleOAuth do
-    pod 'SimpleOAuth2', '0.0.3'
-    pod 'MBProgressHUD', '~> 0.9'
-end
-
-target :BoxSimpleOAuthTests do
+target :Specs do
     pod 'Specta'
     pod 'Expecta'
     pod 'OCMock'

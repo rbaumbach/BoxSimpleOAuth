@@ -1,4 +1,4 @@
-//Copyright (c) 2016 Ryan Baumbach <github@ryan.codes>
+//Copyright (c) 2017 Ryan Baumbach <github@ryan.codes>
 //
 //Permission is hereby granted, free of charge, to any person obtaining
 //a copy of this software and associated documentation files (the "Software"),
@@ -20,12 +20,12 @@
 //WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #import <SimpleOAuth2/SimpleOAuth2.h>
+
 #import "BoxAuthenticationManager.h"
 #import "BoxLoginResponse.h"
 #import "BoxConstants.h"
 #import "BoxTokenParameters.h"
 #import "BoxRefreshTokenParameters.h"
-
 
 NSString *const BoxTokenEndpoint = @"/api/oauth2/token";
 

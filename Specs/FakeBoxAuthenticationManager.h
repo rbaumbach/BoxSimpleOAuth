@@ -1,6 +1,5 @@
 #import "BoxAuthenticationManager.h"
 
-
 @interface FakeBoxAuthenticationManager : BoxAuthenticationManager
 
 @property (copy, nonatomic) NSString *authCode;
