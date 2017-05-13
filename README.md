@@ -3,8 +3,8 @@
 A quick and simple way to authenticate a Box user in your iPhone or iPad app.
 
 <p align="center">
-   <img src="https://github.com/rbaumbach/BoxSimpleOAuth/blob/master/iPhone5Screenshot.jpg?raw=true" alt="iPhone5 Screenshot"/>
-   <img src="https://github.com/rbaumbach/BoxSimpleOAuth/blob/master/iPadScreenshot.jpg?raw=true" alt="iPad Screenshot"/>
+   <img src="https://github.com/rbaumbach/BoxSimpleOAuth/blob/master/Snapshots/iPhone7Screenshot.jpg?raw=true" alt="iPhone 7 Screenshot" width="250" height="510"/>
+   <img src="https://github.com/rbaumbach/BoxSimpleOAuth/blob/master/Snapshots/iPadPro9_7Screenshot.jpg?raw=true" alt="iPad Pro 9.7 Screenshot" width="360" height="510"/>
 </p>
 
 ## Adding BoxSimpleOAuth to your project

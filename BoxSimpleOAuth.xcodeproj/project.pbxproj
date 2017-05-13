@@ -57,6 +57,8 @@
 		946E58E21EBB7DCB006C7C22 /* SimpleOAuth2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9434D5981EB690C200191952 /* SimpleOAuth2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		946E58E41EBB7DF3006C7C22 /* BoxSimpleOAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9434D58E1EB68FC200191952 /* BoxSimpleOAuth.framework */; };
 		946E58E51EBB7DF3006C7C22 /* BoxSimpleOAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9434D58E1EB68FC200191952 /* BoxSimpleOAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		94A3CB371EC6CC5200749596 /* Snapshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3CB361EC6CC5200749596 /* Snapshots.swift */; };
+		94A3CB3F1EC6CC7E00749596 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A3CB3E1EC6CC7E00749596 /* SnapshotHelper.swift */; };
 		BEE97E06BE00F432C9CC588E /* libPods-Specs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5016B9E6B4CD58C6799E9FE4 /* libPods-Specs.a */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +76,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 9434D58D1EB68FC200191952;
 			remoteInfo = BoxSimpleOAuth;
+		};
+		94A3CB391EC6CC5200749596 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF4CF4E61A1327990013D8A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 946E58BD1EBB79B6006C7C22;
+			remoteInfo = DemoApp;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -159,6 +168,10 @@
 		946E58D81EBB7B50006C7C22 /* JustAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JustAViewController.m; sourceTree = "<group>"; };
 		946E58D91EBB7B50006C7C22 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		946E58DA1EBB7B50006C7C22 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		94A3CB341EC6CC5200749596 /* Snapshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Snapshots.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94A3CB361EC6CC5200749596 /* Snapshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snapshots.swift; sourceTree = "<group>"; };
+		94A3CB381EC6CC5200749596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94A3CB3E1EC6CC7E00749596 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +205,13 @@
 				946E58E11EBB7DCB006C7C22 /* SimpleOAuth2.framework in Frameworks */,
 				946E58DF1EBB7DCB006C7C22 /* MBProgressHUD.framework in Frameworks */,
 				946E58DD1EBB7DCB006C7C22 /* AFNetworking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94A3CB311EC6CC5200749596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +344,16 @@
 			name = AppCode;
 			sourceTree = "<group>";
 		};
+		94A3CB351EC6CC5200749596 /* Snapshots */ = {
+			isa = PBXGroup;
+			children = (
+				94A3CB3E1EC6CC7E00749596 /* SnapshotHelper.swift */,
+				94A3CB361EC6CC5200749596 /* Snapshots.swift */,
+				94A3CB381EC6CC5200749596 /* Info.plist */,
+			);
+			path = Snapshots;
+			sourceTree = "<group>";
+		};
 		991CBF914F8C72753FE2E788 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -339,6 +369,7 @@
 				946E58BF1EBB79B6006C7C22 /* DemoApp */,
 				9434D58F1EB68FC200191952 /* BoxSimpleOAuth */,
 				9434D5BF1EB6953200191952 /* Specs */,
+				94A3CB351EC6CC5200749596 /* Snapshots */,
 				AF4CF4EF1A1327990013D8A6 /* Products */,
 				991CBF914F8C72753FE2E788 /* Pods */,
 				C2F7348F7BF791472A1CBF67 /* Frameworks */,
@@ -351,6 +382,7 @@
 				9434D58E1EB68FC200191952 /* BoxSimpleOAuth.framework */,
 				9434D5BE1EB6953200191952 /* Specs.xctest */,
 				946E58BE1EBB79B6006C7C22 /* DemoApp.app */,
+				94A3CB341EC6CC5200749596 /* Snapshots.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -445,12 +477,31 @@
 			productReference = 946E58BE1EBB79B6006C7C22 /* DemoApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		94A3CB331EC6CC5200749596 /* Snapshots */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94A3CB3D1EC6CC5200749596 /* Build configuration list for PBXNativeTarget "Snapshots" */;
+			buildPhases = (
+				94A3CB301EC6CC5200749596 /* Sources */,
+				94A3CB311EC6CC5200749596 /* Frameworks */,
+				94A3CB321EC6CC5200749596 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94A3CB3A1EC6CC5200749596 /* PBXTargetDependency */,
+			);
+			name = Snapshots;
+			productName = Snapshots;
+			productReference = 94A3CB341EC6CC5200749596 /* Snapshots.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		AF4CF4E61A1327990013D8A6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = rkb;
 				TargetAttributes = {
@@ -465,6 +516,11 @@
 					946E58BD1EBB79B6006C7C22 = {
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
+					};
+					94A3CB331EC6CC5200749596 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 946E58BD1EBB79B6006C7C22;
 					};
 				};
 			};
@@ -484,6 +540,7 @@
 				946E58BD1EBB79B6006C7C22 /* DemoApp */,
 				9434D58D1EB68FC200191952 /* BoxSimpleOAuth */,
 				9434D5BD1EB6953200191952 /* Specs */,
+				94A3CB331EC6CC5200749596 /* Snapshots */,
 			);
 		};
 /* End PBXProject section */
@@ -511,6 +568,13 @@
 				946E58D01EBB79B6006C7C22 /* LaunchScreen.storyboard in Resources */,
 				946E58CD1EBB79B6006C7C22 /* Assets.xcassets in Resources */,
 				946E58CB1EBB79B6006C7C22 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94A3CB321EC6CC5200749596 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,6 +670,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		94A3CB301EC6CC5200749596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94A3CB371EC6CC5200749596 /* Snapshots.swift in Sources */,
+				94A3CB3F1EC6CC7E00749596 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -618,6 +691,11 @@
 			isa = PBXTargetDependency;
 			target = 9434D58D1EB68FC200191952 /* BoxSimpleOAuth */;
 			targetProxy = 946E58E61EBB7DF3006C7C22 /* PBXContainerItemProxy */;
+		};
+		94A3CB3A1EC6CC5200749596 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 946E58BD1EBB79B6006C7C22 /* DemoApp */;
+			targetProxy = 94A3CB391EC6CC5200749596 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -782,6 +860,44 @@
 			};
 			name = Release;
 		};
+		94A3CB3B1EC6CC5200749596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = Snapshots/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rkb.Snapshots;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DemoApp;
+			};
+			name = Debug;
+		};
+		94A3CB3C1EC6CC5200749596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INFOPLIST_FILE = Snapshots/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rkb.Snapshots;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DemoApp;
+			};
+			name = Release;
+		};
 		AF4CF50F1A1327990013D8A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -893,6 +1009,15 @@
 			buildConfigurations = (
 				946E58D31EBB79B6006C7C22 /* Debug */,
 				946E58D41EBB79B6006C7C22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94A3CB3D1EC6CC5200749596 /* Build configuration list for PBXNativeTarget "Snapshots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94A3CB3B1EC6CC5200749596 /* Debug */,
+				94A3CB3C1EC6CC5200749596 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
