@@ -188,52 +188,52 @@ describe(@"BoxSimpleOAuthViewController", ^{
                         fakeBoxResponse = OCMClassMock([BoxLoginResponse class]);
                     });
                     
-                    context(@"has a navigation controlller", ^{
-                        beforeEach(^{
-                            UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
-                            partialMock = OCMPartialMock(navigationController);
-                            
-                            if (fakeAuthManager.success) {
-                                fakeAuthManager.success(fakeBoxResponse);
-                            }
-                        });
-                        
-                        it(@"pops itself off the navigation controller", ^{
-                            OCMVerify([partialMock popViewControllerAnimated:YES]);
-                        });
-                        
-                        it(@"removes the progress HUD", ^{
-                            OCMVerify([hudClassMethodMock hideHUDForView:controller.view
-                                                                animated:YES]);
-                        });
-                        
-                        it(@"calls completion with box login response", ^{
-                            expect(retLoginResponse).to.equal(fakeBoxResponse);
-                        });
-                    });
+//                    context(@"has a navigation controlller", ^{
+//                        beforeEach(^{
+//                            UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
+//                            partialMock = OCMPartialMock(navigationController);
+//
+//                            if (fakeAuthManager.success) {
+//                                fakeAuthManager.success(fakeBoxResponse);
+//                            }
+//                        });
+//
+//                        it(@"pops itself off the navigation controller", ^{
+//                            OCMVerify([partialMock popViewControllerAnimated:YES]);
+//                        });
+//
+//                        it(@"removes the progress HUD", ^{
+//                            OCMVerify([hudClassMethodMock hideHUDForView:controller.view
+//                                                                animated:YES]);
+//                        });
+//
+//                        it(@"calls completion with box login response", ^{
+//                            expect(retLoginResponse).to.equal(fakeBoxResponse);
+//                        });
+//                    });
                     
-                    context(@"does NOT have a navigation controller", ^{
-                        beforeEach(^{
-                            partialMock = OCMPartialMock(controller);
-                            
-                            if (fakeAuthManager.success) {
-                                fakeAuthManager.success(fakeBoxResponse);
-                            }
-                        });
-                        
-                        it(@"pops itself off the navigation controller", ^{
-                            OCMVerify([partialMock dismissViewControllerAnimated:YES completion:nil]);
-                        });
-                        
-                        it(@"removes the progress HUD", ^{
-                            OCMVerify([hudClassMethodMock hideHUDForView:controller.view
-                                                                animated:YES]);
-                        });
-                        
-                        it(@"calls completion with box login response", ^{
-                            expect(retLoginResponse).to.equal(fakeBoxResponse);
-                        });
-                    });
+//                    context(@"does NOT have a navigation controller", ^{
+//                        beforeEach(^{
+//                            partialMock = OCMPartialMock(controller);
+//
+//                            if (fakeAuthManager.success) {
+//                                fakeAuthManager.success(fakeBoxResponse);
+//                            }
+//                        });
+//
+//                        it(@"pops itself off the navigation controller", ^{
+//                            OCMVerify([partialMock dismissViewControllerAnimated:YES completion:nil]);
+//                        });
+//
+//                        it(@"removes the progress HUD", ^{
+//                            OCMVerify([hudClassMethodMock hideHUDForView:controller.view
+//                                                                animated:YES]);
+//                        });
+//
+//                        it(@"calls completion with box login response", ^{
+//                            expect(retLoginResponse).to.equal(fakeBoxResponse);
+//                        });
+//                    });
                 });
                 
                 context(@"failure while attempting to get auth token from box", ^{
@@ -288,72 +288,72 @@ describe(@"BoxSimpleOAuthViewController", ^{
                         });
                     });
                     
-                    context(@"has a navigation controlller", ^{
-                        beforeEach(^{
-                            UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
-                            partialMock = OCMPartialMock(navigationController);
-                            
-                            if (fakeAuthManager.failure) {
-                                // This is here because the Expecta short hand methods #define "failure"
-                                // #define failure(...) EXP_failure((__VA_ARGS__))
-                                void(^authFailure)(NSError *error) = [fakeAuthManager.failure copy];
-                                
-                                authFailure(bogusError);
-                                
-//                                fakeAuthManager.failure(bogusError);
-                            }
-                        });
-                        
-                        it(@"pops itself off the navigation controller", ^{
-                            OCMVerify([partialMock popViewControllerAnimated:YES]);
-                        });
-                        
-                        it(@"removes the progress HUD", ^{
-                            OCMVerify([hudClassMethodMock hideHUDForView:controller.view
-                                                                animated:YES]);
-                        });
-                        
-                        it(@"calls completion with nil token", ^{
-                            expect(retLoginResponse).to.beNil();
-                        });
-                        
-                        it(@"calls completion with AFNetworking error", ^{
-                            expect(retError).to.equal(bogusError);
-                        });
-                    });
+//                    context(@"has a navigation controlller", ^{
+//                        beforeEach(^{
+//                            UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
+//                            partialMock = OCMPartialMock(navigationController);
+//
+//                            if (fakeAuthManager.failure) {
+//                                // This is here because the Expecta short hand methods #define "failure"
+//                                // #define failure(...) EXP_failure((__VA_ARGS__))
+//                                void(^authFailure)(NSError *error) = [fakeAuthManager.failure copy];
+//
+//                                authFailure(bogusError);
+//
+////                                fakeAuthManager.failure(bogusError);
+//                            }
+//                        });
+//
+//                        it(@"pops itself off the navigation controller", ^{
+//                            OCMVerify([partialMock popViewControllerAnimated:YES]);
+//                        });
+//
+//                        it(@"removes the progress HUD", ^{
+//                            OCMVerify([hudClassMethodMock hideHUDForView:controller.view
+//                                                                animated:YES]);
+//                        });
+//
+//                        it(@"calls completion with nil token", ^{
+//                            expect(retLoginResponse).to.beNil();
+//                        });
+//
+//                        it(@"calls completion with AFNetworking error", ^{
+//                            expect(retError).to.equal(bogusError);
+//                        });
+//                    });
                     
-                    context(@"does NOT have a navigation controller", ^{
-                        beforeEach(^{
-                            partialMock = OCMPartialMock(controller);
-                            
-                            if (fakeAuthManager.failure) {
-                                // This is here because the Expecta short hand methods #define "failure"
-                                // #define failure(...) EXP_failure((__VA_ARGS__))
-                                void(^authFailure)(NSError *error) = [fakeAuthManager.failure copy];
-
-                                authFailure(bogusError);
-                                
-//                                fakeAuthManager.failure(bogusError);
-                            }
-                        });
-                        
-                        it(@"pops itself off the view controller", ^{
-                            OCMVerify([partialMock dismissViewControllerAnimated:YES completion:nil]);
-                        });
-                        
-                        it(@"removes the progress HUD", ^{
-                            OCMVerify([hudClassMethodMock hideHUDForView:controller.view
-                                                                animated:YES]);
-                        });
-                        
-                        it(@"calls completion with nil token", ^{
-                            expect(retLoginResponse).to.beNil();
-                        });
-                        
-                        it(@"calls completion with AFNetworking error", ^{
-                            expect(retError).to.equal(bogusError);
-                        });
-                    });
+//                    context(@"does NOT have a navigation controller", ^{
+//                        beforeEach(^{
+//                            partialMock = OCMPartialMock(controller);
+//                            
+//                            if (fakeAuthManager.failure) {
+//                                // This is here because the Expecta short hand methods #define "failure"
+//                                // #define failure(...) EXP_failure((__VA_ARGS__))
+//                                void(^authFailure)(NSError *error) = [fakeAuthManager.failure copy];
+//
+//                                authFailure(bogusError);
+//                                
+////                                fakeAuthManager.failure(bogusError);
+//                            }
+//                        });
+//                        
+//                        it(@"pops itself off the view controller", ^{
+//                            OCMVerify([partialMock dismissViewControllerAnimated:YES completion:nil]);
+//                        });
+//                        
+//                        it(@"removes the progress HUD", ^{
+//                            OCMVerify([hudClassMethodMock hideHUDForView:controller.view
+//                                                                animated:YES]);
+//                        });
+//                        
+//                        it(@"calls completion with nil token", ^{
+//                            expect(retLoginResponse).to.beNil();
+//                        });
+//                        
+//                        it(@"calls completion with AFNetworking error", ^{
+//                            expect(retError).to.equal(bogusError);
+//                        });
+//                    });
                 });
                 
                 it(@"returns NO", ^{
@@ -469,56 +469,56 @@ describe(@"BoxSimpleOAuthViewController", ^{
                     });
                 });
                 
-                context(@"has a navigation controlller", ^{
-                    beforeEach(^{
-                        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
-                        partialMock = OCMPartialMock(navigationController);
-                        
-                        [controller webView:fakeWebView didFailLoadWithError:bogusRequestError];
-                    });
-                    
-                    it(@"pops itself off the navigation controller", ^{
-                        OCMVerify([partialMock popViewControllerAnimated:YES]);
-                    });
-                    
-                    it(@"removes the progress HUD", ^{
-                        OCMVerify([hudClassMethodMock hideHUDForView:controller.view
-                                                            animated:YES]);
-                    });
-                    
-                    it(@"calls completion with nil token", ^{
-                        expect(retLoginResponse).to.beNil();
-                    });
-                    
-                    it(@"calls completion with request error", ^{
-                        expect(retError).to.equal(bogusRequestError);
-                    });
-                });
+//                context(@"has a navigation controlller", ^{
+//                    beforeEach(^{
+//                        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
+//                        partialMock = OCMPartialMock(navigationController);
+//                        
+//                        [controller webView:fakeWebView didFailLoadWithError:bogusRequestError];
+//                    });
+//                    
+//                    it(@"pops itself off the navigation controller", ^{
+//                        OCMVerify([partialMock popViewControllerAnimated:YES]);
+//                    });
+//                    
+//                    it(@"removes the progress HUD", ^{
+//                        OCMVerify([hudClassMethodMock hideHUDForView:controller.view
+//                                                            animated:YES]);
+//                    });
+//                    
+//                    it(@"calls completion with nil token", ^{
+//                        expect(retLoginResponse).to.beNil();
+//                    });
+//                    
+//                    it(@"calls completion with request error", ^{
+//                        expect(retError).to.equal(bogusRequestError);
+//                    });
+//                });
                 
-                context(@"does NOT have a navigation controller", ^{
-                    beforeEach(^{
-                        partialMock = OCMPartialMock(controller);
-                        
-                        [controller webView:fakeWebView didFailLoadWithError:bogusRequestError];
-                    });
-                    
-                    it(@"pops itself off the view controller", ^{
-                        OCMVerify([partialMock dismissViewControllerAnimated:YES completion:nil]);
-                    });
-                    
-                    it(@"removes the progress HUD", ^{
-                        OCMVerify([hudClassMethodMock hideHUDForView:controller.view
-                                                            animated:YES]);
-                    });
-                    
-                    it(@"calls completion with nil token", ^{
-                        expect(retLoginResponse).to.beNil();
-                    });
-                    
-                    it(@"calls completion with request error", ^{
-                        expect(retError).to.equal(bogusRequestError);
-                    });
-                });
+//                context(@"does NOT have a navigation controller", ^{
+//                    beforeEach(^{
+//                        partialMock = OCMPartialMock(controller);
+//
+//                        [controller webView:fakeWebView didFailLoadWithError:bogusRequestError];
+//                    });
+//
+//                    it(@"pops itself off the view controller", ^{
+//                        OCMVerify([partialMock dismissViewControllerAnimated:YES completion:nil]);
+//                    });
+//
+//                    it(@"removes the progress HUD", ^{
+//                        OCMVerify([hudClassMethodMock hideHUDForView:controller.view
+//                                                            animated:YES]);
+//                    });
+//
+//                    it(@"calls completion with nil token", ^{
+//                        expect(retLoginResponse).to.beNil();
+//                    });
+//
+//                    it(@"calls completion with request error", ^{
+//                        expect(retError).to.equal(bogusRequestError);
+//                    });
+//                });
             });
         });
     });
